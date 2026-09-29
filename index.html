@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenRouter 零定价模型守望</title>
+<meta name="description" content="OpenRouter 上零定价（匿名可用）模型的实时清单：实际可用上下文、可用性、梯队与同档参考。">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header>
+  <div class="hd">
+    <div>
+      <h1>OpenRouter 零定价模型守望</h1>
+      <div class="sub" id="last">加载中…</div>
+    </div>
+    <div class="spacer"></div>
+    <div class="stats">
+      <div class="stat">零定价 <b id="sFree">–</b></div>
+      <div class="stat">全站 <b id="sTotal">–</b></div>
+      <div class="stat">有上游 <b id="sAlive">–</b></div>
+      <div class="stat alert" id="sUnreadBox" style="display:none">未读 <b id="sUnread">0</b></div>
+    </div>
+    <button id="btnRead">全部已读</button>
+    <button id="btnCfg" class="primary">复制 opencode 配置</button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section id="secNotice" style="display:none">
+    <div class="notice" id="notice"></div>
+  </section>
+
+  <section>
+    <div class="sec-hd"><h2>限流口径</h2><span class="count">账号级政策，不按模型计</span></div>
+    <div class="lim" id="lim"></div>
+  </section>
+
+  <section>
+    <div class="sec-hd"><h2>新发现</h2><span class="count" id="alertCount"></span></div>
+    <div id="alerts"></div>
+  </section>
+
+  <section>
+    <div class="sec-hd"><h2>当前零定价池</h2><span class="count">点击表头排序 · 点击模型名看明细</span></div>
+    <table>
+      <thead><tr>
+        <th data-k="score">关注度</th>
+        <th data-k="tier">梯队</th>
+        <th data-k="id">模型</th>
+        <th data-k="effc">实际上下文</th>
+        <th data-k="nomc">标称</th>
+        <th data-k="act">上游</th>
+        <th data-k="up">可用性</th>
+        <th data-k="peer">同档参考</th>
+        <th>标签</th>
+        <th></th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </section>
+
+  <section>
+    <div class="sec-hd"><h2>变更时间线</h2><span class="count" id="tlCount"></span></div>
+    <div class="tl" id="timeline"></div>
+  </section>
+
+  <section>
+    <div class="sec-hd"><h2>怎么读这份表</h2></div>
+    <div class="notice" style="line-height:1.75">
+      <b>实际上下文</b>取自各上游实际提供的值，与 <b>标称</b>不符时标 ▼ 并显示区间——按标称值规划长文档会被打脸。<br>
+      <b>有上游 0</b> 表示当前零定价但没有任何可用供应商，等于调不通（标红「无可用上游」）。<br>
+      <b>梯队</b>按该模型实际有值的 Artificial Analysis 指数取全站分位数，标注了用的是智力/编程/Agent 哪一个；
+      三个指数全缺时如实显示「无基准数据」，不硬凑。<br>
+      <b>限流</b>是账号级政策，官方没有公开接口返回这些数字，标注了来源与核对日期，<b>非接口返回</b>，政策变动需人工核对。
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>数据源：<code>openrouter.ai/api/v1/models</code> 与 <code>/endpoints</code>（均为匿名公开接口，派生结果任何人都可自行计算）。</div>
+    <div>本页面由本机每 2 小时巡检生成后推送；<b>已读状态保存在各自浏览器本地</b>，不随站点同步、也不跨设备。</div>
+    <div>「关注度」是本地启发式排序（基准分 + 实际可用上下文 + 模态 + 工具调用），非官方指标。</div>
+  </div>
+</footer>
+
+<dialog id="dlg">
+  <div class="dlg-hd"><h3 id="dlgTitle">详情</h3><div class="spacer"></div><button id="btnClose">关闭</button></div>
+  <div class="dlg-bd" id="dlgBody"></div>
+</dialog>
+
+<div class="toast" id="toast"></div>
+
+<script src="./app.js"></script>
+</body>
+</html>

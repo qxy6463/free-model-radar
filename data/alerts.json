@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-09-29T16:41:52.874Z",
+  "items": [
+    {
+      "id": "20260929-155820|stealth/space-bunny-alpha",
+      "at": "2026-09-29T15:58:20.5512054+08:00",
+      "type": "new",
+      "modelId": "stealth/space-bunny-alpha",
+      "name": "Space Bunny Alpha",
+      "kindText": "匿名模型",
+      "score": 27.9,
+      "tier": "?",
+      "tierText": "无基准数据",
+      "contextText": "1M",
+      "nominalText": "1M",
+      "tags": [
+        "标称百万上下文",
+        "图片输入",
+        "音视频",
+        "工具调用",
+        "结构化输出",
+        "推理档位",
+        "可调推理档",
+        "单上游",
+        "匿名模型"
+      ]
+    },
+    {
+      "id": "20260929-155820|openrouter/free",
+      "at": "2026-09-29T15:58:20.5512054+08:00",
+      "type": "new",
+      "modelId": "openrouter/free",
+      "name": "Free Models Router",
+      "kindText": "官方路由",
+      "score": 23.1,
+      "tier": "?",
+      "tierText": "无基准数据",
+      "contextText": "200K",
+      "nominalText": "200K",
+      "tags": [
+        "标称长上下文",
+        "图片输入",
+        "工具调用",
+        "结构化输出",
+        "推理档位",
+        "单上游",
+        "官方路由"
+      ]
+    },
+    {
+      "id": "20260929-153542|thinkingmachines/inkling:free",
+      "at": "2026-09-29T15:35:42.3128362+08:00",
+      "type": "new",
+      "modelId": "thinkingmachines/inkling:free",
+      "name": "Thinking Machines: Inkling (free)",
+      "score": 69.2,
+      "contextText": "1.05M",
+      "tags": [
+        "百万上下文",
+        "长上下文",
+        "图片输入",
+        "音视频",
+        "工具调用",
+        "推理档位",
+        "可调推理档",
+        "编程向"
+      ]
+    },
+    {
+      "id": "20260929-153542|poolside/laguna-s-2.1:free",
+      "at": "2026-09-29T15:35:42.3128362+08:00",
+      "type": "new",
+      "modelId": "poolside/laguna-s-2.1:free",
+      "name": "Poolside: Laguna S 2.1 (free)",
+      "score": 18.4,
+      "contextText": "262K",
+      "tags": [
+        "长上下文",
+        "工具调用",
+        "自带推理",
+        "编程向"
+      ]
+    },
+    {
+      "id": "20260929-152928|qwen/qwen3.8-27b:free",
+      "at": "2026-09-29T15:29:28.3792083+08:00",
+      "type": "new",
+      "modelId": "qwen/qwen3.8-27b:free",
+      "name": "Qwen: Qwen3.8 27B (free)",
+      "score": 85.9,
+      "contextText": "262K",
+      "tags": [
+        "长上下文",
+        "图片输入",
+        "音视频",
+        "工具调用",
+        "结构化输出",
+        "推理档位",
+        "可调推理档",
+        "编程向"
+      ]
+    },
+    {
+      "id": "20260929-152928|nvidia/nemotron-3-super-120b-a12b:free",
+      "at": "2026-09-29T15:29:28.3792083+08:00",
+      "type": "new",
+      "modelId": "nvidia/nemotron-3-super-120b-a12b:free",
+      "name": "NVIDIA: Nemotron 3 Super (free)",
+      "score": 40.5,
+      "contextText": "262K",
+      "tags": [
+        "长上下文",
+        "工具调用",
+        "结构化输出",
+        "推理档位",
+        "可调推理档",
+        "大参数",
+        "编程向"
+      ]
+    }
+  ]
+}

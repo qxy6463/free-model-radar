@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-09-29T16:41:52.874Z",
+  "items": [
+    {
+      "at": "2026-09-29T15:58:27.3976752+08:00",
+      "type": "new",
+      "modelId": "openrouter/free"
+    },
+    {
+      "at": "2026-09-29T15:58:27.3976752+08:00",
+      "type": "new",
+      "modelId": "stealth/space-bunny-alpha"
+    },
+    {
+      "at": "2026-09-29T15:35:48.3689791+08:00",
+      "type": "new",
+      "modelId": "poolside/laguna-s-2.1:free"
+    },
+    {
+      "at": "2026-09-29T15:35:48.3689791+08:00",
+      "type": "new",
+      "modelId": "thinkingmachines/inkling:free"
+    },
+    {
+      "at": "2026-09-29T15:29:33.3875847+08:00",
+      "type": "new",
+      "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
+    },
+    {
+      "at": "2026-09-29T15:29:33.3875847+08:00",
+      "type": "new",
+      "modelId": "qwen/qwen3.8-27b:free"
+    }
+  ]
+}
