@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-29T16:41:52.874Z",
-  "checkedAt": "2026-09-29T17:43:05.5219766+08:00",
-  "totalModels": 460,
+  "generatedAt": "2026-09-30T07:27:05.149Z",
+  "checkedAt": "2026-09-30T15:26:47.1308398+08:00",
+  "totalModels": 464,
   "freeCount": 18,
   "anchorsResolved": 7,
   "skippedNonText": [
@@ -69,8 +69,8 @@
         "匿名模型"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.9,
-      "uptime30m": 99.97,
+      "uptime1d": 99.94,
+      "uptime30m": 99.99,
       "providers": [
         "Stealth"
       ],
@@ -154,7 +154,7 @@
       "tierText": "中上·次旗舰档",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 62.6,
+      "percentile": 62,
       "peerModels": [
         "GPT-6 Astra",
         "Claude Sonnet 4.5"
@@ -173,8 +173,8 @@
         "官方免费层"
       ],
       "upstreamCount": 16,
-      "uptime1d": 99.06,
-      "uptime30m": 99.5,
+      "uptime1d": 99.29,
+      "uptime30m": 99.67,
       "providers": [
         "AkashML",
         "Alibaba",
@@ -296,11 +296,11 @@
       "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
       "kind": "free-tier",
       "kindText": "官方免费层",
-      "contextText": "1M",
+      "contextText": "262K",
       "nominalText": "1M",
-      "effectiveContext": 1000000,
+      "effectiveContext": 262144,
       "nominalContext": 1000000,
-      "contextShrunk": false,
+      "contextShrunk": true,
       "maxOutputTokens": 65536,
       "inputModalities": [
         "text"
@@ -316,18 +316,18 @@
       "tierText": "入门·小模型档",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 24.5,
+      "percentile": 23.9,
       "peerModels": "Gemini 2.5 Pro",
-      "score": 38.7,
+      "score": 37.2,
       "tags": [
         "标称百万上下文",
-        "实际长上下文",
+        "实际仅262K",
         "工具调用",
         "自带推理",
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.95,
+      "uptime1d": 99.9,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -443,7 +443,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.94,
+      "uptime1d": 99.97,
       "uptime30m": 100,
       "providers": [
         "Poolside"
@@ -488,7 +488,7 @@
       "tierText": "中·轻量旗舰档",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 48.9,
+      "percentile": 48.6,
       "peerModels": [
         "GPT-6 Astra",
         "Claude Sonnet 4.5"
@@ -506,8 +506,8 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.37,
-      "uptime30m": 99.97,
+      "uptime1d": 99.4,
+      "uptime30m": 99.85,
       "providers": [
         "DeepInfra",
         "Together"
@@ -557,7 +557,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.98,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "Poolside"
@@ -593,7 +593,7 @@
       "tierText": "入门·小模型档",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 13.7,
+      "percentile": 13.4,
       "peerModels": "Gemini 2.5 Pro",
       "score": 38.1,
       "tags": [
@@ -687,7 +687,7 @@
       "tierText": "中·轻量旗舰档",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 43.2,
+      "percentile": 43,
       "peerModels": [
         "GPT-6 Astra",
         "Claude Sonnet 4.5"
@@ -703,17 +703,15 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 4,
-      "uptime1d": 99.96,
-      "uptime30m": 100,
+      "upstreamCount": 3,
+      "uptime1d": 99.98,
+      "uptime30m": 99.86,
       "providers": [
         "BaseTen",
-        "DeepInfra",
-        "Venice"
+        "DeepInfra"
       ],
       "quantizations": [
-        "fp4",
-        "fp8"
+        "fp4"
       ],
       "implicitCaching": false,
       "modelCreatedAt": "2026-06-04"
@@ -808,9 +806,9 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 14,
-      "uptime1d": 99.24,
-      "uptime30m": 99.24,
+      "upstreamCount": 12,
+      "uptime1d": 99.43,
+      "uptime30m": 99.65,
       "providers": [
         "Cloudflare",
         "CoreWeave",
@@ -823,8 +821,6 @@
         "NextBit",
         "Novita",
         "Parasail",
-        "Reka",
-        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -881,8 +877,8 @@
         "官方免费层"
       ],
       "upstreamCount": 13,
-      "uptime1d": 97.77,
-      "uptime30m": 99.39,
+      "uptime1d": 96.81,
+      "uptime30m": 99.12,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -892,7 +888,6 @@
         "Io Net",
         "ModelRun",
         "Parasail",
-        "Reka",
         "SambaNova",
         "SiliconFlow",
         "Venice"
@@ -934,7 +929,7 @@
       "tierText": "入门·小模型档",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 23,
+      "percentile": 22.5,
       "peerModels": "Gemini 2.5 Pro",
       "score": 40.5,
       "tags": [
@@ -949,8 +944,8 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 97.88,
-      "uptime30m": 97.58,
+      "uptime1d": 99.54,
+      "uptime30m": 99.56,
       "providers": [
         "DeepInfra",
         "DekaLLM"
