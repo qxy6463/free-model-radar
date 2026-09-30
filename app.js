@@ -1,46 +1,30 @@
 'use strict';
 /*
- * 静态站点版本。相对本地面板（scripts/openrouter-watch-panel.*）的差别只有三处：
- *   1. 数据来自 ./data/*.json 而不是本机 API；
- *   2. 已读状态存 localStorage 而不是回写服务端；
- *   3. 没有「立即巡检」——静态页无后端，巡检由本机计划任务负责。
- * 页面逻辑（打分展示、梯队、明细弹窗、opencode 片段）与本地面板保持一致。
- *
- * 所有资源与数据都用相对路径：GitHub Pages 的项目站点挂在 /<repo>/ 子路径下，
- * 用绝对路径会 404。
+ * 静态站点脚本。数据来自 ./data/*.json（相对路径：GitHub Pages 项目站点在 /<repo>/ 子路径）。
+ * 已读状态存 localStorage —— 仅本浏览器，不随站点同步、不跨设备。
  */
 
-let ROSTER = null, ALERTS = [], META = null, TIMELINE = [];
-let sortKey = 'score', sortDir = -1;
-let readSet = new Set();
-
 const SCHEMA_EXPECTED = 2;
-const LS_KEY = 'orwatch.read.v1';   // v1 = 以 alert.id 为键
+const LS_READ = 'orwatch.read.v2';
+
+let ROSTER = null, ALERTS = [], TIMELINE = [], META = null;
+let readSet = new Set();
+let tierFilter = null;          // 选中的梯队（如 'T3'），null = 全部
+let facet = 'all';
+let query = '';
+let sortKey = 'score', sortDir = -1;
 
 const $ = (s) => document.querySelector(s);
-const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-// PowerShell ConvertTo-Json 会把单元素数组序列化成标量字符串，消费端统一归一化。
+const $$ = (s) => Array.from(document.querySelectorAll(s));
 const arr = (x) => (x == null) ? [] : (Array.isArray(x) ? x : [x]);
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const alive = (m) => (m.upstreamCount || 0) > 0;
 
 function ctxText(n) {
   n = Number(n) || 0;
   if (n >= 1000000) return (Math.round(n / 100000) / 10) + 'M';
   if (n >= 1000) return Math.round(n / 1000) + 'K';
   return String(n);
-}
-function toast(msg) {
-  const t = $('#toast'); t.textContent = msg; t.classList.add('on');
-  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 1900);
-}
-async function copy(text, label) {
-  try { await navigator.clipboard.writeText(text); toast(label + '已复制'); return; }
-  catch (e) { /* 继续走 execCommand 回退 */ }
-  const ta = document.createElement('textarea');
-  ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
-  document.body.appendChild(ta); ta.select();
-  try { document.execCommand('copy'); toast(label + '已复制'); }
-  catch (e2) { toast('复制失败，请手动选取'); }
-  ta.remove();
 }
 function ago(iso) {
   if (!iso) return '—';
@@ -52,129 +36,170 @@ function ago(iso) {
   if (s < 86400) return Math.floor(s / 3600) + ' 小时前';
   return Math.floor(s / 86400) + ' 天前';
 }
-function hhmm(iso) {
+const hhmm = (iso) => {
   const d = iso ? new Date(iso) : null;
   return (d && !Number.isNaN(d.getTime()))
-    ? d.toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+    ? d.toLocaleString('zh-CN', { month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' })
     : '—';
-}
+};
 
-/* ---- 已读：localStorage，仅本浏览器 ---------------------------------------- */
-function loadRead() {
-  try { readSet = new Set(JSON.parse(localStorage.getItem(LS_KEY) || '[]')); }
-  catch (e) { readSet = new Set(); }
-}
-function saveRead() {
-  try { localStorage.setItem(LS_KEY, JSON.stringify([...readSet])); } catch (e) { /* 隐私模式下写不了，忽略 */ }
-}
+/* ---- 已读：localStorage ---- */
+function loadRead() { try { readSet = new Set(JSON.parse(localStorage.getItem(LS_READ) || '[]')); } catch (e) { readSet = new Set(); } }
+function saveRead() { try { localStorage.setItem(LS_READ, JSON.stringify([...readSet])); } catch (e) {} }
 const isRead = (id) => readSet.has(id);
 
-/* ---- 展示组件 -------------------------------------------------------------- */
-function scoreCell(m) {
-  const w = Math.max(3, Math.min(100, Number(m.score) || 0));
-  return '<div class="score"><div class="bar"><i class="' + (m.score >= 55 ? 'hi' : '') +
-         '" style="width:' + w + '%"></i></div><span class="sc-n">' + esc(m.score) + '</span></div>';
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('on');
+  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 1900);
 }
-function tierCell(m) {
-  const c = String(m.tier || '').toLowerCase();
-  const cls = c.indexOf('t') === 0 ? c : 'none';
-  const title = esc(m.tierText || '') + (m.tierBasisLabel ? '（按' + esc(m.tierBasisLabel) + '指数的全站分位数）' : '');
-  return '<span class="tier ' + cls + '" title="' + title + '">' + esc(m.tier || '?') +
-         (m.tierBasisLabel ? '·' + esc(m.tierBasisLabel) : '') + '</span>';
-}
-function tagClass(t) {
-  if (t === '无可用上游') return 'dead';
-  if (['实际仅', '单上游', '可用性偏低'].indexOf(t) >= 0) return 'risk';
-  if (['百万上下文', '标称百万上下文', '长上下文', '标称长上下文', '实际长上下文', '编程向', '图片输入'].indexOf(t) >= 0) return 'k';
-  return '';
-}
-function tagChips(m) { return arr(m.tags).map(t => '<span class="tag ' + tagClass(t) + '">' + esc(t) + '</span>').join(''); }
-
-function renderNotice() {
-  const bits = [];
-  if (ROSTER && ROSTER.schemaVersion != null && ROSTER.schemaVersion !== SCHEMA_EXPECTED) {
-    bits.push('<b>数据结构不一致</b>：数据为 v' + ROSTER.schemaVersion + '，页面期望 v' + SCHEMA_EXPECTED +
-              '，部分内容可能显示不全。');
-  }
-  if (location.protocol === 'file:') {
-    bits.push('<b>当前是用 file:// 打开的</b>，浏览器会因 CORS 拒绝读取本地 JSON。请用 HTTP 打开' +
-              '（例如本机 `node scripts\\openrouter-watch-panel.mjs` 之类的静态服务，或直接访问已部署的网址）。');
-  }
-  if (META && META.note) bits.push(esc(META.note));
-  if (!bits.length) { $('#secNotice').style.display = 'none'; return; }
-  $('#secNotice').style.display = '';
-  $('#notice').innerHTML = bits.join('<br>');
+async function copy(text, label) {
+  try { await navigator.clipboard.writeText(text); toast(label + '已复制'); return; }
+  catch (e) { /* 回退 */ }
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); toast(label + '已复制'); } catch (e2) { toast('复制失败'); }
+  ta.remove();
 }
 
-function renderLimits() {
-  const L = ROSTER && ROSTER.rateLimits;
-  if (!L) { $('#lim').innerHTML = '<div class="meta">尚未取得限流口径。</div>'; return; }
-  $('#lim').innerHTML =
-    '<h3>每分钟 / 每天请求数上限</h3>'
-    + '<div class="kv">'
-    +   '<div><b>' + esc(L.RequestsPerMinute) + '</b> 次 / 分钟</div>'
-    +   '<div>未充值账号 <b>' + esc(L.RpdWithoutCredits) + '</b> 次 / 天</div>'
-    +   '<div>累计充值满 <b>&#36;' + esc(L.CreditsThreshold) + '</b> 后 <b>' + esc(L.RpdWithCredits) + '</b> 次 / 天</div>'
-    + '</div>'
-    + '<div class="note">按账号计：池里有 ' + ROSTER.freeCount + ' 个零定价模型也不会给 ' + ROSTER.freeCount
-    + ' 倍配额 · 核对日期 ' + esc(L.VerifiedOn) + ' · <span style="color:var(--warn)">非接口返回</span>，来源 '
-    + '<a href="' + esc(L.SourceUrl) + '" target="_blank" rel="noreferrer">官方文档</a>，政策变动需人工核对</div>';
-}
-
-function renderAlerts() {
-  const box = $('#alerts');
-  const list = arr(ALERTS && ALERTS.items);
-  const unread = list.filter(a => !isRead(a.id)).length;
-  $('#sUnread').textContent = unread;
-  $('#sUnreadBox').style.display = unread ? '' : 'none';
-  $('#alertCount').textContent = list.length ? (list.length + ' 条（' + unread + ' 条未读）') : '';
+/* ---- 头 ---- */
+function renderHead() {
+  const r = ROSTER;
+  const ms = arr(r.models);
+  const unread = arr(ALERTS.items).filter(a => !isRead(a.id)).length;
+  $('#oFree').textContent = r.freeCount;
+  $('#oAll').textContent = r.totalModels;
+  $('#oAlive').textContent = ms.filter(alive).length;
+  $('#oUnread').textContent = unread;
   $('#btnRead').disabled = unread === 0;
-  if (!list.length) {
-    box.innerHTML = '<div class="empty">还没有任何发现记录。</div>';
-    return;
-  }
-  const byId = {};
-  arr(ROSTER && ROSTER.models).forEach(m => { byId[m.id] = m; });
 
-  box.innerHTML = list.map(function (a) {
+  const gen = r.generatedAt || r.checkedAt;
+  const ageMs = gen ? Date.now() - new Date(gen).getTime() : 0;
+  const stale = ageMs > 6 * 3600e3;
+  $('#last').textContent = '巡检 ' + ago(gen);
+  $('#age').textContent = stale ? '（已超过 6 小时，巡检可能未在运行）' : '';
+  $('#age').style.color = stale ? 'var(--amber)' : '';
+  $('#live').className = 'live' + (stale ? ' stale' : '');
+}
+
+/* ---- 限流 ---- */
+function renderLimits() {
+  const L = ROSTER.rateLimits;
+  if (!L) { $('#limits').innerHTML = '<div class="foot">尚未取得限流口径。</div>'; return; }
+  $('#limits').innerHTML =
+    '<div class="grid">'
+    + '<div class="cell"><div class="k">每分钟</div><div class="v">' + esc(L.RequestsPerMinute) + '<small>次</small></div></div>'
+    + '<div class="cell"><div class="k">未充值账号 / 每天</div><div class="v">' + esc(L.RpdWithoutCredits) + '<small>次</small></div></div>'
+    + '<div class="cell"><div class="k">充值满 $' + esc(L.CreditsThreshold) + ' / 每天</div><div class="v">' + esc(L.RpdWithCredits) + '<small>次</small></div></div>'
+    + '</div>'
+    + '<div class="foot">按账号计：池里有 <b>' + ROSTER.freeCount + '</b> 个零定价模型也不会给 ' + ROSTER.freeCount
+    + ' 倍配额 · 核对日期 ' + esc(L.VerifiedOn)
+    + ' · <span class="flag">非接口返回</span>，来源 <a href="' + esc(L.SourceUrl) + '" target="_blank" rel="noreferrer">官方文档</a>，政策变动需人工核对</div>';
+}
+
+/* ---- 梯队阶梯（记忆点） ---- */
+const TIERS = [
+  { code:'T1', label:'顶尖 · 闭源旗舰档', pct:'≥ 95 分位' },
+  { code:'T2', label:'强 · 旗舰主力档',   pct:'80–95' },
+  { code:'T3', label:'中上 · 次旗舰档',   pct:'60–80' },
+  { code:'T4', label:'中 · 轻量旗舰档',   pct:'40–60' },
+  { code:'T5', label:'入门 · 小模型档',   pct:'< 40' },
+  { code:'?',  label:'无基准数据',        pct:'三个指数全缺' },
+];
+
+function renderLadder() {
+  const ms = arr(ROSTER.models);
+  const box = $('#ladder');
+  const used = new Set(ms.map(m => m.tier || '?'));
+  const top = TIERS.find(t => used.has(t.code));
+  box.innerHTML = TIERS.map(function (t) {
+    const list = ms.filter(m => (m.tier || '?') === t.code);
+    if (!list.length) {
+      // 空档保留在阶梯里：一眼看出这个池子的天花板在哪，但压成细条
+      return '<div class="rung empty-rung" data-tier="' + t.code + '">'
+        + '<div class="mark"><span class="code">' + t.code + '</span>'
+        + '<span class="label">' + t.label + '</span>'
+        + '<span class="pct">— 暂无模型 · ' + t.pct + '</span></div>'
+        + '<div class="body"></div></div>';
+    }
+    const chips = list.map(function (m) {
+      const cls = !alive(m) ? 'dead' : (m.score >= 55 ? 't-hi' : (m.score < 30 ? 't-lo' : ''));
+      const w = Math.max(6, Math.min(100, Number(m.score) || 0));
+      return '<button class="chip ' + cls + '" onclick="detail(\'' + String(m.id).replace(/'/g, "\\'") + '\')">'
+        + '<span class="sig"><i style="width:' + w + '%"></i></span>' + esc(m.id) + '</button>';
+    }).join('');
+    return '<div class="rung' + (tierFilter === t.code ? ' on' : '') + '" data-tier="' + t.code + '">'
+      + '<div class="mark" onclick="pickTier(\'' + t.code + '\')">'
+      +   '<span class="code">' + t.code + '</span>'
+      +   '<span class="label">' + t.label + '</span>'
+      +   '<span class="pct">' + t.pct + ' · ' + list.length + ' 个</span>'
+      + '</div><div class="body">' + chips + '</div></div>';
+  }).join('');
+
+  if (top) {
+    $('#ladderNote').textContent = '池内最高 ' + top.code + '（' + top.label + '）· 最高分位 ' +
+      Math.max.apply(null, ms.filter(m => (m.tier || '?') === top.code).map(m => Number(m.percentile) || 0)) + '%';
+  }
+}
+
+function pickTier(code) {
+  tierFilter = (tierFilter === code) ? null : code;
+  $('#btnResetTier').style.display = tierFilter ? '' : 'none';
+  renderLadder(); renderGrid();
+}
+
+/* ---- 新发现轨道 ---- */
+function renderRail() {
+  const items = arr(ALERTS.items);
+  const unread = items.filter(a => !isRead(a.id)).length;
+  $('#railNote').textContent = items.length ? (items.length + ' 条记录 · ' + unread + ' 条未读') : '';
+  if (!items.length) { $('#rail').innerHTML = '<div class="empty">还没有任何发现记录。</div>'; return; }
+  const byId = {}; arr(ROSTER.models).forEach(m => { byId[m.id] = m; });
+  $('#rail').innerHTML = items.map(function (a) {
     const m = byId[a.modelId] || {};
     const read = isRead(a.id);
-    const up = m.uptime1d;
-    const shrunk = a.nominalText && a.contextText && a.nominalText !== a.contextText;
-    const qs = "'" + String(a.id).replace(/'/g, "\\'") + "'";
-    let h = '<div class="card ' + (read ? 'read' : 'unread') + ' ' + (a.type === 'removed' ? 'removed' : '') + '">';
-    h += '<div class="row1">';
-    h += '<span class="badge ' + (a.type === 'removed' ? 'gone' : 'new') + '">' + (a.type === 'removed' ? '已下架' : '新增') + '</span>';
-    if (a.kindText) h += '<span class="badge kind">' + esc(a.kindText) + '</span>';
-    h += '<span class="mid mono copy" onclick="detailById(' + qs + ')" title="点击看明细">' + esc(a.modelId) + '</span>';
-    if (a.type !== 'removed') h += tierCell(m) + scoreCell(m);
-    if (read) h += '<span class="badge seen">已读</span>';
-    h += '<div class="acts">';
-    h += '<button class="tiny" onclick="copy(' + "'" + String(a.modelId).replace(/'/g, "\\'") + "'" + ',\'模型 ID\')">复制 ID</button>';
-    h += '<button class="tiny" onclick="markRead(' + qs + ')">' + (read ? '标为未读' : '标记已读') + '</button>';
-    h += '</div></div>';
-    h += '<div class="meta">';
-    h += '<span>发现于 ' + hhmm(a.at) + '（' + ago(a.at) + '）</span>';
-    if (a.contextText) h += '<span>实际上下文 ' + esc(a.contextText) + (shrunk ? '（标称 ' + esc(a.nominalText) + '）' : '') + '</span>';
-    if (m.modelCreatedAt) h += '<span>模型上线 ' + esc(m.modelCreatedAt) + '</span>';
-    if (up != null) h += '<span>可用性 ' + up + '%</span>';
-    if (m.upstreamCount != null) h += '<span>' + m.upstreamCount + ' 个上游</span>';
-    h += '</div>';
-    const tags = arr(a.tags);
-    if (tags.length) h += '<div class="tags">' + tags.map(t => '<span class="tag ' + tagClass(t) + '">' + esc(t) + '</span>').join('') + '</div>';
-    h += '</div>';
-    return h;
+    return '<article class="arrive' + (read ? ' is-read' : '') + '" onclick="detail(\'' + String(a.modelId).replace(/'/g, "\\'") + '\')">'
+      + '<div class="top"><span class="tag">' + (a.type === 'removed' ? '下架' : '新增') + '</span>'
+      + (a.kindText ? '<span class="kind">' + esc(a.kindText) + '</span>' : '')
+      + '<span class="when">' + hhmm(a.at) + '</span></div>'
+      + '<div class="id">' + esc(a.modelId) + '</div>'
+      + '<div class="facts">'
+      +   (a.tier ? '<span>' + esc(a.tier) + (a.tierText ? ' ' + esc(a.tierText) : '') + '</span>' : '')
+      +   (a.contextText ? '<span>' + esc(a.contextText) + (a.nominalText && a.nominalText !== a.contextText ? ' ▼' : '') + '</span>' : '')
+      +   (m.uptime1d != null ? '<span>' + m.uptime1d + '%</span>' : '')
+      +   (m.upstreamCount != null ? '<span>' + m.upstreamCount + ' 上游</span>' : '')
+      + '</div>'
+      + '<div class="rd" onclick="event.stopPropagation();toggleRead(\'' + String(a.id).replace(/'/g, "\\'") + '\')">'
+      + (read ? '✓ 已读' : '标记已读') + '</div>'
+      + '</article>';
   }).join('');
 }
 
-function sortModels() {
-  const accessors = {
-    score: m => m.score, tier: m => m.tier || 'zz', id: m => m.id,
-    effc: m => m.effectiveContext, nomc: m => m.nominalContext,
-    act: m => m.upstreamCount, up: m => m.uptime1d, peer: m => arr(m.peerModels).join(' ')
-  };
-  const get = accessors[sortKey] || accessors.score;
-  return arr(ROSTER && ROSTER.models).slice().sort((a, b) => {
+function toggleRead(id) {
+  if (isRead(id)) readSet.delete(id); else readSet.add(id);
+  saveRead(); renderHead(); renderRail(); renderGrid();
+  toast(isRead(id) ? '已标记为已读' : '已标记为未读');
+}
+
+/* ---- 清单 ---- */
+function visibleModels() {
+  const q = query.trim().toLowerCase();
+  let ms = arr(ROSTER.models);
+  if (tierFilter) ms = ms.filter(m => (m.tier || '?') === tierFilter);
+  if (facet === 'alive') ms = ms.filter(alive);
+  else if (facet === 'dead') ms = ms.filter(m => !alive(m));
+  else if (facet === 'new') {
+    const ids = new Set(arr(ALERTS.items).map(a => a.modelId));
+    ms = ms.filter(m => ids.has(m.id));
+  } else if (facet === 'shrink') ms = ms.filter(m => m.contextShrunk);
+  if (q) {
+    ms = ms.filter(m => (m.id + ' ' + (m.name || '') + ' ' + arr(m.tags).join(' ') + ' ' + arr(m.providers).join(' ')).toLowerCase().indexOf(q) >= 0);
+  }
+  const get = {
+    score: m => m.score, effectiveContext: m => m.effectiveContext,
+    percentile: m => m.percentile, uptime1d: m => m.uptime1d, id: m => m.id
+  }[sortKey] || (m => m.score);
+  ms = ms.slice().sort((a, b) => {
     const x = get(a), y = get(b);
     if (x == null && y == null) return 0;
     if (x == null) return 1;
@@ -182,37 +207,61 @@ function sortModels() {
     if (typeof x === 'string') return sortDir * x.localeCompare(y);
     return sortDir * (x - y);
   });
+  return ms;
 }
 
-function renderRows() {
-  const qs = (s) => "'" + String(s).replace(/'/g, "\\'") + "'";
-  const models = sortModels();
-  if (!models.length) { $('#rows').innerHTML = '<tr><td colspan="10" class="err">没有数据</td></tr>'; return; }
-  $('#rows').innerHTML = models.map(function (m) {
-    const up = m.uptime1d, act = m.upstreamCount || 0;
-    const upCls = up == null ? 'up-no' : (up >= 99 ? 'up-ok' : (up >= 97 ? 'up-mid' : 'up-no'));
+function tagCls(t) {
+  if (t === '无可用上游') return 'bad';
+  if (['实际仅', '单上游', '可用性偏低'].indexOf(t) >= 0) return 'warn';
+  if (['百万上下文', '标称百万上下文', '长上下文', '标称长上下文', '实际长上下文', '编程向', '图片输入'].indexOf(t) >= 0) return 'good';
+  return '';
+}
+
+function renderGrid() {
+  const ms = visibleModels();
+  const shown = new Set(ms.map(m => m.id));
+  $('#gridNote').textContent = '显示 ' + ms.length + ' / ' + arr(ROSTER.models).length + ' 个';
+  if (!ms.length) { $('#grid').innerHTML = '<div class="empty">没有匹配的模型。换个筛选条件试试。</div>'; return; }
+  $('#grid').innerHTML = ms.map(function (m) {
+    const act = m.upstreamCount || 0;
     const peers = arr(m.peerModels);
-    return '<tr class="' + (act === 0 ? 'dead' : '') + '">'
-      + '<td class="num">' + scoreCell(m) + '</td>'
-      + '<td class="num">' + tierCell(m) + '</td>'
-      + '<td><span class="mono copy" onclick="detailById(' + qs(m.id) + ')" title="点击看明细">' + esc(m.id) + '</span></td>'
-      + '<td class="num ' + (m.contextShrunk ? 'ctx-shrink' : '') + '">' + esc(m.contextText)
-        + (m.contextShrunk ? ' <span title="标称 ' + esc(m.nominalText) + '，实际可用更低">▼</span>' : '') + '</td>'
-      + '<td class="num" style="color:var(--fg-mute)">' + esc(m.nominalText) + '</td>'
-      + '<td class="num ' + (act === 0 ? '' : 'up-ok') + '">' + (act === 0 ? '<span style="color:var(--bad)">0</span>' : act) + '</td>'
-      + '<td class="num ' + upCls + '">' + (up == null ? '?' : up + '%') + '</td>'
-      + '<td class="num" style="color:var(--fg-dim);font-size:11.5px">'
-        + (peers.length ? esc(peers.join(' / ')) : '<span style="color:var(--fg-mute)">—</span>') + '</td>'
-      + '<td><div class="tags" style="margin:0">' + tagChips(m) + '</div></td>'
-      + '<td class="num"><button class="tiny" onclick="copy(' + qs(m.id) + ',\'模型 ID\')">复制</button></td>'
-      + '</tr>';
+    const minC = (m.endpoints && m.endpoints.minContext) || 0;
+    const ctxRange = (minC > 0 && minC < m.effectiveContext)
+      ? ctxText(minC) + '~' + ctxText(m.effectiveContext) : m.contextText;
+    const w = Math.max(4, Math.min(100, Number(m.score) || 0));
+    const tags = arr(m.tags).slice(0, 6).map(t => '<span class="' + tagCls(t) + '">' + esc(t) + '</span>').join('');
+    return '<article class="cell" onclick="detail(\'' + String(m.id).replace(/'/g, "\\'") + '\')">'
+      + '<div class="r1"><span class="id">' + esc(m.id) + '</span>'
+      + '<span class="score' + (m.score >= 55 ? ' hi' : '') + '">' + esc(m.score) + '</span></div>'
+      + '<div class="r2">'
+      +   (m.tier ? '<span class="tier' + (m.tier === 'T1' || m.tier === 'T2' ? ' up' : '') + '">' + esc(m.tier) + (m.tierBasisLabel ? '·' + esc(m.tierBasisLabel) : '') + '</span>' : '')
+      +   '<span class="kind">' + esc(m.kindText || '') + '</span>'
+      +   '<span class="sigwrap"><i class="' + (m.score >= 55 ? 'hi' : '') + '" style="width:' + w + '%"></i></span>'
+      + '</div>'
+      + '<div class="r3">'
+      +   '<span class="' + (m.contextShrunk ? 'shrink' : '') + '">上下文 <b>' + esc(ctxRange) + '</b>' + (m.contextShrunk ? ' ▼' : '') + '</span>'
+      +   '<span class="' + (act === 0 ? 'dead' : '') + '">' + act + ' 上游' + '</span>'
+      +   (m.uptime1d != null ? '<span>' + m.uptime1d + '%</span>' : '')
+      +   (m.maxOutputTokens ? '<span>出 ' + ctxText(m.maxOutputTokens) + '</span>' : '')
+      + '</div>'
+      + (peers.length ? '<div class="peer">≈ ' + esc(peers.join(' / ')) + '</div>' : '')
+      + (tags ? '<div class="tags">' + tags + '</div>' : '')
+      + '</article>';
   }).join('');
-
-  $('#sFree').textContent = ROSTER.freeCount;
-  $('#sTotal').textContent = ROSTER.totalModels;
-  $('#sAlive').textContent = models.filter(m => (m.upstreamCount || 0) > 0).length;
 }
 
+/* ---- 时间线 ---- */
+function renderTimeline() {
+  const ev = arr(TIMELINE.items);
+  $('#tlNote').textContent = ev.length ? ('最近 ' + ev.length + ' 条') : '';
+  $('#timeline').innerHTML = ev.length
+    ? ev.map(e => '<div class="ev ' + esc(e.type) + '"><span class="at">' + hhmm(e.at) + '</span>'
+        + '<span class="what">' + (e.type === 'removed' ? '下架' : '新增') + '</span>'
+        + '<span class="mid">' + esc(e.modelId) + '</span></div>').join('')
+    : '<div class="empty">暂无变更记录。</div>';
+}
+
+/* ---- 明细 ---- */
 function opencodeSnippet(m) {
   return JSON.stringify({
     $schema: 'https://opencode.ai/config.json',
@@ -225,53 +274,43 @@ function opencodeSnippet(m) {
   }, null, 2);
 }
 
-function detail(m) {
-  if (!m) { toast('当前数据里没有这个模型'); return; }
+function detail(id) {
+  const m = arr(ROSTER.models).find(x => x.id === id);
+  if (!m) { toast('当前清单里没有这个模型（可能已不再零定价）'); return; }
+  const e = m.endpoints || {};
   const peers = arr(m.peerModels);
   const rows = [
     ['名称', esc(m.name)],
     ['类型', esc(m.kindText)],
-    ['梯队', esc((m.tier || '?') + ' ' + (m.tierText || '')) + (m.tierBasisLabel ? '（按' + esc(m.tierBasisLabel) + '指数，全站分位 ' + m.percentile + '%）' : '（无基准数据）')],
+    ['梯队', '<b>' + esc((m.tier || '?') + ' ' + (m.tierText || '')) + '</b>'
+      + (m.tierBasisLabel ? '（按' + esc(m.tierBasisLabel) + '指数，全站分位 ' + m.percentile + '%）' : '（无基准数据）')],
     ['同档参考', peers.length ? esc(peers.join(' / ')) : '—'],
-    ['关注度', esc(m.score)],
-    ['实际上下文', esc(m.contextText) + (m.contextShrunk ? '　⚠ 标称 ' + esc(m.nominalText) + ' 高于实际上游' : '')],
+    ['关注度', '<b>' + esc(m.score) + '</b>'],
+    ['实际上下文', '<b>' + esc(m.contextText) + '</b>' + (m.contextShrunk ? '　⚠ 标称 ' + esc(m.nominalText) + ' 高于实际上游' : '')],
     ['最大输出', m.maxOutputTokens ? ctxText(m.maxOutputTokens) : '—'],
     ['输入模态', arr(m.inputModalities).join('、') || '—'],
     ['推理档位', arr(m.reasoningEfforts).join(' / ') || '—'],
     ['工具调用', m.supportsTools ? '支持' : '不支持'],
-    ['活跃上游', (m.upstreamCount || 0) + ' 个' + (arr(m.providers).length ? '：' + esc(arr(m.providers).join('、')) : '')],
+    ['活跃上游', (m.upstreamCount || 0) + ' 个' + (arr(m.providers).length ? '：' + esc(arr(m.providers).join('、')) : '')
+      + ((m.upstreamCount || 0) === 0 ? '　<b style="color:var(--red)">当前调不通</b>' : '')],
     ['量化格式', arr(m.quantizations).join('、') || '—'],
-    ['可用性 1日', m.uptime1d != null ? m.uptime1d + '%' : '—'],
-    ['可用性 30分', m.uptime30m != null ? m.uptime30m + '%' : '—'],
+    ['可用性', (m.uptime1d != null ? '1日 ' + m.uptime1d + '%' : '—') + (m.uptime30m != null ? ' · 30分 ' + m.uptime30m + '%' : '')],
     ['隐式缓存', m.implicitCaching ? '支持（命中部分不计费 / 更快）' : '不支持'],
     ['模型上线', esc(m.modelCreatedAt || '—')],
   ];
   $('#dlgTitle').textContent = m.id;
   $('#dlgBody').innerHTML =
-    '<dl class="dgrid">' + rows.map(p => '<dt>' + p[0] + '</dt><dd>' + p[1] + '</dd>').join('') + '</dl>'
-    + '<pre id="code" class="mono">' + esc(opencodeSnippet(m)) + '</pre>'
-    + '<div style="margin-top:12px"><button id="btnCopyCode" class="primary">复制这个模型的配置</button></div>'
-    + '<p class="hint">存为项目下的 <code>opencode.json</code>；API Key 从环境变量 <code>OPENROUTER_API_KEY</code> 读取。</p>';
-  $('#btnCopyCode').onclick = function () { copy($('#code').textContent, '配置片段'); };
+    '<dl class="dgrid">' + rows.map(r => '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>').join('') + '</dl>'
+    + '<pre id="code">' + esc(opencodeSnippet(m)) + '</pre>'
+    + '<div class="dlg-act"><button class="mini" id="btnCopyOne">复制该模型配置</button>'
+    + '<button class="mini" id="btnCopyId">复制模型 ID</button></div>';
+  $('#btnCopyOne').onclick = () => copy($('#code').textContent, '配置片段');
+  $('#btnCopyId').onclick = () => copy(m.id, '模型 ID');
   $('#dlg').showModal();
-}
-function detailById(id) {
-  const m = arr(ROSTER && ROSTER.models).find(x => x.id === id);
-  if (m) detail(m);
-  else toast('当前数据里没有这个模型（可能已不再零定价）');
-}
-
-function markRead(id) {
-  if (isRead(id)) readSet.delete(id); else readSet.add(id);
-  saveRead();
-  renderAlerts();
-  toast(isRead(id) ? '已标记为已读' : '已标记为未读');
 }
 
 function buildConfig() {
-  const picked = arr(ROSTER && ROSTER.models)
-    .filter(m => (m.upstreamCount || 0) > 0)
-    .sort((a, b) => b.score - a.score).slice(0, 8);
+  const picked = arr(ROSTER.models).filter(alive).sort((a, b) => b.score - a.score).slice(0, 8);
   const mm = {};
   picked.forEach(m => {
     mm[m.id] = { name: String(m.name || '').replace(/\s*\(free\)\s*$/i, '') };
@@ -287,74 +326,91 @@ function buildConfig() {
   }, null, 2);
 }
 
-function renderTimeline() {
-  const ev = arr(TIMELINE && TIMELINE.items);
-  $('#tlCount').textContent = ev.length ? ('最近 ' + ev.length + ' 条') : '';
-  $('#timeline').innerHTML = ev.length
-    ? ev.map(e => '<div class="tl-item ' + esc(e.type) + '"><span class="tl-t">' + hhmm(e.at) + '</span>'
-        + '<span class="badge ' + (e.type === 'removed' ? 'gone' : 'new') + '">' + (e.type === 'removed' ? '下架' : '新增') + '</span> '
-        + '<span class="mono">' + esc(e.modelId) + '</span></div>').join('')
-    : '<div class="empty">暂无变更记录。</div>';
+function showConfig() {
+  const ids = arr(ROSTER.models).filter(alive).map(m => m.id).slice(0, 8);
+  $('#dlgTitle').textContent = 'opencode.json 片段';
+  $('#dlgBody').innerHTML =
+    '<pre id="code">' + esc(buildConfig()) + '</pre>'
+    + '<div class="dlg-act"><button class="mini" id="btnCopyAll">复制</button></div>'
+    + '<p class="legend" style="margin-top:14px;padding:12px 14px">已收录 <b>' + ids.length
+    + '</b> 个有可用上游的模型，按关注度取前 8。API Key 从环境变量 <code>OPENROUTER_API_KEY</code> 读取。</p>';
+  $('#btnCopyAll').onclick = () => copy($('#code').textContent, '配置片段');
+  $('#dlg').showModal();
 }
 
+/* ---- 渲染总入口 ---- */
 function render() {
   if (!ROSTER) return;
-  renderNotice(); renderLimits(); renderAlerts(); renderRows(); renderTimeline();
-  const gen = ROSTER.generatedAt || ROSTER.checkedAt;
-  const stale = gen && (Date.now() - new Date(gen).getTime()) > 6 * 3600e3;
-  $('#last').textContent = '数据生成于 ' + ago(gen) + (stale ? '（超过 6 小时，可能巡检未在运行）' : '');
-  $('#last').style.color = stale ? 'var(--warn)' : '';
+  const bits = [];
+  if (ROSTER.schemaVersion != null && ROSTER.schemaVersion !== SCHEMA_EXPECTED) {
+    bits.push('<b>数据结构不一致</b>：数据为 v' + ROSTER.schemaVersion + '，页面期望 v' + SCHEMA_EXPECTED + '，部分内容可能显示不全。');
+  }
+  if (location.protocol === 'file:') {
+    bits.push('<b>当前是用 file:// 打开的</b>，浏览器会因 CORS 拒绝读取本地 JSON。请通过 HTTP 访问（部署后的网址，或本地起 <code>node scripts\\serve-openrouter-site.mjs</code>）。');
+  }
+  if (META && META.note) bits.push(esc(META.note));
+  $('#noticeBox').innerHTML = bits.length ? '<div class="notice">' + bits.join('<br>') + '</div>' : '';
+
+  renderHead();
+  renderLimits();
+  renderLadder();
+  renderRail();
+  renderGrid();
+  renderTimeline();
 }
 
 async function load() {
   try {
-    const [r, a, m, tl] = await Promise.all([
+    const [r, a, t, m] = await Promise.all([
       fetch('./data/roster.json', { cache: 'no-cache' }),
       fetch('./data/alerts.json', { cache: 'no-cache' }),
-      fetch('./data/meta.json', { cache: 'no-cache' }),
       fetch('./data/timeline.json', { cache: 'no-cache' }),
+      fetch('./data/meta.json', { cache: 'no-cache' }),
     ]);
     if (!r.ok) throw new Error('roster.json HTTP ' + r.status);
     ROSTER = await r.json();
     ALERTS = a.ok ? await a.json() : { items: [] };
+    TIMELINE = t.ok ? await t.json() : { items: [] };
     META = m.ok ? await m.json() : null;
-    TIMELINE = tl.ok ? await tl.json() : { items: [] };
     render();
   } catch (e) {
     $('#last').textContent = '数据加载失败：' + e.message;
-    $('#last').style.color = 'var(--bad)';
+    $('#live').className = 'live dead';
   }
 }
 
-window.detailById = detailById;
-window.markRead = markRead;
-window.copy = copy;
+window.detail = detail;
+window.toggleRead = toggleRead;
+window.pickTier = pickTier;
 
 document.addEventListener('DOMContentLoaded', function () {
   loadRead();
-  $('#btnClose').onclick = function () { $('#dlg').close(); };
+  $('#btnClose') && ($('#btnClose').onclick = () => $('#dlg').close());
+  $('#dlg').addEventListener('click', function (ev) { if (ev.target === $('#dlg')) $('#dlg').close(); });
+  $('#btnCfg').onclick = showConfig;
   $('#btnRead').onclick = function () {
-    arr(ALERTS && ALERTS.items).forEach(a => readSet.add(a.id));
-    saveRead(); renderAlerts(); toast('已全部标记为已读（仅本浏览器）');
+    arr(ALERTS.items).forEach(a => readSet.add(a.id));
+    saveRead(); renderHead(); renderRail(); renderGrid();
+    toast('已全部标记为已读（仅本浏览器）');
   };
-  $('#btnCfg').onclick = function () {
-    $('#dlgTitle').textContent = 'opencode.json 片段（仅含有可用上游的模型）';
-    $('#dlgBody').innerHTML =
-      '<pre id="code" class="mono">' + esc(buildConfig()) + '</pre>'
-      + '<div style="margin-top:12px"><button id="btnCopyCode" class="primary">复制</button></div>'
-      + '<p class="hint">存为项目下的 <code>opencode.json</code>；API Key 从环境变量 <code>OPENROUTER_API_KEY</code> 读取。</p>';
-    $('#btnCopyCode').onclick = function () { copy($('#code').textContent, '配置片段'); };
-    $('#dlg').showModal();
-  };
-  document.querySelectorAll('th[data-k]').forEach(function (th) {
-    th.onclick = function () {
-      const k = th.dataset.k;
-      sortDir = (sortKey === k) ? -sortDir : -1;
-      sortKey = k;
-      document.querySelectorAll('th[data-k] .arr').forEach(s => s.remove());
-      th.insertAdjacentHTML('beforeend', ' <span class="arr">' + (sortDir < 0 ? '▼' : '▲') + '</span>');
-      renderRows();
+  $('#btnResetTier').onclick = function () { tierFilter = null; $('#btnResetTier').style.display = 'none'; renderLadder(); renderGrid(); };
+  $('#btnResetTier').style.display = 'none';
+
+  $('#q').addEventListener('input', function (ev) { query = ev.target.value; renderGrid(); });
+  $$('#seg button').forEach(function (b) {
+    b.onclick = function () {
+      $$('#seg button').forEach(x => x.classList.remove('on'));
+      b.classList.add('on'); facet = b.dataset.f; renderGrid();
     };
   });
+  $$('#sortSeg button').forEach(function (b) {
+    b.onclick = function () {
+      $$('#sortSeg button').forEach(x => x.classList.remove('on'));
+      b.classList.add('on');
+      sortKey = b.dataset.k; sortDir = -1; renderGrid();
+    };
+  });
+
   load();
+  setInterval(load, 60000);
 });

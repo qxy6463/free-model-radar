@@ -4,92 +4,130 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OpenRouter 零定价模型守望</title>
-<meta name="description" content="OpenRouter 上零定价（匿名可用）模型的实时清单：实际可用上下文、可用性、梯队与同档参考。">
+<meta name="description" content="OpenRouter 零定价模型实时清单：实际可用上下文、可用性、梯队与同档参考。">
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
 <header>
   <div class="hd">
-    <div>
-      <h1>OpenRouter 零定价模型守望</h1>
-      <div class="sub" id="last">加载中…</div>
+    <div class="brand">
+      <div class="kicker">signal monitor · 零定价模型</div>
+      <h1>OpenRouter <em>零定价</em>模型守望</h1>
+      <div class="sub">
+        <span class="live" id="live"><span class="pip"></span><span id="last">读取中…</span></span>
+        <span id="age"></span>
+      </div>
     </div>
-    <div class="spacer"></div>
-    <div class="stats">
-      <div class="stat">零定价 <b id="sFree">–</b></div>
-      <div class="stat">全站 <b id="sTotal">–</b></div>
-      <div class="stat">有上游 <b id="sAlive">–</b></div>
-      <div class="stat alert" id="sUnreadBox" style="display:none">未读 <b id="sUnread">0</b></div>
+
+    <div class="readouts">
+      <div class="readout"><span class="k">零定价</span><span class="v" id="oFree">–</span></div>
+      <div class="readout good"><span class="k">有上游</span><span class="v" id="oAlive">–</span></div>
+      <div class="readout"><span class="k">全站</span><span class="v" id="oAll">–</span></div>
+      <div class="readout alert"><span class="k">未读</span><span class="v" id="oUnread">–</span></div>
     </div>
-    <button id="btnRead">全部已读</button>
-    <button id="btnCfg" class="primary">复制 opencode 配置</button>
+
+    <div class="hd-actions">
+      <button id="btnRead" class="ghost">全部已读</button>
+      <button id="btnCfg">复制 opencode 配置</button>
+    </div>
   </div>
 </header>
 
-<div class="wrap">
+<main>
+  <div id="noticeBox"></div>
 
-  <section id="secNotice" style="display:none">
-    <div class="notice" id="notice"></div>
+  <section class="rise" style="animation-delay:.05s">
+    <div class="sec-hd">
+      <h2>限流口径</h2>
+      <span class="note">账号级政策 —— 池里有几个零定价模型都不会给你几倍配额</span>
+    </div>
+    <div class="limits" id="limits"></div>
   </section>
 
-  <section>
-    <div class="sec-hd"><h2>限流口径</h2><span class="count">账号级政策，不按模型计</span></div>
-    <div class="lim" id="lim"></div>
+  <section class="rise" style="animation-delay:.12s">
+    <div class="sec-hd">
+      <h2>梯队阶梯</h2>
+      <span class="note">按该模型实际有值的 Artificial Analysis 指数取全站分位数 · 点某一阶筛选下方清单</span>
+      <span class="note" id="ladderNote" style="margin-left:auto"></span>
+      <span class="spacer"></span>
+      <button id="btnResetTier" class="mini ghost">显示全部</button>
+    </div>
+    <div class="ladder" id="ladder"></div>
   </section>
 
-  <section>
-    <div class="sec-hd"><h2>新发现</h2><span class="count" id="alertCount"></span></div>
-    <div id="alerts"></div>
+  <section class="rise" style="animation-delay:.19s">
+    <div class="sec-hd">
+      <h2>新发现</h2>
+      <span class="note" id="railNote"></span>
+    </div>
+    <div class="rail" id="rail"></div>
   </section>
 
-  <section>
-    <div class="sec-hd"><h2>当前零定价池</h2><span class="count">点击表头排序 · 点击模型名看明细</span></div>
-    <table>
-      <thead><tr>
-        <th data-k="score">关注度</th>
-        <th data-k="tier">梯队</th>
-        <th data-k="id">模型</th>
-        <th data-k="effc">实际上下文</th>
-        <th data-k="nomc">标称</th>
-        <th data-k="act">上游</th>
-        <th data-k="up">可用性</th>
-        <th data-k="peer">同档参考</th>
-        <th>标签</th>
-        <th></th>
-      </tr></thead>
-      <tbody id="rows"></tbody>
-    </table>
+  <section class="rise" style="animation-delay:.26s">
+    <div class="sec-hd">
+      <h2>完整清单</h2>
+      <span class="note">点击卡片看上游明细与 opencode 配置片段</span>
+    </div>
+    <div class="toolbar">
+      <input class="search" id="q" type="search" placeholder="过滤模型 / 上游 / 标签…" autocomplete="off">
+      <div class="seg" id="seg">
+        <button data-f="all" class="on">全部</button>
+        <button data-f="alive">有上游</button>
+        <button data-f="dead">无上游</button>
+        <button data-f="new">新发现</button>
+        <button data-f="shrink">标称虚高</button>
+      </div>
+      <div class="seg" id="sortSeg">
+        <button data-k="score" class="on">关注度</button>
+        <button data-k="effectiveContext">上下文</button>
+        <button data-k="percentile">分位</button>
+        <button data-k="uptime1d">可用性</button>
+        <button data-k="id">名称</button>
+      </div>
+      <span class="note" id="gridNote" style="margin-left:auto"></span>
+    </div>
+    <div class="grid" id="grid"></div>
   </section>
 
-  <section>
-    <div class="sec-hd"><h2>变更时间线</h2><span class="count" id="tlCount"></span></div>
+  <section class="rise" style="animation-delay:.33s">
+    <div class="sec-hd">
+      <h2>变更时间线</h2>
+      <span class="note" id="tlNote"></span>
+    </div>
     <div class="tl" id="timeline"></div>
   </section>
 
-  <section>
+  <section class="rise" style="animation-delay:.4s">
     <div class="sec-hd"><h2>怎么读这份表</h2></div>
-    <div class="notice" style="line-height:1.75">
-      <b>实际上下文</b>取自各上游实际提供的值，与 <b>标称</b>不符时标 ▼ 并显示区间——按标称值规划长文档会被打脸。<br>
-      <b>有上游 0</b> 表示当前零定价但没有任何可用供应商，等于调不通（标红「无可用上游」）。<br>
-      <b>梯队</b>按该模型实际有值的 Artificial Analysis 指数取全站分位数，标注了用的是智力/编程/Agent 哪一个；
-      三个指数全缺时如实显示「无基准数据」，不硬凑。<br>
-      <b>限流</b>是账号级政策，官方没有公开接口返回这些数字，标注了来源与核对日期，<b>非接口返回</b>，政策变动需人工核对。
+    <div class="legend">
+      <dl>
+        <dt>实际上下文</dt>
+        <dd>取自各上游<b>实际提供</b>的值，与 <code>/v1/models</code> 的标称值常有出入（标称 1M、实际 256K 很常见）。对不上时显示区间并标 <b style="color:var(--amber)">▼</b>。</dd>
+        <dt>有上游 0</dt>
+        <dd>零定价但当前<b style="color:var(--red)">没有任何可用供应商</b>，等于调不通 —— 这不是数据缺失，是真实状态。</dd>
+        <dt>梯队</dt>
+        <dd>按该模型实际有值的那个指数取全站分位数：智力 → 编程 → Agent 依次回退，三个都缺才显示「无基准数据」，不硬凑。</dd>
+        <dt>同档参考</dt>
+        <dd>运行时从活列表解析的锚点模型（Claude Opus 5.5 / GPT-6 Astra / GPT-5 / Claude Sonnet 4.5 / GPT-5 mini / Llama 4 Maverick / Gemini 2.5 Pro），锚点下线会自动减少。</dd>
+        <dt>限流</dt>
+        <dd>官方<b>没有公开接口</b>返回这些数字，此处为文档常量并标注来源与核对日期，政策变动需人工核对。</dd>
+        <dt>已读状态</dt>
+        <dd>存在<b>各自浏览器本地</b>（localStorage），不随站点同步、不跨设备 —— 因为提醒是 Windows 弹窗，本来就是单设备的。</dd>
+      </dl>
     </div>
   </section>
-
-</div>
+</main>
 
 <footer>
   <div class="wrap">
-    <div>数据源：<code>openrouter.ai/api/v1/models</code> 与 <code>/endpoints</code>（均为匿名公开接口，派生结果任何人都可自行计算）。</div>
-    <div>本页面由本机每 2 小时巡检生成后推送；<b>已读状态保存在各自浏览器本地</b>，不随站点同步、也不跨设备。</div>
-    <div>「关注度」是本地启发式排序（基准分 + 实际可用上下文 + 模态 + 工具调用），非官方指标。</div>
+    <div>数据源：<code>openrouter.ai/api/v1/models</code> 与 <code>/endpoints</code>，均为匿名公开接口，派生结果任何人都可自行计算。</div>
+    <div>本页面由本机每 2 小时巡检生成后推送；「关注度」是本地启发式排序，非官方指标。</div>
   </div>
 </footer>
 
 <dialog id="dlg">
-  <div class="dlg-hd"><h3 id="dlgTitle">详情</h3><div class="spacer"></div><button id="btnClose">关闭</button></div>
+  <div class="dlg-hd"><h3 id="dlgTitle">详情</h3></div>
   <div class="dlg-bd" id="dlgBody"></div>
 </dialog>
 
