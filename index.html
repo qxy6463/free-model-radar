@@ -6,6 +6,22 @@
 <title>OpenRouter 零定价模型守望</title>
 <meta name="description" content="OpenRouter 零定价模型实时清单：实际可用上下文、可用性、梯队与同档参考。">
 <link rel="stylesheet" href="./style.css">
+<script>
+/* 主题与字号必须在首屏渲染前定下来，否则会闪一下默认样式。
+   「自动」在这里解析成实际值再写 data-theme，所以 CSS 端只需要一个浅色覆盖块，
+   不用再写一份 prefers-color-scheme 媒体查询。 */
+(function () {
+  var d = document.documentElement;
+  try {
+    var pref = localStorage.getItem('orwatch.theme') || 'auto';
+    d.dataset.themePref = pref;
+    d.dataset.theme = pref === 'auto'
+      ? (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+      : pref;
+    d.style.setProperty('--fs', localStorage.getItem('orwatch.fs') || '1.18');
+  } catch (e) { d.dataset.theme = 'dark'; }
+})();
+</script>
 </head>
 <body>
 
@@ -28,6 +44,18 @@
     </div>
 
     <div class="hd-actions">
+      <div class="pref">
+        <div class="seg mini" id="themeSeg" title="主题">
+          <button data-th="auto">自动</button>
+          <button data-th="light">浅色</button>
+          <button data-th="dark">深色</button>
+        </div>
+        <div class="seg mini" id="fsSeg" title="字号">
+          <button data-fs="1">A</button>
+          <button data-fs="1.18">A</button>
+          <button data-fs="1.36">A</button>
+        </div>
+      </div>
       <button id="btnRead" class="ghost">全部已读</button>
       <button id="btnCfg">复制 opencode 配置</button>
     </div>

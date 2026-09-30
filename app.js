@@ -383,8 +383,38 @@ window.detail = detail;
 window.toggleRead = toggleRead;
 window.pickTier = pickTier;
 
+/* ---- 主题 / 字号：只存偏好，实际值由 <head> 里的内联脚本解析 ---- */
+const LS_THEME = 'orwatch.theme', LS_FS = 'orwatch.fs';
+
+function resolveTheme(pref) {
+  return pref === 'auto'
+    ? (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+    : pref;
+}
+function applyTheme(pref, persist) {
+  const d = document.documentElement;
+  d.dataset.themePref = pref;
+  d.dataset.theme = resolveTheme(pref);
+  if (persist) { try { localStorage.setItem(LS_THEME, pref); } catch (e) {} }
+  $$('#themeSeg button').forEach(b => b.classList.toggle('on', b.dataset.th === pref));
+}
+function applyFs(v, persist) {
+  document.documentElement.style.setProperty('--fs', v);
+  if (persist) { try { localStorage.setItem(LS_FS, v); } catch (e) {} }
+  $$('#fsSeg button').forEach(b => b.classList.toggle('on', b.dataset.fs === v));
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   loadRead();
+  applyTheme(document.documentElement.dataset.themePref || 'auto', false);
+  applyFs(document.documentElement.style.getPropertyValue('--fs').trim() || '1.18', false);
+  $$('#themeSeg button').forEach(b => { b.onclick = () => applyTheme(b.dataset.th, true); });
+  $$('#fsSeg button').forEach(b => { b.onclick = () => applyFs(b.dataset.fs, true); });
+  // 「自动」要跟着系统实时切换，系统改了才切，不切就跟「自动」这个字面意思不符
+  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function () {
+    if ((document.documentElement.dataset.themePref || 'auto') === 'auto') applyTheme('auto', false);
+  });
+
   $('#btnClose') && ($('#btnClose').onclick = () => $('#dlg').close());
   $('#dlg').addEventListener('click', function (ev) { if (ev.target === $('#dlg')) $('#dlg').close(); });
   $('#btnCfg').onclick = showConfig;
