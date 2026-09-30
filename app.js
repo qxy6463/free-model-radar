@@ -97,21 +97,33 @@ function renderLimits() {
     + ' · <span class="flag">非接口返回</span>，来源 <a href="' + esc(L.SourceUrl) + '" target="_blank" rel="noreferrer">官方文档</a>，政策变动需人工核对</div>';
 }
 
-/* ---- 梯队阶梯（记忆点） ---- */
+/* ---- 智力分位阶梯 ----
+   档名只说「排在哪儿」，不说「相当于谁」。旧版写「次旗舰档 / 轻量旗舰档」是
+   替数据说话：池内最强智力 33.7，离前沿 23.9 分，只够叫「前 50%」。
+   定档只用智力指数——编程/Agent 的刻度与智力不可比，混排会得出
+   「编程 52.9 的模型强过智力 33.7 的模型」这种错误结论。 */
 const TIERS = [
-  { code:'T1', label:'顶尖 · 闭源旗舰档', pct:'≥ 95 分位' },
-  { code:'T2', label:'强 · 旗舰主力档',   pct:'80–95' },
-  { code:'T3', label:'中上 · 次旗舰档',   pct:'60–80' },
-  { code:'T4', label:'中 · 轻量旗舰档',   pct:'40–60' },
-  { code:'T5', label:'入门 · 小模型档',   pct:'< 40' },
-  { code:'?',  label:'无基准数据',        pct:'三个指数全缺' },
+  { code:'Q1', label:'前 10%', pct:'≥ 90 分位' },
+  { code:'Q2', label:'前 25%', pct:'75–90' },
+  { code:'Q3', label:'前 50%', pct:'50–75' },
+  { code:'Q4', label:'后 50%', pct:'< 50' },
+  { code:'?',  label:'OpenRouter 未提供智力基准', pct:'不参与排序' },
 ];
+
+/* 把 benchRef 渲染成一句带数字的话。宁可啰嗦也不含糊：
+   「同档参考 Claude Opus 5.5」会被读成「约等于它」，实际差 23.9 分。 */
+function refText(b) {
+  if (!b || b.value == null) return '';
+  const bits = [];
+  if (b.frontier) bits.push('距 ' + b.frontier.label + ' <b>' + (b.frontierGap > 0 ? '+' : '−') + Math.abs(b.frontierGap) + '</b>');
+  if (b.above && b.above.delta < 0) bits.push('最近上界 ' + esc(b.above.label) + ' <b>' + b.above.delta + '</b>');
+  if (b.below && b.below.delta > 0) bits.push('最近下界 ' + esc(b.below.label) + ' <b>+' + b.below.delta + '</b>');
+  return bits.join(' · ');
+}
 
 function renderLadder() {
   const ms = arr(ROSTER.models);
   const box = $('#ladder');
-  const used = new Set(ms.map(m => m.tier || '?'));
-  const top = TIERS.find(t => used.has(t.code));
   box.innerHTML = TIERS.map(function (t) {
     const list = ms.filter(m => (m.tier || '?') === t.code);
     if (!list.length) {
@@ -125,8 +137,12 @@ function renderLadder() {
     const chips = list.map(function (m) {
       const cls = !alive(m) ? 'dead' : (m.score >= 55 ? 't-hi' : (m.score < 30 ? 't-lo' : ''));
       const w = Math.max(6, Math.min(100, Number(m.score) || 0));
+      const iv = m.benchRef && m.benchRef.value != null ? m.benchRef.value : null;
       return '<button class="chip ' + cls + '" onclick="detail(\'' + String(m.id).replace(/'/g, "\\'") + '\')">'
-        + '<span class="sig"><i style="width:' + w + '%"></i></span>' + esc(m.id) + '</button>';
+        + '<span class="sig"><i style="width:' + w + '%"></i></span>'
+        + esc(m.id)
+        + (iv != null ? '<span class="iv">智力 ' + iv + '</span>' : '')
+        + '</button>';
     }).join('');
     return '<div class="rung' + (tierFilter === t.code ? ' on' : '') + '" data-tier="' + t.code + '">'
       + '<div class="mark" onclick="pickTier(\'' + t.code + '\')">'
@@ -136,9 +152,17 @@ function renderLadder() {
       + '</div><div class="body">' + chips + '</div></div>';
   }).join('');
 
-  if (top) {
-    $('#ladderNote').textContent = '池内最高 ' + top.code + '（' + top.label + '）· 最高分位 ' +
-      Math.max.apply(null, ms.filter(m => (m.tier || '?') === top.code).map(m => Number(m.percentile) || 0)) + '%';
+  // 标题给校准信息而不是结论：把标尺和池内最强一起摆出来，让读者自己判断。
+  const withBench = ms.filter(m => m.benchRef && m.benchRef.value != null);
+  if (withBench.length) {
+    const best = withBench.slice().sort((a, b) => b.percentile - a.percentile)[0];
+    const b = best.benchRef;
+    const d = b.dist;
+    $('#ladderNote').textContent =
+      '全站 ' + b.sampleSize + ' 个模型有智力基准（中位 ' + d.p50 + '，最高 ' + b.frontier.value + '）· '
+      + '池内最强 ' + best.id.replace(':free', '') + ' 智力 ' + b.value + '（第 ' + b.percentile + ' 百分位，距 ' + b.frontier.label + ' ' + Math.abs(b.frontierGap) + ' 分）';
+  } else {
+    $('#ladderNote').textContent = '';
   }
 }
 
@@ -224,7 +248,6 @@ function renderGrid() {
   if (!ms.length) { $('#grid').innerHTML = '<div class="empty">没有匹配的模型。换个筛选条件试试。</div>'; return; }
   $('#grid').innerHTML = ms.map(function (m) {
     const act = m.upstreamCount || 0;
-    const peers = arr(m.peerModels);
     const minC = (m.endpoints && m.endpoints.minContext) || 0;
     const ctxRange = (minC > 0 && minC < m.effectiveContext)
       ? ctxText(minC) + '~' + ctxText(m.effectiveContext) : m.contextText;
@@ -234,7 +257,8 @@ function renderGrid() {
       + '<div class="r1"><span class="id">' + esc(m.id) + '</span>'
       + '<span class="score' + (m.score >= 55 ? ' hi' : '') + '">' + esc(m.score) + '</span></div>'
       + '<div class="r2">'
-      +   (m.tier ? '<span class="tier' + (m.tier === 'T1' || m.tier === 'T2' ? ' up' : '') + '">' + esc(m.tier) + (m.tierBasisLabel ? '·' + esc(m.tierBasisLabel) : '') + '</span>' : '')
+      +   (m.tier ? '<span class="tier' + (m.tier === 'Q1' || m.tier === 'Q2' ? ' up' : '') + '">' + esc(m.tier) + '</span>' : '')
+      +   (m.benchRef && m.benchRef.value != null ? '<span class="kind">智力 ' + m.benchRef.value + ' · 第 ' + m.benchRef.percentile + ' 百分位</span>' : '')
       +   '<span class="kind">' + esc(m.kindText || '') + '</span>'
       +   '<span class="sigwrap"><i class="' + (m.score >= 55 ? 'hi' : '') + '" style="width:' + w + '%"></i></span>'
       + '</div>'
@@ -282,9 +306,22 @@ function detail(id) {
   const rows = [
     ['名称', esc(m.name)],
     ['类型', esc(m.kindText)],
-    ['梯队', '<b>' + esc((m.tier || '?') + ' ' + (m.tierText || '')) + '</b>'
-      + (m.tierBasisLabel ? '（按' + esc(m.tierBasisLabel) + '指数，全站分位 ' + m.percentile + '%）' : '（无基准数据）')],
-    ['同档参考', peers.length ? esc(peers.join(' / ')) : '—'],
+    ['智力指数', m.benchRef && m.benchRef.value != null
+      ? '<b>' + m.benchRef.value + '</b>　全站第 <b>' + m.benchRef.percentile + '</b> 百分位（共 ' + m.benchRef.sampleSize + ' 个模型有该指数）'
+      : 'OpenRouter 未提供此模型的智力指数'],
+    ['与商业旗舰的差距', m.benchRef && m.benchRef.value != null
+      ? '距 ' + esc(m.benchRef.frontier.label) + '（' + m.benchRef.frontier.value + '）<b>' + (m.benchRef.frontierGap > 0 ? ' +' : '−') + Math.abs(m.benchRef.frontierGap) + ' 分</b>'
+        + '，相当于其 <b>' + m.benchRef.frontierPct + '%</b>'
+        + (m.benchRef.above ? '<br>最近上界 ' + esc(m.benchRef.above.label) + '（' + m.benchRef.above.value + '），差 ' + m.benchRef.above.delta : '')
+        + (m.benchRef.below ? '<br>最近下界 ' + esc(m.benchRef.below.label) + '（' + m.benchRef.below.value + '），高 ' + m.benchRef.below.delta : '')
+      : '—'],
+    ['全站智力基准', m.benchRef && m.benchRef.dist
+      ? '中位 ' + m.benchRef.dist.p50 + ' · p75 ' + m.benchRef.dist.p75 + ' · p90 ' + m.benchRef.dist.p90 + ' · 最高 ' + m.benchRef.dist.max
+      : '—'],
+    ['其他指数（不参与排序）', [
+      m.codingIndex != null ? '编程 ' + m.codingIndex + '（第 ' + (m.codingPercentile == null ? '—' : m.codingPercentile) + ' 百分位）' : '',
+      m.agenticIndex != null ? 'Agent ' + m.agenticIndex + '（第 ' + (m.agenticPercentile == null ? '—' : m.agenticPercentile) + ' 百分位）' : ''
+    ].filter(Boolean).join('　') || '—'],
     ['关注度', '<b>' + esc(m.score) + '</b>'],
     ['实际上下文', '<b>' + esc(m.contextText) + '</b>' + (m.contextShrunk ? '　⚠ 标称 ' + esc(m.nominalText) + ' 高于实际上游' : '')],
     ['最大输出', m.maxOutputTokens ? ctxText(m.maxOutputTokens) : '—'],
