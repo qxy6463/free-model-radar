@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-30T09:30:02.952Z",
+  "generatedAt": "2026-09-30T09:40:27.121Z",
   "checkedAt": "2026-09-30T17:27:19.7945896+08:00",
   "totalModels": 464,
   "freeCount": 18,
@@ -54,6 +54,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
       "score": 27.9,
       "tags": [
         "标称百万上下文",
@@ -105,6 +123,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
       "score": 18.4,
       "tags": [
         "标称长上下文",
@@ -153,6 +189,36 @@
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
       "percentile": 62,
+      "benchRef": {
+        "value": 33.7,
+        "percentile": 62,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": {
+          "label": "GPT-6 Astra",
+          "value": 52.7,
+          "delta": -19
+        },
+        "below": {
+          "label": "Claude Sonnet 4.5",
+          "value": 20.7,
+          "delta": 13
+        },
+        "frontierGap": -23.9,
+        "frontierPct": 59,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        },
+        "frontier": {
+          "label": "Claude Opus 5.5",
+          "value": 57.6
+        }
+      },
+      "codingPercentile": 72.3,
+      "agenticPercentile": 86.1,
       "score": 87.4,
       "tags": [
         "标称长上下文",
@@ -223,6 +289,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
       "score": 24.1,
       "tags": [
         "标称长上下文",
@@ -267,6 +351,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
       "score": 16.9,
       "tags": [
         "工具调用",
@@ -309,6 +411,32 @@
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
       "percentile": 23.9,
+      "benchRef": {
+        "value": 12.9,
+        "percentile": 23.9,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": {
+          "label": "Gemini 2.5 Pro",
+          "value": 16.1,
+          "delta": -3.2
+        },
+        "below": null,
+        "frontierGap": -44.7,
+        "frontierPct": 22,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        },
+        "frontier": {
+          "label": "Claude Opus 5.5",
+          "value": 57.6
+        }
+      },
+      "codingPercentile": 28.8,
+      "agenticPercentile": 29.9,
       "score": 37.2,
       "tags": [
         "标称百万上下文",
@@ -370,6 +498,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": 59.3,
+      "agenticPercentile": null,
       "score": 46.1,
       "tags": [
         "标称百万上下文",
@@ -421,6 +567,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
       "score": 19.9,
       "tags": [
         "标称长上下文",
@@ -478,6 +642,36 @@
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
       "percentile": 48.6,
+      "benchRef": {
+        "value": 25,
+        "percentile": 48.6,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": {
+          "label": "GPT-6 Astra",
+          "value": 52.7,
+          "delta": -27.7
+        },
+        "below": {
+          "label": "Claude Sonnet 4.5",
+          "value": 20.7,
+          "delta": 4.3
+        },
+        "frontierGap": -32.6,
+        "frontierPct": 43,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        },
+        "frontier": {
+          "label": "Claude Opus 5.5",
+          "value": 57.6
+        }
+      },
+      "codingPercentile": 57.1,
+      "agenticPercentile": 59.9,
       "score": 68.4,
       "tags": [
         "标称百万上下文",
@@ -530,6 +724,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
       "score": 18.4,
       "tags": [
         "标称长上下文",
@@ -578,6 +790,32 @@
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
       "percentile": 13.4,
+      "benchRef": {
+        "value": 9.9,
+        "percentile": 13.4,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": {
+          "label": "Gemini 2.5 Pro",
+          "value": 16.1,
+          "delta": -6.2
+        },
+        "below": null,
+        "frontierGap": -47.7,
+        "frontierPct": 17,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        },
+        "frontier": {
+          "label": "Claude Opus 5.5",
+          "value": 57.6
+        }
+      },
+      "codingPercentile": 35,
+      "agenticPercentile": 17.5,
       "score": 38.1,
       "tags": [
         "标称长上下文",
@@ -622,6 +860,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
       "score": 17.7,
       "tags": [
         "图片输入",
@@ -670,6 +926,36 @@
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
       "percentile": 43,
+      "benchRef": {
+        "value": 22.9,
+        "percentile": 43,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": {
+          "label": "GPT-6 Astra",
+          "value": 52.7,
+          "delta": -29.8
+        },
+        "below": {
+          "label": "Claude Sonnet 4.5",
+          "value": 20.7,
+          "delta": 2.2
+        },
+        "frontierGap": -34.7,
+        "frontierPct": 40,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        },
+        "frontier": {
+          "label": "Claude Opus 5.5",
+          "value": 57.6
+        }
+      },
+      "codingPercentile": 52.5,
+      "agenticPercentile": 54.7,
       "score": 56.6,
       "tags": [
         "标称百万上下文",
@@ -723,6 +1009,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": 11.3,
+      "agenticPercentile": null,
       "score": 31.3,
       "tags": [
         "标称长上下文",
@@ -770,6 +1074,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": 39.5,
+      "agenticPercentile": null,
       "score": 40.4,
       "tags": [
         "标称长上下文",
@@ -835,6 +1157,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": 43.5,
+      "agenticPercentile": 32.8,
       "score": 43.2,
       "tags": [
         "标称长上下文",
@@ -902,6 +1242,32 @@
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
       "percentile": 22.5,
+      "benchRef": {
+        "value": 12.8,
+        "percentile": 22.5,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": {
+          "label": "Gemini 2.5 Pro",
+          "value": 16.1,
+          "delta": -3.3
+        },
+        "below": null,
+        "frontierGap": -44.8,
+        "frontierPct": 22,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        },
+        "frontier": {
+          "label": "Claude Opus 5.5",
+          "value": 57.6
+        }
+      },
+      "codingPercentile": 37.3,
+      "agenticPercentile": 26.3,
       "score": 40.5,
       "tags": [
         "标称长上下文",
@@ -955,6 +1321,24 @@
       "tierBasis": null,
       "tierBasisLabel": "",
       "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 142,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.8,
+          "p75": 39.6,
+          "p90": 47.5,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
       "score": 23.1,
       "tags": [
         "标称长上下文",

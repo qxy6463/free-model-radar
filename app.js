@@ -4,12 +4,12 @@
  * 已读状态存 localStorage —— 仅本浏览器，不随站点同步、不跨设备。
  */
 
-const SCHEMA_EXPECTED = 2;
+const SCHEMA_EXPECTED = 3;
 const LS_READ = 'orwatch.read.v2';
 
 let ROSTER = null, ALERTS = [], TIMELINE = [], META = null;
 let readSet = new Set();
-let tierFilter = null;          // 选中的梯队（如 'T3'），null = 全部
+let tierFilter = null;          // 选中的智力分位档（如 'Q3'），null = 全部
 let facet = 'all';
 let query = '';
 let sortKey = 'score', sortDir = -1;
@@ -268,7 +268,7 @@ function renderGrid() {
       +   (m.uptime1d != null ? '<span>' + m.uptime1d + '%</span>' : '')
       +   (m.maxOutputTokens ? '<span>出 ' + ctxText(m.maxOutputTokens) + '</span>' : '')
       + '</div>'
-      + (peers.length ? '<div class="peer">≈ ' + esc(peers.join(' / ')) + '</div>' : '')
+      + (refText(m.benchRef) ? '<div class="peer">' + refText(m.benchRef) + '</div>' : '')
       + (tags ? '<div class="tags">' + tags + '</div>' : '')
       + '</article>';
   }).join('');
@@ -302,7 +302,6 @@ function detail(id) {
   const m = arr(ROSTER.models).find(x => x.id === id);
   if (!m) { toast('当前清单里没有这个模型（可能已不再零定价）'); return; }
   const e = m.endpoints || {};
-  const peers = arr(m.peerModels);
   const rows = [
     ['名称', esc(m.name)],
     ['类型', esc(m.kindText)],

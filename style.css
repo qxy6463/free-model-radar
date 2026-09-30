@@ -237,6 +237,10 @@ section { margin-bottom:34px; }
 .chip.t-lo .sig i { background:var(--ink-3); }
 .chip.dead { border-style:dashed; color:var(--ink-3); }
 .chip.dead .sig i { background:var(--red); }
+/* 智力分值跟在模型名后：档位说「排在哪」，这个数说「多少分」，两者都要看 */
+.chip .iv { color:var(--cyan); font-size:calc(10px * var(--fs)); padding-left:2px; }
+.chip.t-hi .iv { color:var(--phos); }
+.chip.dead .iv { color:var(--ink-3); }
 
 /* 新发现轨道 */
 .rail { display:flex; gap:12px; overflow-x:auto; padding-bottom:10px; scroll-snap-type:x proximity; }

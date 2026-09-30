@@ -75,8 +75,8 @@
 
   <section class="rise" style="animation-delay:.12s">
     <div class="sec-hd">
-      <h2>梯队阶梯</h2>
-      <span class="note">按该模型实际有值的 Artificial Analysis 指数取全站分位数 · 点某一阶筛选下方清单</span>
+      <h2>智力分位</h2>
+      <span class="note">只用 Artificial Analysis 智力指数定档 —— 编程与 Agent 指数刻度不同，混在一起比没有意义 · 点某一档筛选下方清单</span>
       <span class="note" id="ladderNote" style="margin-left:auto"></span>
       <span class="spacer"></span>
       <button id="btnResetTier" class="mini ghost">显示全部</button>
@@ -134,10 +134,13 @@
         <dd>取自各上游<b>实际提供</b>的值，与 <code>/v1/models</code> 的标称值常有出入（标称 1M、实际 256K 很常见）。对不上时显示区间并标 <b style="color:var(--amber)">▼</b>。</dd>
         <dt>有上游 0</dt>
         <dd>零定价但当前<b style="color:var(--red)">没有任何可用供应商</b>，等于调不通 —— 这不是数据缺失，是真实状态。</dd>
-        <dt>梯队</dt>
-        <dd>按该模型实际有值的那个指数取全站分位数：智力 → 编程 → Agent 依次回退，三个都缺才显示「无基准数据」，不硬凑。</dd>
-        <dt>同档参考</dt>
-        <dd>运行时从活列表解析的锚点模型（Claude Opus 5.5 / GPT-6 Astra / GPT-5 / Claude Sonnet 4.5 / GPT-5 mini / Llama 4 Maverick / Gemini 2.5 Pro），锚点下线会自动减少。</dd>
+        <dt>智力指数</dt>
+        <dd>取自 OpenRouter 转发的 Artificial Analysis <b>智力</b>指数，标注的是<b>在全站有该指数的模型里排第几百分位</b>，以及<b>与商业旗舰差多少分</b>。
+            只用这一个指数定档：编程与 Agent 指数的刻度和智力不可比，混排会得出「编程 52.9 的模型强过智力 33.7 的模型」这种错误结论。
+            模型没有该指数时不凑档位，直接标「OpenRouter 未提供」。</dd>
+        <dt>为什么不写「相当于 XX」</dt>
+        <dd>因为差距通常很大，而且锚点之间可能有几十分的<b>空洞</b>（实测 GPT-6 Astra 智力 52.7 与 Claude Sonnet 4.5 的 20.7 之间没有任何模型）。
+            所以这里一律给<b>分值与差值</b>，把结论留给你自己下。锚点在运行时从活列表解析，模型下线会自动减少。</dd>
         <dt>限流</dt>
         <dd>官方<b>没有公开接口</b>返回这些数字，此处为文档常量并标注来源与核对日期，政策变动需人工核对。</dd>
         <dt>已读状态</dt>
