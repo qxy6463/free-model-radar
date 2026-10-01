@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-01T13:43:10.664Z",
-  "checkedAt": "2026-10-01T21:43:05.1032869+08:00",
-  "totalModels": 462,
-  "freeCount": 18,
+  "generatedAt": "2026-10-01T17:43:27.368Z",
+  "checkedAt": "2026-10-02T01:43:05.4696929+08:00",
+  "totalModels": 464,
+  "freeCount": 19,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -20,6 +20,67 @@
     "RpdWithCredits": 1000
   },
   "models": [
+    {
+      "id": "apodex/apodex-1.1-mini:free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "kind": "free-tier",
+      "kindText": "官方免费层",
+      "contextText": "262K",
+      "nominalText": "262K",
+      "effectiveContext": 262144,
+      "nominalContext": 262144,
+      "contextShrunk": false,
+      "maxOutputTokens": 235929,
+      "inputModalities": [
+        "text"
+      ],
+      "reasoningEfforts": [],
+      "supportsTools": true,
+      "totalParamsB": null,
+      "activeParamsB": null,
+      "intelIndex": null,
+      "codingIndex": null,
+      "agenticIndex": null,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 146,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 25.3,
+          "p75": 39.5,
+          "p90": 47.6,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
+      "score": 18.4,
+      "tags": [
+        "标称长上下文",
+        "工具调用",
+        "结构化输出",
+        "自带推理",
+        "无可用上游",
+        "官方免费层"
+      ],
+      "upstreamCount": 0,
+      "uptime1d": null,
+      "uptime30m": null,
+      "providers": [],
+      "quantizations": [],
+      "implicitCaching": false,
+      "modelCreatedAt": "2026-10-02"
+    },
     {
       "id": "stealth/space-bunny-alpha",
       "name": "Space Bunny Alpha",
@@ -86,8 +147,8 @@
         "匿名模型"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.92,
-      "uptime30m": 99.84,
+      "uptime1d": 99.9,
+      "uptime30m": 99.89,
       "providers": [
         "Stealth"
       ],
@@ -232,12 +293,13 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 16,
-      "uptime1d": 99,
-      "uptime30m": 98.87,
+      "upstreamCount": 17,
+      "uptime1d": 98.98,
+      "uptime30m": 99.21,
       "providers": [
         "AkashML",
         "Alibaba",
+        "Cerebras",
         "Chutes",
         "Cloudflare",
         "CoreWeave",
@@ -255,6 +317,7 @@
       ],
       "quantizations": [
         "bf16",
+        "fp16",
         "fp4",
         "fp8",
         "unknown"
@@ -445,13 +508,14 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 4,
-      "uptime1d": 98.48,
-      "uptime30m": 100,
+      "upstreamCount": 5,
+      "uptime1d": 97.48,
+      "uptime30m": 99.96,
       "providers": [
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
+        "Io Net",
         "Phala"
       ],
       "quantizations": [
@@ -541,7 +605,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.98,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -607,7 +671,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.98,
+      "uptime1d": 99.97,
       "uptime30m": 100,
       "providers": [
         "Poolside"
@@ -696,7 +760,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.86,
+      "uptime1d": 99.6,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
@@ -979,8 +1043,8 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.36,
-      "uptime30m": 99.74,
+      "uptime1d": 99.04,
+      "uptime30m": 99.6,
       "providers": [
         "BaseTen",
         "DeepInfra",
@@ -1117,22 +1181,20 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 13,
-      "uptime1d": 98.85,
-      "uptime30m": 99.14,
+      "upstreamCount": 11,
+      "uptime1d": 99.24,
+      "uptime30m": 99.22,
       "providers": [
         "Cloudflare",
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
-        "Google",
         "Io Net",
         "Makora",
         "NextBit",
         "Novita",
         "Parasail",
-        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1210,27 +1272,21 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 12,
-      "uptime1d": 98.31,
-      "uptime30m": 98.53,
+      "upstreamCount": 7,
+      "uptime1d": 99.18,
+      "uptime30m": 98.12,
       "providers": [
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
-        "DekaLLM",
-        "Friendli",
-        "Io Net",
         "ModelRun",
         "Parasail",
-        "SambaNova",
-        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
         "bf16",
         "fp4",
-        "fp8",
-        "unknown"
+        "fp8"
       ],
       "implicitCaching": false,
       "modelCreatedAt": "2026-04-03"
@@ -1303,8 +1359,8 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.55,
-      "uptime30m": 99.2,
+      "uptime1d": 99.61,
+      "uptime30m": 99.92,
       "providers": [
         "DeepInfra",
         "DekaLLM"
