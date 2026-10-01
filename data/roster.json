@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-01T17:43:27.368Z",
-  "checkedAt": "2026-10-02T01:43:05.4696929+08:00",
+  "generatedAt": "2026-10-01T23:43:14.382Z",
+  "checkedAt": "2026-10-02T07:43:05.6387497+08:00",
   "totalModels": 464,
   "freeCount": 19,
   "anchorsResolved": 6,
@@ -148,7 +148,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 99.9,
-      "uptime30m": 99.89,
+      "uptime30m": 99.97,
       "providers": [
         "Stealth"
       ],
@@ -293,9 +293,9 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 17,
-      "uptime1d": 98.98,
-      "uptime30m": 99.21,
+      "upstreamCount": 16,
+      "uptime1d": 99.06,
+      "uptime30m": 99.09,
       "providers": [
         "AkashML",
         "Alibaba",
@@ -310,7 +310,6 @@
         "Mancer 2",
         "Novita",
         "Parasail",
-        "Phala",
         "Reka",
         "Venice",
         "Wafer"
@@ -509,8 +508,8 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 97.48,
-      "uptime30m": 99.96,
+      "uptime1d": 98.71,
+      "uptime30m": 99.55,
       "providers": [
         "CoreWeave",
         "Darkbloom",
@@ -671,8 +670,8 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.97,
-      "uptime30m": 100,
+      "uptime1d": 99.94,
+      "uptime30m": 99.92,
       "providers": [
         "Poolside"
       ],
@@ -760,8 +759,8 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.6,
-      "uptime30m": 100,
+      "uptime1d": 99.64,
+      "uptime30m": 99.49,
       "providers": [
         "DeepInfra",
         "Together"
@@ -829,7 +828,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": 100,
+      "uptime30m": null,
       "providers": [
         "Poolside"
       ],
@@ -962,7 +961,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": null,
+      "uptime30m": 100,
       "providers": [
         "DeepInfra"
       ],
@@ -1043,8 +1042,8 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.04,
-      "uptime30m": 99.6,
+      "uptime1d": 98.21,
+      "uptime30m": 100,
       "providers": [
         "BaseTen",
         "DeepInfra",
@@ -1182,19 +1181,19 @@
         "官方免费层"
       ],
       "upstreamCount": 11,
-      "uptime1d": 99.24,
-      "uptime30m": 99.22,
+      "uptime1d": 98.96,
+      "uptime30m": 99.83,
       "providers": [
         "Cloudflare",
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
-        "Io Net",
         "Makora",
         "NextBit",
         "Novita",
         "Parasail",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1272,21 +1271,27 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 7,
-      "uptime1d": 99.18,
-      "uptime30m": 98.12,
+      "upstreamCount": 12,
+      "uptime1d": 95.35,
+      "uptime30m": 99.38,
       "providers": [
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
+        "DekaLLM",
+        "Friendli",
+        "Io Net",
         "ModelRun",
         "Parasail",
+        "SambaNova",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
         "bf16",
         "fp4",
-        "fp8"
+        "fp8",
+        "unknown"
       ],
       "implicitCaching": false,
       "modelCreatedAt": "2026-04-03"
@@ -1359,8 +1364,8 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.61,
-      "uptime30m": 99.92,
+      "uptime1d": 99.54,
+      "uptime30m": 99.65,
       "providers": [
         "DeepInfra",
         "DekaLLM"
