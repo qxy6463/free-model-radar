@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-10-02T13:43:18.925Z",
+  "generatedAt": "2026-10-02T15:43:27.911Z",
   "items": [
+    {
+      "id": "20261002-234309|inclusionai/ling-3.1-flash",
+      "at": "2026-10-02T23:43:09.1557820+08:00",
+      "type": "new",
+      "modelId": "inclusionai/ling-3.1-flash",
+      "name": "inclusionAI: Ling 3.1 Flash",
+      "kindText": "零价模型",
+      "score": 18.4,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "contextText": "262K",
+      "nominalText": "262K",
+      "tags": [
+        "标称长上下文",
+        "实际长上下文",
+        "工具调用",
+        "自带推理",
+        "单上游",
+        "零价模型"
+      ]
+    },
     {
       "id": "20261002-014305|apodex/apodex-1.1-mini:free",
       "at": "2026-10-02T01:43:05.4696929+08:00",
