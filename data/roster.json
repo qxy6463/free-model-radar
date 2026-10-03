@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-03T01:43:15.575Z",
-  "checkedAt": "2026-10-03T09:43:07.8695866+08:00",
+  "generatedAt": "2026-10-03T09:30:04.428Z",
+  "checkedAt": "2026-10-03T15:43:06.4797670+08:00",
   "totalModels": 466,
   "freeCount": 20,
   "anchorsResolved": 6,
@@ -75,7 +75,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": 99.98,
+      "uptime30m": 100,
       "providers": [
         "Novita"
       ],
