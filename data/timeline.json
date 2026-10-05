@@ -1,6 +1,16 @@
 {
-  "generatedAt": "2026-10-05T11:43:12.996Z",
+  "generatedAt": "2026-10-05T17:43:09.199Z",
   "items": [
+    {
+      "at": "2026-10-06T01:43:07.7235333+08:00",
+      "type": "removed",
+      "modelId": "qwen/qwen3.8-27b:free"
+    },
+    {
+      "at": "2026-10-06T01:43:07.7235333+08:00",
+      "type": "removed",
+      "modelId": "stealth/space-bunny-alpha"
+    },
     {
       "at": "2026-10-02T23:43:12.6271361+08:00",
       "type": "new",
