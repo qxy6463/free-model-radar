@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-06T09:30:04.193Z",
-  "checkedAt": "2026-10-06T15:43:05.4648410+08:00",
+  "generatedAt": "2026-10-06T11:43:13.946Z",
+  "checkedAt": "2026-10-06T19:43:04.9402131+08:00",
   "totalModels": 464,
   "freeCount": 18,
   "anchorsResolved": 6,
@@ -410,8 +410,8 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.77,
-      "uptime30m": 99.9,
+      "uptime1d": 99.75,
+      "uptime30m": 99.87,
       "providers": [
         "CoreWeave",
         "Darkbloom",
@@ -572,8 +572,8 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.97,
-      "uptime30m": 100,
+      "uptime1d": 99.96,
+      "uptime30m": 99.94,
       "providers": [
         "Poolside"
       ],
@@ -661,8 +661,8 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.62,
-      "uptime30m": 100,
+      "uptime1d": 99.73,
+      "uptime30m": 98.91,
       "providers": [
         "DeepInfra",
         "Together"
@@ -863,7 +863,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": null,
+      "uptime30m": 100,
       "providers": [
         "DeepInfra"
       ],
@@ -944,8 +944,8 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.13,
-      "uptime30m": 99.98,
+      "uptime1d": 99.18,
+      "uptime30m": 100,
       "providers": [
         "BaseTen",
         "DeepInfra",
@@ -1103,8 +1103,8 @@
         "官方免费层"
       ],
       "upstreamCount": 13,
-      "uptime1d": 98.74,
-      "uptime30m": 99.67,
+      "uptime1d": 98.79,
+      "uptime30m": 99.49,
       "providers": [
         "Cloudflare",
         "CoreWeave",
@@ -1195,11 +1195,10 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 12,
-      "uptime1d": 96.96,
-      "uptime30m": 99.51,
+      "upstreamCount": 11,
+      "uptime1d": 97.43,
+      "uptime30m": 99.64,
       "providers": [
-        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
@@ -1288,8 +1287,8 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.7,
-      "uptime30m": 99.88,
+      "uptime1d": 99.62,
+      "uptime30m": 99.68,
       "providers": [
         "DeepInfra",
         "DekaLLM"
