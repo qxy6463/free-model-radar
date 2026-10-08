@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-08T13:43:30.171Z",
-  "checkedAt": "2026-10-08T21:43:06.5698378+08:00",
-  "totalModels": 468,
-  "freeCount": 18,
+  "generatedAt": "2026-10-08T17:43:15.745Z",
+  "checkedAt": "2026-10-09T01:43:09.7213451+08:00",
+  "totalModels": 467,
+  "freeCount": 17,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -157,66 +157,6 @@
       "quantizations": [],
       "implicitCaching": false,
       "modelCreatedAt": "2026-10-02"
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "262K",
-      "nominalText": "262K",
-      "effectiveContext": 262144,
-      "nominalContext": 262144,
-      "contextShrunk": false,
-      "maxOutputTokens": 32768,
-      "inputModalities": [
-        "text"
-      ],
-      "reasoningEfforts": [],
-      "supportsTools": true,
-      "totalParamsB": null,
-      "activeParamsB": null,
-      "intelIndex": null,
-      "codingIndex": null,
-      "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
-      "benchRef": {
-        "value": null,
-        "percentile": null,
-        "axis": "智力",
-        "sampleSize": 292,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
-        "dist": {
-          "p50": 19.3,
-          "p75": 30.4,
-          "p90": 42.1,
-          "max": 57.6
-        }
-      },
-      "codingPercentile": null,
-      "agenticPercentile": null,
-      "score": 18.4,
-      "tags": [
-        "标称长上下文",
-        "工具调用",
-        "自带推理",
-        "无可用上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 0,
-      "uptime1d": null,
-      "uptime30m": null,
-      "providers": [],
-      "quantizations": [],
-      "implicitCaching": false,
-      "modelCreatedAt": "2026-09-05"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
