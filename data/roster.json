@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-09T09:30:04.207Z",
-  "checkedAt": "2026-10-09T15:43:06.2442453+08:00",
+  "generatedAt": "2026-10-09T09:43:14.748Z",
+  "checkedAt": "2026-10-09T17:43:06.1472629+08:00",
   "totalModels": 469,
   "freeCount": 17,
   "anchorsResolved": 6,
@@ -350,7 +350,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.98,
+      "uptime1d": 99.94,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -446,7 +446,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.52,
+      "uptime1d": 99.81,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -598,17 +598,19 @@
         "推理档位",
         "可调推理档",
         "编程向",
-        "单上游",
+        "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 1,
-      "uptime1d": 99.07,
+      "upstreamCount": 2,
+      "uptime1d": 91.18,
       "uptime30m": 100,
       "providers": [
-        "DeepInfra"
+        "DeepInfra",
+        "Together"
       ],
       "quantizations": [
-        "fp8"
+        "fp8",
+        "unknown"
       ],
       "implicitCaching": false,
       "modelCreatedAt": "2026-07-18"
@@ -883,7 +885,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.28,
+      "uptime1d": 99.67,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1042,7 +1044,7 @@
         "官方免费层"
       ],
       "upstreamCount": 13,
-      "uptime1d": 99.02,
+      "uptime1d": 99.05,
       "uptime30m": 99.74,
       "providers": [
         "Cloudflare",
@@ -1132,20 +1134,22 @@
         "自带推理",
         "大参数",
         "编程向",
+        "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 97.59,
+      "upstreamCount": 11,
+      "uptime1d": 92.72,
       "uptime30m": 100,
       "providers": [
+        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
         "Friendli",
         "Io Net",
         "ModelRun",
+        "Novita",
         "Parasail",
-        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1225,7 +1229,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.86,
+      "uptime1d": 99.65,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
