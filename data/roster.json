@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-10T09:30:04.246Z",
-  "checkedAt": "2026-10-10T15:43:05.9321106+08:00",
+  "generatedAt": "2026-10-10T13:43:21.260Z",
+  "checkedAt": "2026-10-10T21:43:06.0448478+08:00",
   "totalModels": 458,
   "freeCount": 17,
   "anchorsResolved": 6,
@@ -350,7 +350,7 @@
         "官方免费层"
       ],
       "upstreamCount": 6,
-      "uptime1d": 99.74,
+      "uptime1d": 99.45,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -602,7 +602,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 96.95,
+      "uptime1d": 96.58,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
@@ -803,8 +803,8 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 97.92,
-      "uptime30m": null,
+      "uptime1d": 97.83,
+      "uptime30m": 100,
       "providers": [
         "DeepInfra"
       ],
@@ -885,7 +885,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.8,
+      "uptime1d": 99.75,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1044,8 +1044,8 @@
         "官方免费层"
       ],
       "upstreamCount": 12,
-      "uptime1d": 99.46,
-      "uptime30m": 98.89,
+      "uptime1d": 99.51,
+      "uptime30m": 99.72,
       "providers": [
         "Cloudflare",
         "CoreWeave",
@@ -1135,10 +1135,11 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 9,
-      "uptime1d": 99.07,
-      "uptime30m": 99.63,
+      "upstreamCount": 12,
+      "uptime1d": 97,
+      "uptime30m": 99.72,
       "providers": [
+        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
@@ -1146,6 +1147,8 @@
         "Io Net",
         "ModelRun",
         "Parasail",
+        "SambaNova",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1225,7 +1228,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.9,
+      "uptime1d": 99.86,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
