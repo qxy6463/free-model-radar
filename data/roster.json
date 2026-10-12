@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-12T03:43:16.949Z",
-  "checkedAt": "2026-10-12T11:43:05.8164311+08:00",
+  "generatedAt": "2026-10-12T07:43:13.115Z",
+  "checkedAt": "2026-10-12T15:43:06.0048939+08:00",
   "totalModels": 458,
   "freeCount": 17,
   "anchorsResolved": 6,
@@ -30,7 +30,7 @@
       "effectiveContext": 262144,
       "nominalContext": 262144,
       "contextShrunk": false,
-      "maxOutputTokens": 32768,
+      "maxOutputTokens": 235929,
       "inputModalities": [
         "text"
       ],
