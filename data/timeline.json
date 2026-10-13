@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-10-13T17:43:13.554Z",
+  "generatedAt": "2026-10-13T19:43:09.892Z",
   "items": [
+    {
+      "at": "2026-10-14T03:43:08.4380441+08:00",
+      "type": "removed",
+      "modelId": "apodex/apodex-1.1-mini:free"
+    },
     {
       "at": "2026-10-14T01:43:12.0530410+08:00",
       "type": "removed",
