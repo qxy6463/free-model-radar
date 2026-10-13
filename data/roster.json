@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-12T19:43:14.523Z",
-  "checkedAt": "2026-10-13T03:43:05.1651244+08:00",
+  "generatedAt": "2026-10-13T03:43:15.893Z",
+  "checkedAt": "2026-10-13T11:43:05.3292598+08:00",
   "totalModels": 459,
   "freeCount": 17,
   "anchorsResolved": 6,
@@ -350,7 +350,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 95.8,
+      "uptime1d": 99.47,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -446,7 +446,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.85,
+      "uptime1d": 99.88,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -601,7 +601,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 98.46,
+      "uptime1d": 99.07,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
@@ -802,7 +802,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.3,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -884,7 +884,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.77,
+      "uptime1d": 99.88,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1043,8 +1043,8 @@
         "官方免费层"
       ],
       "upstreamCount": 12,
-      "uptime1d": 99.28,
-      "uptime30m": 100,
+      "uptime1d": 99.1,
+      "uptime30m": 98.89,
       "providers": [
         "Cloudflare",
         "CoreWeave",
@@ -1134,16 +1134,18 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 8,
-      "uptime1d": 99.79,
-      "uptime30m": 99.17,
+      "upstreamCount": 10,
+      "uptime1d": 99.09,
+      "uptime30m": 99.33,
       "providers": [
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
         "Friendli",
+        "Io Net",
         "ModelRun",
         "Parasail",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1223,7 +1225,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.88,
+      "uptime1d": 99.93,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
