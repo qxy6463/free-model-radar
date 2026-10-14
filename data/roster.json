@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-14T01:43:09.758Z",
-  "checkedAt": "2026-10-14T09:43:05.6000249+08:00",
+  "generatedAt": "2026-10-14T05:43:20.200Z",
+  "checkedAt": "2026-10-14T13:43:05.7051207+08:00",
   "totalModels": 462,
   "freeCount": 15,
   "anchorsResolved": 6,
@@ -212,7 +212,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.97,
+      "uptime1d": 97.88,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -308,7 +308,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.77,
+      "uptime1d": 99.73,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -463,7 +463,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 97.89,
+      "uptime1d": 96.18,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
@@ -664,7 +664,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.39,
+      "uptime1d": 99.4,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -746,7 +746,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.83,
+      "uptime1d": 99.69,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -904,9 +904,9 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 12,
-      "uptime1d": 99.54,
-      "uptime30m": 100,
+      "upstreamCount": 11,
+      "uptime1d": 99.52,
+      "uptime30m": 99.7,
       "providers": [
         "Cloudflare",
         "CoreWeave",
@@ -917,7 +917,6 @@
         "Makora",
         "NextBit",
         "Novita",
-        "Parasail",
         "SiliconFlow",
         "Venice"
       ],
@@ -994,23 +993,21 @@
         "自带推理",
         "大参数",
         "编程向",
-        "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 12,
-      "uptime1d": 94.49,
-      "uptime30m": 99.17,
+      "upstreamCount": 11,
+      "uptime1d": 97.4,
+      "uptime30m": 100,
       "providers": [
+        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
         "Friendli",
         "Io Net",
         "ModelRun",
-        "Novita",
         "Parasail",
         "SambaNova",
-        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
