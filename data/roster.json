@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-14T13:43:25.792Z",
-  "checkedAt": "2026-10-14T21:43:06.3528940+08:00",
+  "generatedAt": "2026-10-14T21:43:14.733Z",
+  "checkedAt": "2026-10-15T05:43:05.6399880+08:00",
   "totalModels": 462,
   "freeCount": 15,
   "anchorsResolved": 6,
@@ -212,7 +212,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 97.32,
+      "uptime1d": 97.21,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -463,7 +463,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 95.94,
+      "uptime1d": 96.88,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
@@ -664,8 +664,8 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.07,
-      "uptime30m": 100,
+      "uptime1d": 100,
+      "uptime30m": null,
       "providers": [
         "DeepInfra"
       ],
@@ -905,7 +905,7 @@
         "官方免费层"
       ],
       "upstreamCount": 12,
-      "uptime1d": 98.31,
+      "uptime1d": 99.49,
       "uptime30m": 100,
       "providers": [
         "Cloudflare",
@@ -913,12 +913,12 @@
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
-        "Google",
         "Io Net",
         "Makora",
         "NextBit",
         "Novita",
         "Parasail",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -997,18 +997,20 @@
         "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 93.93,
-      "uptime30m": 98.67,
+      "upstreamCount": 12,
+      "uptime1d": 94.65,
+      "uptime30m": 99.36,
       "providers": [
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
         "Friendli",
+        "Io Net",
         "ModelRun",
         "Novita",
         "Parasail",
         "SambaNova",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1085,17 +1087,18 @@
         "可调推理档",
         "大参数",
         "编程向",
-        "单上游",
         "官方免费层"
       ],
-      "upstreamCount": 1,
-      "uptime1d": 100,
+      "upstreamCount": 2,
+      "uptime1d": 99.9,
       "uptime30m": 100,
       "providers": [
-        "DeepInfra"
+        "DeepInfra",
+        "DekaLLM"
       ],
       "quantizations": [
-        "bf16"
+        "bf16",
+        "fp8"
       ],
       "implicitCaching": false,
       "modelCreatedAt": "2026-03-12"
