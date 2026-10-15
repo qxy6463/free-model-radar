@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-10-15T13:43:16.879Z",
+  "generatedAt": "2026-10-15T15:43:25.748Z",
   "items": [
+    {
+      "id": "20261015-234305|nvidia/nemotron-3.5-super-vl:free",
+      "at": "2026-10-15T23:43:05.9880904+08:00",
+      "type": "new",
+      "modelId": "nvidia/nemotron-3.5-super-vl:free",
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "kindText": "官方免费层",
+      "score": 27.9,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "contextText": "1M",
+      "nominalText": "1M",
+      "tags": [
+        "标称百万上下文",
+        "图片输入",
+        "音视频",
+        "工具调用",
+        "结构化输出",
+        "自带推理",
+        "无可用上游",
+        "官方免费层"
+      ]
+    },
     {
       "id": "20261014-034305|apodex/apodex-1.1-mini:free",
       "at": "2026-10-14T03:43:05.5461127+08:00",

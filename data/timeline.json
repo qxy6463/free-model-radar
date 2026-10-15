@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-10-15T13:43:16.879Z",
+  "generatedAt": "2026-10-15T15:43:25.748Z",
   "items": [
+    {
+      "at": "2026-10-15T23:43:11.0826377+08:00",
+      "type": "new",
+      "modelId": "nvidia/nemotron-3.5-super-vl:free"
+    },
     {
       "at": "2026-10-14T03:43:08.4380441+08:00",
       "type": "removed",

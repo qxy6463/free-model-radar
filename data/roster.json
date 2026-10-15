@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-15T13:43:16.879Z",
-  "checkedAt": "2026-10-15T21:43:05.9527005+08:00",
-  "totalModels": 461,
-  "freeCount": 15,
+  "generatedAt": "2026-10-15T15:43:25.748Z",
+  "checkedAt": "2026-10-15T23:43:05.9880904+08:00",
+  "totalModels": 462,
+  "freeCount": 16,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -20,6 +20,71 @@
     "RpdWithCredits": 1000
   },
   "models": [
+    {
+      "id": "nvidia/nemotron-3.5-super-vl:free",
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "kind": "free-tier",
+      "kindText": "官方免费层",
+      "contextText": "1M",
+      "nominalText": "1M",
+      "effectiveContext": 1000000,
+      "nominalContext": 1000000,
+      "contextShrunk": false,
+      "maxOutputTokens": 131072,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "reasoningEfforts": [],
+      "supportsTools": true,
+      "totalParamsB": null,
+      "activeParamsB": null,
+      "intelIndex": null,
+      "codingIndex": null,
+      "agenticIndex": null,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 285,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 20.4,
+          "p75": 33.6,
+          "p90": 43.6,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
+      "score": 27.9,
+      "tags": [
+        "标称百万上下文",
+        "图片输入",
+        "音视频",
+        "工具调用",
+        "结构化输出",
+        "自带推理",
+        "无可用上游",
+        "官方免费层"
+      ],
+      "upstreamCount": 0,
+      "uptime1d": null,
+      "uptime30m": null,
+      "providers": [],
+      "quantizations": [],
+      "implicitCaching": false,
+      "modelCreatedAt": "2026-10-15"
+    },
     {
       "id": "dots-studio/dots-3-note-preview:free",
       "name": "Dots Studio: Dots3-Note Preview (free)",
