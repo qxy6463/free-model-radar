@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-15T19:43:10.570Z",
-  "checkedAt": "2026-10-16T03:43:06.0890786+08:00",
+  "generatedAt": "2026-10-15T21:43:11.165Z",
+  "checkedAt": "2026-10-16T05:43:06.1784219+08:00",
   "totalModels": 463,
   "freeCount": 16,
   "anchorsResolved": 6,
@@ -25,9 +25,9 @@
       "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
       "kind": "free-tier",
       "kindText": "官方免费层",
-      "contextText": "1M",
+      "contextText": "1.05M",
       "nominalText": "1M",
-      "effectiveContext": 1000000,
+      "effectiveContext": 1048576,
       "nominalContext": 1000000,
       "contextShrunk": false,
       "maxOutputTokens": 131072,
@@ -71,18 +71,26 @@
         "标称百万上下文",
         "图片输入",
         "音视频",
+        "实际长上下文",
         "工具调用",
         "结构化输出",
         "自带推理",
-        "无可用上游",
         "官方免费层"
       ],
-      "upstreamCount": 0,
-      "uptime1d": null,
-      "uptime30m": null,
-      "providers": [],
-      "quantizations": [],
-      "implicitCaching": false,
+      "upstreamCount": 3,
+      "uptime1d": 98.7,
+      "uptime30m": 93.33,
+      "providers": [
+        "CoreWeave",
+        "DeepInfra",
+        "Together"
+      ],
+      "quantizations": [
+        "fp4",
+        "nvfp4",
+        "unknown"
+      ],
+      "implicitCaching": true,
       "modelCreatedAt": "2026-10-15"
     },
     {
