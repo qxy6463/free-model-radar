@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-16T19:43:23.129Z",
-  "checkedAt": "2026-10-17T03:43:05.2088304+08:00",
+  "generatedAt": "2026-10-16T21:43:14.122Z",
+  "checkedAt": "2026-10-17T05:43:05.2192650+08:00",
   "totalModels": 467,
   "freeCount": 17,
   "anchorsResolved": 6,
@@ -361,7 +361,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.33,
+      "uptime1d": 99.39,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -456,7 +456,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.46,
+      "uptime1d": 99.55,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -612,7 +612,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.05,
+      "uptime1d": 99.43,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -893,15 +893,17 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 3,
-      "uptime1d": 100,
+      "upstreamCount": 5,
+      "uptime1d": 96.71,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
-        "DeepInfra"
+        "DeepInfra",
+        "Venice"
       ],
       "quantizations": [
-        "fp4"
+        "fp4",
+        "fp8"
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-06-04"
@@ -1051,7 +1053,7 @@
         "官方免费层"
       ],
       "upstreamCount": 12,
-      "uptime1d": 99.76,
+      "uptime1d": 99.73,
       "uptime30m": 100,
       "providers": [
         "Cloudflare",
@@ -1142,25 +1144,21 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 14,
-      "uptime1d": 95.98,
-      "uptime30m": 100,
+      "upstreamCount": 12,
+      "uptime1d": 99.05,
+      "uptime30m": 99.52,
       "providers": [
         "Chutes",
         "CoreWeave",
-        "Crusoe",
         "DeepInfra",
         "Friendli",
         "Io Net",
         "ModelRun",
-        "Novita",
         "Parasail",
-        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
-        "bf16",
         "fp4",
         "fp8",
         "unknown"
@@ -1237,7 +1235,7 @@
         "官方免费层"
       ],
       "upstreamCount": 3,
-      "uptime1d": 99.95,
+      "uptime1d": 99.9,
       "uptime30m": 100,
       "providers": [
         "Crusoe",
