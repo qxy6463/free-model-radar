@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-10-16T13:43:28.210Z",
+  "generatedAt": "2026-10-16T19:43:23.129Z",
   "items": [
+    {
+      "id": "20261017-034305|xingchen-agi/xing4.0-29b-a4b:free",
+      "at": "2026-10-17T03:43:05.2088304+08:00",
+      "type": "new",
+      "modelId": "xingchen-agi/xing4.0-29b-a4b:free",
+      "name": "XingChen: Xing4.0 29B A4B (free)",
+      "kindText": "官方免费层",
+      "score": 18.4,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "contextText": "262K",
+      "nominalText": "262K",
+      "tags": [
+        "标称长上下文",
+        "工具调用",
+        "结构化输出",
+        "自带推理",
+        "无可用上游",
+        "官方免费层"
+      ]
+    },
     {
       "id": "20261015-234305|nvidia/nemotron-3.5-super-vl:free",
       "at": "2026-10-15T23:43:05.9880904+08:00",
