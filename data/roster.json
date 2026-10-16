@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-15T23:43:14.499Z",
-  "checkedAt": "2026-10-16T07:43:06.0666311+08:00",
+  "generatedAt": "2026-10-16T01:43:10.090Z",
+  "checkedAt": "2026-10-16T09:43:05.1609617+08:00",
   "totalModels": 465,
   "freeCount": 16,
   "anchorsResolved": 6,
@@ -40,33 +40,45 @@
       "supportsTools": true,
       "totalParamsB": null,
       "activeParamsB": null,
-      "intelIndex": null,
+      "intelIndex": 26.5,
       "codingIndex": null,
       "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
+      "tier": "Q3",
+      "tierText": "前 50%",
+      "tierBasis": "intelligence_index",
+      "tierBasisLabel": "智力",
+      "percentile": 67.6,
       "benchRef": {
-        "value": null,
-        "percentile": null,
+        "value": 26.5,
+        "percentile": 67.6,
         "axis": "智力",
-        "sampleSize": 285,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
+        "sampleSize": 287,
+        "above": {
+          "label": "GPT-6 Astra",
+          "value": 52.7,
+          "delta": -26.2
+        },
+        "below": {
+          "label": "Claude Sonnet 4.5",
+          "value": 20.7,
+          "delta": 5.8
+        },
+        "frontierGap": -31.1,
+        "frontierPct": 46,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
+        },
+        "frontier": {
+          "label": "Claude Opus 5.5",
+          "value": 57.6
         }
       },
       "codingPercentile": null,
       "agenticPercentile": null,
-      "score": 27.9,
+      "score": 44.8,
       "tags": [
         "标称百万上下文",
         "图片输入",
@@ -124,13 +136,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -181,12 +193,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 17.9,
+      "percentile": 17.8,
       "benchRef": {
         "value": 8.4,
-        "percentile": 17.9,
+        "percentile": 17.8,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -196,7 +208,7 @@
         "frontierGap": -49.2,
         "frontierPct": 15,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -249,12 +261,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 36.1,
+      "percentile": 35.9,
       "benchRef": {
         "value": 12.9,
-        "percentile": 36.1,
+        "percentile": 35.9,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -264,7 +276,7 @@
         "frontierGap": -44.7,
         "frontierPct": 22,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -333,12 +345,12 @@
       "tierText": "前 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 65.6,
+      "percentile": 65.2,
       "benchRef": {
         "value": 25.7,
-        "percentile": 65.6,
+        "percentile": 65.2,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": {
           "label": "GPT-6 Astra",
           "value": 52.7,
@@ -352,7 +364,7 @@
         "frontierGap": -31.9,
         "frontierPct": 45,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -419,13 +431,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -489,12 +501,12 @@
       "tierText": "前 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 63.9,
+      "percentile": 63.4,
       "benchRef": {
         "value": 25,
-        "percentile": 63.9,
+        "percentile": 63.4,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": {
           "label": "GPT-6 Astra",
           "value": 52.7,
@@ -508,7 +520,7 @@
         "frontierGap": -32.6,
         "frontierPct": 43,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -576,13 +588,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -637,12 +649,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 23.5,
+      "percentile": 23.3,
       "benchRef": {
         "value": 9.9,
-        "percentile": 23.5,
+        "percentile": 23.3,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -652,7 +664,7 @@
         "frontierGap": -47.7,
         "frontierPct": 17,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -712,13 +724,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -774,12 +786,12 @@
       "tierText": "前 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 58.2,
+      "percentile": 57.8,
       "benchRef": {
         "value": 22.9,
-        "percentile": 58.2,
+        "percentile": 57.8,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": {
           "label": "GPT-6 Astra",
           "value": 52.7,
@@ -793,7 +805,7 @@
         "frontierGap": -34.7,
         "frontierPct": 40,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -859,12 +871,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 25.3,
+      "percentile": 25.1,
       "benchRef": {
         "value": 10.3,
-        "percentile": 25.3,
+        "percentile": 25.1,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -874,7 +886,7 @@
         "frontierGap": -47.3,
         "frontierPct": 18,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -932,12 +944,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 44.9,
+      "percentile": 44.6,
       "benchRef": {
         "value": 16.7,
-        "percentile": 44.9,
+        "percentile": 44.6,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": {
           "label": "GPT-5 mini",
           "value": 20.6,
@@ -951,7 +963,7 @@
         "frontierGap": -40.9,
         "frontierPct": 29,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -1027,12 +1039,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 40,
+      "percentile": 39.7,
       "benchRef": {
         "value": 14.7,
-        "percentile": 40,
+        "percentile": 39.7,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -1042,7 +1054,7 @@
         "frontierGap": -42.9,
         "frontierPct": 26,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -1118,12 +1130,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 35.4,
+      "percentile": 35.2,
       "benchRef": {
         "value": 12.8,
-        "percentile": 35.4,
+        "percentile": 35.2,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -1133,7 +1145,7 @@
         "frontierGap": -44.8,
         "frontierPct": 22,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
@@ -1203,13 +1215,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 285,
+        "sampleSize": 287,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 20.4,
+          "p50": 20.6,
           "p75": 33.6,
           "p90": 43.6,
           "max": 57.6
