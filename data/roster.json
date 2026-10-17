@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-17T03:43:21.656Z",
-  "checkedAt": "2026-10-17T11:43:05.2561335+08:00",
+  "generatedAt": "2026-10-17T09:30:03.947Z",
+  "checkedAt": "2026-10-17T15:43:05.4158906+08:00",
   "totalModels": 469,
   "freeCount": 17,
   "anchorsResolved": 6,
@@ -151,8 +151,8 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 98.26,
-      "uptime30m": 97.5,
+      "uptime1d": 98.41,
+      "uptime30m": 100,
       "providers": [
         "CoreWeave",
         "Crusoe",
