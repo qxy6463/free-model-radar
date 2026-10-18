@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-18T15:43:18.033Z",
-  "checkedAt": "2026-10-18T23:43:01.8181778+08:00",
+  "generatedAt": "2026-10-18T17:43:05.241Z",
+  "checkedAt": "2026-10-19T01:43:01.8335615+08:00",
   "totalModels": 471,
   "freeCount": 17,
   "anchorsResolved": 6,
@@ -150,18 +150,16 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 5,
-      "uptime1d": 97.52,
+      "upstreamCount": 4,
+      "uptime1d": 98.82,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
-        "Crusoe",
         "DeepInfra",
         "Together",
         "Venice"
       ],
       "quantizations": [
-        "bf16",
         "fp4",
         "nvfp4",
         "unknown"
