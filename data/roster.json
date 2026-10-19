@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-19T13:43:22.260Z",
-  "checkedAt": "2026-10-19T21:43:02.0544749+08:00",
+  "generatedAt": "2026-10-19T15:43:19.030Z",
+  "checkedAt": "2026-10-19T23:43:02.1834858+08:00",
   "totalModels": 469,
   "freeCount": 18,
   "anchorsResolved": 6,
@@ -431,7 +431,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.92,
+      "uptime1d": 99.98,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -526,7 +526,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.9,
+      "uptime1d": 99.92,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -681,7 +681,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.22,
+      "uptime1d": 99.24,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
@@ -965,7 +965,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.98,
+      "uptime1d": 98.7,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1123,8 +1123,8 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 11,
-      "uptime1d": 99.52,
+      "upstreamCount": 13,
+      "uptime1d": 98.8,
       "uptime30m": 100,
       "providers": [
         "Cloudflare",
@@ -1132,7 +1132,9 @@
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
+        "Google",
         "Io Net",
+        "Makora",
         "NextBit",
         "Novita",
         "Parasail",
@@ -1214,9 +1216,9 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 13,
-      "uptime1d": 98.44,
-      "uptime30m": 100,
+      "upstreamCount": 15,
+      "uptime1d": 97.04,
+      "uptime30m": 99.29,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -1225,7 +1227,9 @@
         "Friendli",
         "Io Net",
         "ModelRun",
+        "Novita",
         "Parasail",
+        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
@@ -1307,7 +1311,7 @@
         "官方免费层"
       ],
       "upstreamCount": 3,
-      "uptime1d": 99.96,
+      "uptime1d": 99.97,
       "uptime30m": 100,
       "providers": [
         "Crusoe",
