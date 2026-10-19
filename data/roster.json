@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-19T11:43:08.587Z",
-  "checkedAt": "2026-10-19T19:43:02.1371530+08:00",
-  "totalModels": 468,
-  "freeCount": 17,
+  "generatedAt": "2026-10-19T13:43:22.260Z",
+  "checkedAt": "2026-10-19T21:43:02.0544749+08:00",
+  "totalModels": 469,
+  "freeCount": 18,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -20,6 +20,78 @@
     "RpdWithCredits": 1000
   },
   "models": [
+    {
+      "id": "minimax/minimax-m3.1-flash:free",
+      "name": "MiniMax: MiniMax M3.1 Flash (free)",
+      "kind": "free-tier",
+      "kindText": "官方免费层",
+      "contextText": "1M",
+      "nominalText": "1M",
+      "effectiveContext": 1000000,
+      "nominalContext": 1000000,
+      "contextShrunk": false,
+      "maxOutputTokens": 524288,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "reasoningEfforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low"
+      ],
+      "supportsTools": true,
+      "totalParamsB": null,
+      "activeParamsB": null,
+      "intelIndex": null,
+      "codingIndex": null,
+      "agenticIndex": null,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 288,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 20.7,
+          "p75": 32.5,
+          "p90": 43.6,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
+      "score": 27.9,
+      "tags": [
+        "标称百万上下文",
+        "图片输入",
+        "音视频",
+        "工具调用",
+        "结构化输出",
+        "推理档位",
+        "可调推理档",
+        "无可用上游",
+        "官方免费层"
+      ],
+      "upstreamCount": 0,
+      "uptime1d": null,
+      "uptime30m": null,
+      "providers": [],
+      "quantizations": [],
+      "implicitCaching": false,
+      "modelCreatedAt": "2026-10-19"
+    },
     {
       "id": "xingchen-agi/xing4.0-29b-a4b:free",
       "name": "XingChen: Xing4.0 29B A4B (free)",

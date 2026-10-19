@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-10-19T11:43:08.587Z",
+  "generatedAt": "2026-10-19T13:43:22.260Z",
   "items": [
+    {
+      "id": "20261019-214302|minimax/minimax-m3.1-flash:free",
+      "at": "2026-10-19T21:43:02.0544749+08:00",
+      "type": "new",
+      "modelId": "minimax/minimax-m3.1-flash:free",
+      "name": "MiniMax: MiniMax M3.1 Flash (free)",
+      "kindText": "官方免费层",
+      "score": 27.9,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "contextText": "1M",
+      "nominalText": "1M",
+      "tags": [
+        "标称百万上下文",
+        "图片输入",
+        "音视频",
+        "工具调用",
+        "结构化输出",
+        "推理档位",
+        "可调推理档",
+        "无可用上游",
+        "官方免费层"
+      ]
+    },
     {
       "id": "20261017-034305|xingchen-agi/xing4.0-29b-a4b:free",
       "at": "2026-10-17T03:43:05.2088304+08:00",
