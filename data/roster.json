@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-19T03:43:09.917Z",
-  "checkedAt": "2026-10-19T11:43:01.9429748+08:00",
+  "generatedAt": "2026-10-19T09:30:01.556Z",
+  "checkedAt": "2026-10-19T15:43:02.0678324+08:00",
   "totalModels": 471,
   "freeCount": 17,
   "anchorsResolved": 6,
@@ -151,7 +151,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 97.73,
+      "uptime1d": 97.74,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
