@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-20T13:43:19.687Z",
-  "checkedAt": "2026-10-20T21:43:02.3807485+08:00",
+  "generatedAt": "2026-10-20T17:43:05.531Z",
+  "checkedAt": "2026-10-21T01:43:01.7801985+08:00",
   "totalModels": 468,
   "freeCount": 18,
   "anchorsResolved": 6,
@@ -232,20 +232,22 @@
         "工具调用",
         "结构化输出",
         "自带推理",
+        "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 4,
-      "uptime1d": 98.64,
+      "upstreamCount": 5,
+      "uptime1d": 89.25,
       "uptime30m": 100,
       "providers": [
-        "CoreWeave",
+        "BaseTen",
+        "Crusoe",
         "DeepInfra",
         "Together",
         "Venice"
       ],
       "quantizations": [
+        "bf16",
         "fp4",
-        "nvfp4",
         "unknown"
       ],
       "implicitCaching": true,
