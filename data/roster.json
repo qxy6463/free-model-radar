@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-20T17:43:05.531Z",
-  "checkedAt": "2026-10-21T01:43:01.7801985+08:00",
+  "generatedAt": "2026-10-20T21:43:11.003Z",
+  "checkedAt": "2026-10-21T05:43:01.7682159+08:00",
   "totalModels": 468,
   "freeCount": 18,
   "anchorsResolved": 6,
@@ -445,7 +445,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.92,
+      "uptime1d": 99.9,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -695,7 +695,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 95.98,
+      "uptime1d": 96.68,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
@@ -897,7 +897,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": 100,
+      "uptime30m": null,
       "providers": [
         "DeepInfra"
       ],
@@ -979,7 +979,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.29,
+      "uptime1d": 99.84,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1137,19 +1137,22 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 99.53,
+      "upstreamCount": 13,
+      "uptime1d": 98.64,
       "uptime30m": 100,
       "providers": [
         "Cloudflare",
         "CoreWeave",
+        "Darkbloom",
         "DeepInfra",
         "DekaLLM",
+        "Google",
         "Io Net",
         "Makora",
         "NextBit",
         "Novita",
         "Parasail",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1228,8 +1231,8 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 98.02,
-      "uptime30m": 100,
+      "uptime1d": 98.43,
+      "uptime30m": 98.67,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -1322,7 +1325,7 @@
         "官方免费层"
       ],
       "upstreamCount": 3,
-      "uptime1d": 99.88,
+      "uptime1d": 99.92,
       "uptime30m": 100,
       "providers": [
         "Crusoe",
