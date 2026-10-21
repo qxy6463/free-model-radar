@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-21T13:43:08.764Z",
-  "checkedAt": "2026-10-21T21:43:01.8419482+08:00",
+  "generatedAt": "2026-10-21T17:43:07.530Z",
+  "checkedAt": "2026-10-22T01:43:01.8643768+08:00",
   "totalModels": 468,
   "freeCount": 18,
   "anchorsResolved": 6,
@@ -447,7 +447,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.6,
+      "uptime1d": 99.57,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -542,7 +542,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 97.11,
+      "uptime1d": 97.75,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -697,7 +697,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 98.8,
+      "uptime1d": 97.02,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
@@ -899,7 +899,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": 100,
+      "uptime30m": null,
       "providers": [
         "DeepInfra"
       ],
@@ -981,7 +981,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.42,
+      "uptime1d": 99.1,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1139,16 +1139,15 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 13,
-      "uptime1d": 98.35,
-      "uptime30m": 99.74,
+      "upstreamCount": 12,
+      "uptime1d": 98.72,
+      "uptime30m": 100,
       "providers": [
         "Cloudflare",
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
-        "Google",
         "Io Net",
         "Makora",
         "NextBit",
@@ -1232,9 +1231,9 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 11,
-      "uptime1d": 99.44,
-      "uptime30m": 100,
+      "upstreamCount": 15,
+      "uptime1d": 96.59,
+      "uptime30m": 99.56,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -1243,6 +1242,7 @@
         "Friendli",
         "Io Net",
         "ModelRun",
+        "Novita",
         "Parasail",
         "SambaNova",
         "SiliconFlow",
