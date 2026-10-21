@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-21T11:43:15.854Z",
-  "checkedAt": "2026-10-21T19:43:01.8157052+08:00",
+  "generatedAt": "2026-10-21T13:43:08.764Z",
+  "checkedAt": "2026-10-21T21:43:01.8419482+08:00",
   "totalModels": 468,
   "freeCount": 18,
   "anchorsResolved": 6,
@@ -235,11 +235,12 @@
         "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 5,
-      "uptime1d": 92.3,
-      "uptime30m": 66.67,
+      "upstreamCount": 6,
+      "uptime1d": 94.67,
+      "uptime30m": 94.44,
       "providers": [
         "BaseTen",
+        "CoreWeave",
         "Crusoe",
         "DeepInfra",
         "Together",
@@ -248,6 +249,7 @@
       "quantizations": [
         "bf16",
         "fp4",
+        "nvfp4",
         "unknown"
       ],
       "implicitCaching": true,
