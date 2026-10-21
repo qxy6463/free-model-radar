@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-21T21:43:17.994Z",
-  "checkedAt": "2026-10-22T05:43:01.8347167+08:00",
-  "totalModels": 469,
+  "generatedAt": "2026-10-21T23:43:08.719Z",
+  "checkedAt": "2026-10-22T07:43:02.0745423+08:00",
+  "totalModels": 468,
   "freeCount": 19,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -50,7 +50,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -79,7 +79,7 @@
       "providers": [],
       "quantizations": [],
       "implicitCaching": false,
-      "modelCreatedAt": "2026-10-19"
+      "modelCreatedAt": "2026-10-22"
     },
     {
       "id": "minimax/minimax-m3.1-flash:free",
@@ -114,12 +114,12 @@
       "tierText": "前 25%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 88.9,
+      "percentile": 88.8,
       "benchRef": {
         "value": 42.7,
-        "percentile": 88.9,
+        "percentile": 88.8,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "GPT-6 Astra",
           "value": 52.7,
@@ -195,7 +195,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -253,12 +253,12 @@
       "tierText": "前 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 67.6,
+      "percentile": 67.5,
       "benchRef": {
         "value": 26.5,
-        "percentile": 67.6,
+        "percentile": 67.5,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "GPT-6 Astra",
           "value": 52.7,
@@ -348,7 +348,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -410,7 +410,7 @@
         "value": 8.4,
         "percentile": 17.8,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -473,12 +473,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 35.5,
+      "percentile": 35.3,
       "benchRef": {
         "value": 12.9,
-        "percentile": 35.5,
+        "percentile": 35.3,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -509,7 +509,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.57,
+      "uptime1d": 99.63,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -559,12 +559,12 @@
       "tierText": "前 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 65.2,
+      "percentile": 65,
       "benchRef": {
         "value": 25.7,
-        "percentile": 65.2,
+        "percentile": 65,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "GPT-6 Astra",
           "value": 52.7,
@@ -604,7 +604,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 97.75,
+      "uptime1d": 97.95,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -645,7 +645,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -715,12 +715,12 @@
       "tierText": "前 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 63.1,
+      "percentile": 62.9,
       "benchRef": {
         "value": 25,
-        "percentile": 63.1,
+        "percentile": 62.9,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "GPT-6 Astra",
           "value": 52.7,
@@ -759,7 +759,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 97.02,
+      "uptime1d": 97.01,
       "uptime30m": 100,
       "providers": [
         "DeepInfra",
@@ -802,7 +802,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -863,12 +863,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 23.3,
+      "percentile": 23.4,
       "benchRef": {
         "value": 9.9,
-        "percentile": 23.3,
+        "percentile": 23.4,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -938,7 +938,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -1000,12 +1000,12 @@
       "tierText": "前 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 56.8,
+      "percentile": 56.6,
       "benchRef": {
         "value": 22.9,
-        "percentile": 56.8,
+        "percentile": 56.6,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "GPT-6 Astra",
           "value": 52.7,
@@ -1043,7 +1043,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.1,
+      "uptime1d": 98.89,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1085,12 +1085,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 25.1,
+      "percentile": 25.2,
       "benchRef": {
         "value": 10.3,
-        "percentile": 25.1,
+        "percentile": 25.2,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -1158,12 +1158,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 43.6,
+      "percentile": 43.4,
       "benchRef": {
         "value": 16.7,
-        "percentile": 43.6,
+        "percentile": 43.4,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "GPT-5 mini",
           "value": 20.6,
@@ -1202,7 +1202,7 @@
         "官方免费层"
       ],
       "upstreamCount": 12,
-      "uptime1d": 98.72,
+      "uptime1d": 98.74,
       "uptime30m": 100,
       "providers": [
         "Cloudflare",
@@ -1253,12 +1253,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 39.4,
+      "percentile": 39.2,
       "benchRef": {
         "value": 14.7,
-        "percentile": 39.4,
+        "percentile": 39.2,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -1293,21 +1293,17 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 15,
-      "uptime1d": 96.59,
-      "uptime30m": 99.56,
+      "upstreamCount": 10,
+      "uptime1d": 98.69,
+      "uptime30m": 100,
       "providers": [
-        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
         "Friendli",
-        "Io Net",
         "ModelRun",
-        "Novita",
         "Parasail",
         "SambaNova",
-        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1348,12 +1344,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 34.8,
+      "percentile": 34.6,
       "benchRef": {
         "value": 12.8,
-        "percentile": 34.8,
+        "percentile": 34.6,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": {
           "label": "Gemini 2.5 Pro",
           "value": 16.1,
@@ -1388,7 +1384,7 @@
         "官方免费层"
       ],
       "upstreamCount": 3,
-      "uptime1d": 99.97,
+      "uptime1d": 99.95,
       "uptime30m": 100,
       "providers": [
         "Crusoe",
@@ -1433,7 +1429,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 287,
+        "sampleSize": 286,
         "above": null,
         "below": null,
         "frontierGap": null,
