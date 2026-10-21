@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-21T19:43:05.982Z",
-  "checkedAt": "2026-10-22T03:43:02.3712812+08:00",
-  "totalModels": 468,
-  "freeCount": 18,
+  "generatedAt": "2026-10-21T21:43:17.994Z",
+  "checkedAt": "2026-10-22T05:43:01.8347167+08:00",
+  "totalModels": 469,
+  "freeCount": 19,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -20,6 +20,67 @@
     "RpdWithCredits": 1000
   },
   "models": [
+    {
+      "id": "recursive/flint-v1.0:free",
+      "name": "Recursive: Flint (free)",
+      "kind": "free-tier",
+      "kindText": "官方免费层",
+      "contextText": "262K",
+      "nominalText": "262K",
+      "effectiveContext": 262144,
+      "nominalContext": 262144,
+      "contextShrunk": false,
+      "maxOutputTokens": 235929,
+      "inputModalities": [
+        "text"
+      ],
+      "reasoningEfforts": [],
+      "supportsTools": true,
+      "totalParamsB": null,
+      "activeParamsB": null,
+      "intelIndex": null,
+      "codingIndex": null,
+      "agenticIndex": null,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 287,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 20.7,
+          "p75": 33.6,
+          "p90": 43.6,
+          "max": 57.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
+      "score": 18.4,
+      "tags": [
+        "标称长上下文",
+        "工具调用",
+        "结构化输出",
+        "自带推理",
+        "无可用上游",
+        "官方免费层"
+      ],
+      "upstreamCount": 0,
+      "uptime1d": null,
+      "uptime30m": null,
+      "providers": [],
+      "quantizations": [],
+      "implicitCaching": false,
+      "modelCreatedAt": "2026-10-19"
+    },
     {
       "id": "minimax/minimax-m3.1-flash:free",
       "name": "MiniMax: MiniMax M3.1 Flash (free)",

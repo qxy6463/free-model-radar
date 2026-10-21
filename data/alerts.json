@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-10-21T19:43:05.982Z",
+  "generatedAt": "2026-10-21T21:43:17.994Z",
   "items": [
+    {
+      "id": "20261022-054301|recursive/flint-v1.0:free",
+      "at": "2026-10-22T05:43:01.8347167+08:00",
+      "type": "new",
+      "modelId": "recursive/flint-v1.0:free",
+      "name": "Recursive: Flint (free)",
+      "kindText": "官方免费层",
+      "score": 18.4,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "contextText": "262K",
+      "nominalText": "262K",
+      "tags": [
+        "标称长上下文",
+        "工具调用",
+        "结构化输出",
+        "自带推理",
+        "无可用上游",
+        "官方免费层"
+      ]
+    },
     {
       "id": "20261019-214302|minimax/minimax-m3.1-flash:free",
       "at": "2026-10-19T21:43:02.0544749+08:00",
