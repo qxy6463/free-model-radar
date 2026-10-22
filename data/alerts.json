@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-10-22T09:30:01.514Z",
+  "generatedAt": "2026-10-22T13:43:19.172Z",
   "items": [
+    {
+      "id": "20261022-214301|minimax/minimax-m3.1-flash:free",
+      "at": "2026-10-22T21:43:01.9731402+08:00",
+      "type": "removed",
+      "modelId": "minimax/minimax-m3.1-flash:free",
+      "name": "minimax/minimax-m3.1-flash:free",
+      "kindText": "",
+      "score": 0,
+      "tier": "",
+      "tierText": "",
+      "contextText": "",
+      "nominalText": "",
+      "tags": []
+    },
     {
       "id": "20261022-054301|recursive/flint-v1.0:free",
       "at": "2026-10-22T05:43:01.8347167+08:00",

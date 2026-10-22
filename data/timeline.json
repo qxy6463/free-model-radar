@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-10-22T09:30:01.514Z",
+  "generatedAt": "2026-10-22T13:43:19.172Z",
   "items": [
+    {
+      "at": "2026-10-22T21:43:18.8028118+08:00",
+      "type": "removed",
+      "modelId": "minimax/minimax-m3.1-flash:free"
+    },
     {
       "at": "2026-10-22T05:43:04.5732821+08:00",
       "type": "new",

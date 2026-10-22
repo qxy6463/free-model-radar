@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-22T09:30:01.514Z",
-  "checkedAt": "2026-10-22T15:43:02.1169866+08:00",
+  "generatedAt": "2026-10-22T13:43:19.172Z",
+  "checkedAt": "2026-10-22T21:43:01.9731402+08:00",
   "totalModels": 468,
-  "freeCount": 19,
+  "freeCount": 18,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -80,90 +80,6 @@
       "quantizations": [],
       "implicitCaching": false,
       "modelCreatedAt": "2026-10-22"
-    },
-    {
-      "id": "minimax/minimax-m3.1-flash:free",
-      "name": "MiniMax: MiniMax M3.1 Flash (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "1M",
-      "nominalText": "1M",
-      "effectiveContext": 1000000,
-      "nominalContext": 1000000,
-      "contextShrunk": false,
-      "maxOutputTokens": 524288,
-      "inputModalities": [
-        "text",
-        "image",
-        "video"
-      ],
-      "reasoningEfforts": [
-        "max",
-        "xhigh",
-        "high",
-        "medium",
-        "low"
-      ],
-      "supportsTools": true,
-      "totalParamsB": null,
-      "activeParamsB": null,
-      "intelIndex": 42.7,
-      "codingIndex": null,
-      "agenticIndex": null,
-      "tier": "Q2",
-      "tierText": "前 25%",
-      "tierBasis": "intelligence_index",
-      "tierBasisLabel": "智力",
-      "percentile": 88.8,
-      "benchRef": {
-        "value": 42.7,
-        "percentile": 88.8,
-        "axis": "智力",
-        "sampleSize": 286,
-        "above": {
-          "label": "GPT-6 Astra",
-          "value": 52.7,
-          "delta": -10
-        },
-        "below": {
-          "label": "Claude Sonnet 4.5",
-          "value": 20.7,
-          "delta": 22
-        },
-        "frontierGap": -14.9,
-        "frontierPct": 74,
-        "dist": {
-          "p50": 20.7,
-          "p75": 33.6,
-          "p90": 43.6,
-          "max": 57.6
-        },
-        "frontier": {
-          "label": "Claude Opus 5.5",
-          "value": 57.6
-        }
-      },
-      "codingPercentile": null,
-      "agenticPercentile": null,
-      "score": 55,
-      "tags": [
-        "标称百万上下文",
-        "图片输入",
-        "音视频",
-        "工具调用",
-        "结构化输出",
-        "推理档位",
-        "可调推理档",
-        "无可用上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 0,
-      "uptime1d": null,
-      "uptime30m": null,
-      "providers": [],
-      "quantizations": [],
-      "implicitCaching": false,
-      "modelCreatedAt": "2026-10-19"
     },
     {
       "id": "xingchen-agi/xing4.0-29b-a4b:free",
@@ -296,8 +212,8 @@
         "官方免费层"
       ],
       "upstreamCount": 7,
-      "uptime1d": 96.24,
-      "uptime30m": 97.96,
+      "uptime1d": 97.11,
+      "uptime30m": 100,
       "providers": [
         "BaseTen",
         "CoreWeave",
@@ -508,7 +424,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.62,
+      "uptime1d": 99.81,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -603,7 +519,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 98.34,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -685,11 +601,11 @@
       "name": "Thinking Machines: Inkling (free)",
       "kind": "free-tier",
       "kindText": "官方免费层",
-      "contextText": "524K",
+      "contextText": "1.05M",
       "nominalText": "1.05M",
-      "effectiveContext": 524288,
+      "effectiveContext": 1048576,
       "nominalContext": 1048576,
-      "contextShrunk": true,
+      "contextShrunk": false,
       "maxOutputTokens": 262144,
       "inputModalities": [
         "text",
@@ -745,29 +661,24 @@
       },
       "codingPercentile": 54.9,
       "agenticPercentile": 57.1,
-      "score": 68.4,
+      "score": 69.2,
       "tags": [
         "标称百万上下文",
         "图片输入",
         "音视频",
-        "实际仅524K",
         "工具调用",
         "推理档位",
         "可调推理档",
         "编程向",
-        "单上游",
+        "无可用上游",
         "官方免费层"
       ],
-      "upstreamCount": 1,
-      "uptime1d": 95.09,
-      "uptime30m": 100,
-      "providers": [
-        "Together"
-      ],
-      "quantizations": [
-        "unknown"
-      ],
-      "implicitCaching": true,
+      "upstreamCount": 0,
+      "uptime1d": null,
+      "uptime30m": null,
+      "providers": [],
+      "quantizations": [],
+      "implicitCaching": false,
       "modelCreatedAt": "2026-07-18"
     },
     {
@@ -958,7 +869,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 100,
+      "uptime1d": 99.43,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -1041,7 +952,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.6,
+      "uptime1d": 99.63,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1199,16 +1110,15 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 13,
-      "uptime1d": 99.29,
-      "uptime30m": 99.74,
+      "upstreamCount": 12,
+      "uptime1d": 99.72,
+      "uptime30m": 100,
       "providers": [
         "Cloudflare",
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
-        "Google",
         "Io Net",
         "Makora",
         "NextBit",
@@ -1292,20 +1202,24 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 11,
-      "uptime1d": 97.86,
+      "upstreamCount": 14,
+      "uptime1d": 96.86,
       "uptime30m": 100,
       "providers": [
+        "Chutes",
         "CoreWeave",
+        "Crusoe",
         "DeepInfra",
         "Friendli",
+        "Io Net",
         "ModelRun",
+        "Novita",
         "Parasail",
-        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
+        "bf16",
         "fp4",
         "fp8",
         "unknown"
@@ -1382,7 +1296,7 @@
         "官方免费层"
       ],
       "upstreamCount": 3,
-      "uptime1d": 99.95,
+      "uptime1d": 99.98,
       "uptime30m": 100,
       "providers": [
         "Crusoe",
