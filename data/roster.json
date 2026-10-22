@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-21T23:43:08.719Z",
-  "checkedAt": "2026-10-22T07:43:02.0745423+08:00",
+  "generatedAt": "2026-10-22T03:43:06.091Z",
+  "checkedAt": "2026-10-22T11:43:02.0548076+08:00",
   "totalModels": 468,
   "freeCount": 19,
   "anchorsResolved": 6,
@@ -293,12 +293,11 @@
         "工具调用",
         "结构化输出",
         "自带推理",
-        "可用性偏低",
         "官方免费层"
       ],
       "upstreamCount": 7,
-      "uptime1d": 94.99,
-      "uptime30m": 100,
+      "uptime1d": 96.24,
+      "uptime30m": 97.96,
       "providers": [
         "BaseTen",
         "CoreWeave",
