@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-22T23:43:05.409Z",
-  "checkedAt": "2026-10-23T07:43:02.1437662+08:00",
+  "generatedAt": "2026-10-23T01:43:08.674Z",
+  "checkedAt": "2026-10-23T09:43:02.1224844+08:00",
   "totalModels": 468,
   "freeCount": 18,
   "anchorsResolved": 6,
@@ -423,7 +423,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.84,
+      "uptime1d": 99.74,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -518,7 +518,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.68,
+      "uptime1d": 99.59,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -675,7 +675,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 87.06,
+      "uptime1d": 89.68,
       "uptime30m": 100,
       "providers": [
         "Together"
@@ -874,8 +874,8 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.3,
-      "uptime30m": null,
+      "uptime1d": 99.69,
+      "uptime30m": 100,
       "providers": [
         "DeepInfra"
       ],
@@ -956,15 +956,17 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 4,
-      "uptime1d": 99.91,
-      "uptime30m": 100,
+      "upstreamCount": 5,
+      "uptime1d": 99.79,
+      "uptime30m": 99.29,
       "providers": [
         "BaseTen",
-        "DeepInfra"
+        "DeepInfra",
+        "Venice"
       ],
       "quantizations": [
-        "fp4"
+        "fp4",
+        "fp8"
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-06-04"
@@ -1113,8 +1115,8 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 12,
-      "uptime1d": 99.66,
+      "upstreamCount": 13,
+      "uptime1d": 99.27,
       "uptime30m": 100,
       "providers": [
         "Cloudflare",
@@ -1122,6 +1124,7 @@
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
+        "Google",
         "Io Net",
         "Makora",
         "NextBit",
@@ -1206,8 +1209,8 @@
         "官方免费层"
       ],
       "upstreamCount": 13,
-      "uptime1d": 97.98,
-      "uptime30m": 100,
+      "uptime1d": 97.99,
+      "uptime30m": 99.49,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -1215,9 +1218,9 @@
         "DeepInfra",
         "Friendli",
         "Io Net",
+        "ModelRun",
+        "Novita",
         "Parasail",
-        "SambaNova",
-        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1298,7 +1301,7 @@
         "官方免费层"
       ],
       "upstreamCount": 3,
-      "uptime1d": 99.98,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "Crusoe",
