@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T01:43:08.674Z",
-  "changeKey": "68e24cd10cf99a8eeaa9b96206a82042b8cf57504e1bc884cf553d391a26e91f",
+  "generatedAt": "2026-10-23T05:43:09.278Z",
+  "changeKey": "5b1fc82a1e336b6ff916cd95d86a64a4ab8909419214ffb899518f77acb3a9be",
   "source": "https://openrouter.ai/api/v1/models + /endpoints（均为匿名公开接口）",
   "note": "数据由本机每 2 小时巡检生成并推送。已读状态保存在各自浏览器本地，不随站点同步。",
   "eventCount": 18
