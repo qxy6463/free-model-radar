@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-24T23:43:09.431Z",
-  "checkedAt": "2026-10-25T07:43:02.1835065+08:00",
+  "generatedAt": "2026-10-25T07:43:16.031Z",
+  "checkedAt": "2026-10-25T15:43:01.9397152+08:00",
   "totalModels": 467,
   "freeCount": 18,
   "anchorsResolved": 6,
@@ -209,10 +209,11 @@
         "工具调用",
         "结构化输出",
         "自带推理",
+        "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 7,
-      "uptime1d": 96.52,
+      "upstreamCount": 8,
+      "uptime1d": 94.04,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -220,6 +221,7 @@
         "Crusoe",
         "Darkbloom",
         "DeepInfra",
+        "Io Net",
         "Together",
         "Venice"
       ],
@@ -428,7 +430,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.34,
+      "uptime1d": 99.66,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -524,7 +526,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": 100,
+      "uptime30m": null,
       "providers": [
         "DeepInfra"
       ],
@@ -679,7 +681,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.28,
+      "uptime1d": 99.9,
       "uptime30m": 100,
       "providers": [
         "Together"
@@ -961,7 +963,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.98,
+      "uptime1d": 99.9,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1120,8 +1122,8 @@
         "官方免费层"
       ],
       "upstreamCount": 13,
-      "uptime1d": 98.62,
-      "uptime30m": 99.74,
+      "uptime1d": 98.68,
+      "uptime30m": 100,
       "providers": [
         "Cloudflare",
         "CoreWeave",
@@ -1212,13 +1214,15 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 14,
-      "uptime1d": 97.86,
+      "upstreamCount": 16,
+      "uptime1d": 98.26,
       "uptime30m": 100,
       "providers": [
         "Chutes",
         "CoreWeave",
+        "Crusoe",
         "DeepInfra",
+        "DekaLLM",
         "Friendli",
         "Io Net",
         "ModelRun",
@@ -1306,7 +1310,7 @@
         "官方免费层"
       ],
       "upstreamCount": 3,
-      "uptime1d": 99.81,
+      "uptime1d": 99.89,
       "uptime30m": 100,
       "providers": [
         "Crusoe",
