@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-10-27T09:30:01.699Z",
+  "generatedAt": "2026-10-27T09:43:05.323Z",
   "items": [
+    {
+      "at": "2026-10-27T17:43:04.8801242+08:00",
+      "type": "removed",
+      "modelId": "nvidia/nemotron-3-super-120b-a12b:free"
+    },
     {
       "at": "2026-10-22T21:43:18.8028118+08:00",
       "type": "removed",
