@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-28T13:43:08.674Z",
-  "checkedAt": "2026-10-28T21:43:02.2033043+08:00",
-  "totalModels": 464,
+  "generatedAt": "2026-10-28T15:43:26.072Z",
+  "checkedAt": "2026-10-28T23:43:02.2686808+08:00",
+  "totalModels": 456,
   "freeCount": 17,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -207,16 +207,15 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 9,
-      "uptime1d": 96.01,
-      "uptime30m": 100,
+      "upstreamCount": 8,
+      "uptime1d": 96.59,
+      "uptime30m": 99.58,
       "providers": [
         "BaseTen",
         "CoreWeave",
         "Crusoe",
         "Darkbloom",
         "DeepInfra",
-        "Io Net",
         "Nebius",
         "Together",
         "Venice"
@@ -335,7 +334,7 @@
           "max": 58.4
         }
       },
-      "codingPercentile": 3.6,
+      "codingPercentile": 3.7,
       "agenticPercentile": null,
       "score": 20.4,
       "tags": [
@@ -399,8 +398,8 @@
           "max": 58.4
         }
       },
-      "codingPercentile": 25.6,
-      "agenticPercentile": 24.8,
+      "codingPercentile": 24.4,
+      "agenticPercentile": 24.2,
       "score": 29,
       "tags": [
         "标称百万上下文",
@@ -410,7 +409,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.83,
+      "uptime1d": 99.86,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -485,8 +484,8 @@
           "value": 58.4
         }
       },
-      "codingPercentile": 56.5,
-      "agenticPercentile": 58.6,
+      "codingPercentile": 55.5,
+      "agenticPercentile": 58.3,
       "score": 61.3,
       "tags": [
         "标称百万上下文",
@@ -637,8 +636,8 @@
           "value": 58.4
         }
       },
-      "codingPercentile": 54.2,
-      "agenticPercentile": 57.1,
+      "codingPercentile": 53,
+      "agenticPercentile": 56.8,
       "score": 60.5,
       "tags": [
         "标称百万上下文",
@@ -653,7 +652,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 98.57,
+      "uptime1d": 98.55,
       "uptime30m": 100,
       "providers": [
         "Together"
@@ -772,8 +771,8 @@
           "max": 58.4
         }
       },
-      "codingPercentile": 31.5,
-      "agenticPercentile": 12.8,
+      "codingPercentile": 30.5,
+      "agenticPercentile": 12.1,
       "score": 31.8,
       "tags": [
         "标称长上下文",
@@ -844,7 +843,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 98.41,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -909,8 +908,8 @@
           "value": 58.4
         }
       },
-      "codingPercentile": 49.4,
-      "agenticPercentile": 51.9,
+      "codingPercentile": 48.2,
+      "agenticPercentile": 51.5,
       "score": 49.6,
       "tags": [
         "标称百万上下文",
@@ -924,7 +923,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 87.69,
+      "uptime1d": 94.31,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -983,7 +982,7 @@
           "max": 58.4
         }
       },
-      "codingPercentile": 10.1,
+      "codingPercentile": 10.4,
       "agenticPercentile": null,
       "score": 31.3,
       "tags": [
@@ -1048,8 +1047,8 @@
           "max": 58.4
         }
       },
-      "codingPercentile": 35.1,
-      "agenticPercentile": 23.3,
+      "codingPercentile": 34.1,
+      "agenticPercentile": 22.7,
       "score": 41.3,
       "tags": [
         "标称长上下文",
@@ -1062,9 +1061,9 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 15,
-      "uptime1d": 99.26,
-      "uptime30m": 100,
+      "upstreamCount": 14,
+      "uptime1d": 99.2,
+      "uptime30m": 99.76,
       "providers": [
         "AkashML",
         "Cloudflare",
@@ -1079,7 +1078,6 @@
         "Novita",
         "Parasail",
         "PrimeIntellect",
-        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1135,8 +1133,8 @@
           "max": 58.4
         }
       },
-      "codingPercentile": 39.3,
-      "agenticPercentile": 27.8,
+      "codingPercentile": 37.8,
+      "agenticPercentile": 27.3,
       "score": 43.2,
       "tags": [
         "标称长上下文",
@@ -1151,10 +1149,9 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 99.17,
+      "uptime1d": 98.28,
       "uptime30m": 100,
       "providers": [
-        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
@@ -1164,6 +1161,7 @@
         "ModelRun",
         "Novita",
         "Parasail",
+        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
