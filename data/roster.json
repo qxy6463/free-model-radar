@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-28T09:43:11.712Z",
-  "checkedAt": "2026-10-28T17:43:02.1469075+08:00",
+  "generatedAt": "2026-10-28T13:43:08.674Z",
+  "checkedAt": "2026-10-28T21:43:02.2033043+08:00",
   "totalModels": 464,
   "freeCount": 17,
   "anchorsResolved": 6,
@@ -50,16 +50,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
       "codingPercentile": null,
@@ -111,16 +111,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
       "codingPercentile": null,
@@ -162,45 +162,41 @@
       "supportsTools": true,
       "totalParamsB": null,
       "activeParamsB": null,
-      "intelIndex": 26.5,
+      "intelIndex": 13.6,
       "codingIndex": null,
       "agenticIndex": null,
-      "tier": "Q3",
-      "tierText": "前 50%",
+      "tier": "Q4",
+      "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 66,
+      "percentile": 25.5,
       "benchRef": {
-        "value": 26.5,
-        "percentile": 66,
+        "value": 13.6,
+        "percentile": 25.5,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": {
-          "label": "GPT-6 Astra",
-          "value": 52.7,
-          "delta": -26.2
+          "label": "Claude Sonnet 5.5",
+          "value": 54.2,
+          "delta": -40.6
         },
-        "below": {
-          "label": "Claude Sonnet 4.5",
-          "value": 20.7,
-          "delta": 5.8
-        },
-        "frontierGap": -31.1,
-        "frontierPct": 46,
+        "below": null,
+        "frontierGap": -44.8,
+        "frontierPct": 23,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         },
         "frontier": {
           "label": "Claude Opus 5.5",
-          "value": 57.6
+          "value": 58.4
         }
       },
       "codingPercentile": null,
       "agenticPercentile": null,
-      "score": 44.8,
+      "score": 36.6,
       "tags": [
         "标称百万上下文",
         "图片输入",
@@ -265,16 +261,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
       "codingPercentile": null,
@@ -315,41 +311,33 @@
       "supportsTools": true,
       "totalParamsB": 2.6,
       "activeParamsB": null,
-      "intelIndex": 8.4,
+      "intelIndex": null,
       "codingIndex": 7.7,
       "agenticIndex": null,
-      "tier": "Q4",
-      "tierText": "后 50%",
-      "tierBasis": "intelligence_index",
-      "tierBasisLabel": "智力",
-      "percentile": 17.4,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
       "benchRef": {
-        "value": 8.4,
-        "percentile": 17.4,
+        "value": null,
+        "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
-        "above": {
-          "label": "Gemini 2.5 Pro",
-          "value": 16.1,
-          "delta": -7.7
-        },
+        "sampleSize": 47,
+        "above": null,
         "below": null,
-        "frontierGap": -49.2,
-        "frontierPct": 15,
+        "frontierGap": null,
+        "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
-        },
-        "frontier": {
-          "label": "Claude Opus 5.5",
-          "value": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
-      "codingPercentile": 3.8,
+      "codingPercentile": 3.6,
       "agenticPercentile": null,
-      "score": 25.7,
+      "score": 20.4,
       "tags": [
         "工具调用",
         "结构化输出",
@@ -387,41 +375,33 @@
       "supportsTools": true,
       "totalParamsB": null,
       "activeParamsB": null,
-      "intelIndex": 12.9,
+      "intelIndex": null,
       "codingIndex": 26.8,
       "agenticIndex": 3.5,
-      "tier": "Q4",
-      "tierText": "后 50%",
-      "tierBasis": "intelligence_index",
-      "tierBasisLabel": "智力",
-      "percentile": 33.3,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
       "benchRef": {
-        "value": 12.9,
-        "percentile": 33.3,
+        "value": null,
+        "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
-        "above": {
-          "label": "Gemini 2.5 Pro",
-          "value": 16.1,
-          "delta": -3.2
-        },
+        "sampleSize": 47,
+        "above": null,
         "below": null,
-        "frontierGap": -44.7,
-        "frontierPct": 22,
+        "frontierGap": null,
+        "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
-        },
-        "frontier": {
-          "label": "Claude Opus 5.5",
-          "value": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
-      "codingPercentile": 23.6,
-      "agenticPercentile": 23.3,
-      "score": 37.2,
+      "codingPercentile": 25.6,
+      "agenticPercentile": 24.8,
+      "score": 29,
       "tags": [
         "标称百万上下文",
         "实际仅262K",
@@ -473,45 +453,41 @@
       "supportsTools": true,
       "totalParamsB": null,
       "activeParamsB": null,
-      "intelIndex": 25.7,
+      "intelIndex": 12.9,
       "codingIndex": 52.9,
       "agenticIndex": 23.5,
-      "tier": "Q3",
-      "tierText": "前 50%",
+      "tier": "Q4",
+      "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 63.5,
+      "percentile": 21.3,
       "benchRef": {
-        "value": 25.7,
-        "percentile": 63.5,
+        "value": 12.9,
+        "percentile": 21.3,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": {
-          "label": "GPT-6 Astra",
-          "value": 52.7,
-          "delta": -27
+          "label": "Claude Sonnet 5.5",
+          "value": 54.2,
+          "delta": -41.3
         },
-        "below": {
-          "label": "Claude Sonnet 4.5",
-          "value": 20.7,
-          "delta": 5
-        },
-        "frontierGap": -31.9,
-        "frontierPct": 45,
+        "below": null,
+        "frontierGap": -45.5,
+        "frontierPct": 22,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         },
         "frontier": {
           "label": "Claude Opus 5.5",
-          "value": 57.6
+          "value": 58.4
         }
       },
-      "codingPercentile": 55.4,
-      "agenticPercentile": 56.7,
-      "score": 69.5,
+      "codingPercentile": 56.5,
+      "agenticPercentile": 58.6,
+      "score": 61.3,
       "tags": [
         "标称百万上下文",
         "图片输入",
@@ -566,16 +542,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
       "codingPercentile": null,
@@ -629,45 +605,41 @@
       "supportsTools": true,
       "totalParamsB": null,
       "activeParamsB": null,
-      "intelIndex": 25,
+      "intelIndex": 12.5,
       "codingIndex": 52.1,
       "agenticIndex": 22.5,
-      "tier": "Q3",
-      "tierText": "前 50%",
+      "tier": "Q4",
+      "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 61.3,
+      "percentile": 17,
       "benchRef": {
-        "value": 25,
-        "percentile": 61.3,
+        "value": 12.5,
+        "percentile": 17,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": {
-          "label": "GPT-6 Astra",
-          "value": 52.7,
-          "delta": -27.7
+          "label": "Claude Sonnet 5.5",
+          "value": 54.2,
+          "delta": -41.7
         },
-        "below": {
-          "label": "Claude Sonnet 4.5",
-          "value": 20.7,
-          "delta": 4.3
-        },
-        "frontierGap": -32.6,
-        "frontierPct": 43,
+        "below": null,
+        "frontierGap": -45.9,
+        "frontierPct": 21,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         },
         "frontier": {
           "label": "Claude Opus 5.5",
-          "value": 57.6
+          "value": 58.4
         }
       },
-      "codingPercentile": 52.9,
-      "agenticPercentile": 55,
-      "score": 68.4,
+      "codingPercentile": 54.2,
+      "agenticPercentile": 57.1,
+      "score": 60.5,
       "tags": [
         "标称百万上下文",
         "图片输入",
@@ -722,16 +694,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
       "codingPercentile": null,
@@ -776,41 +748,33 @@
       "supportsTools": true,
       "totalParamsB": null,
       "activeParamsB": null,
-      "intelIndex": 9.9,
+      "intelIndex": null,
       "codingIndex": 36.5,
       "agenticIndex": 1.1,
-      "tier": "Q4",
-      "tierText": "后 50%",
-      "tierBasis": "intelligence_index",
-      "tierBasisLabel": "智力",
-      "percentile": 22.3,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
       "benchRef": {
-        "value": 9.9,
-        "percentile": 22.3,
+        "value": null,
+        "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
-        "above": {
-          "label": "Gemini 2.5 Pro",
-          "value": 16.1,
-          "delta": -6.2
-        },
+        "sampleSize": 47,
+        "above": null,
         "below": null,
-        "frontierGap": -47.7,
-        "frontierPct": 17,
+        "frontierGap": null,
+        "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
-        },
-        "frontier": {
-          "label": "Claude Opus 5.5",
-          "value": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
-      "codingPercentile": 29.3,
-      "agenticPercentile": 12.5,
-      "score": 38.1,
+      "codingPercentile": 31.5,
+      "agenticPercentile": 12.8,
+      "score": 31.8,
       "tags": [
         "标称长上下文",
         "工具调用",
@@ -858,16 +822,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
       "codingPercentile": null,
@@ -913,45 +877,41 @@
       "supportsTools": true,
       "totalParamsB": 550,
       "activeParamsB": 55,
-      "intelIndex": 22.9,
+      "intelIndex": 11.8,
       "codingIndex": 49.3,
       "agenticIndex": 20.1,
-      "tier": "Q3",
-      "tierText": "前 50%",
+      "tier": "Q4",
+      "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 55,
+      "percentile": 12.8,
       "benchRef": {
-        "value": 22.9,
-        "percentile": 55,
+        "value": 11.8,
+        "percentile": 12.8,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": {
-          "label": "GPT-6 Astra",
-          "value": 52.7,
-          "delta": -29.8
+          "label": "Claude Sonnet 5.5",
+          "value": 54.2,
+          "delta": -42.4
         },
-        "below": {
-          "label": "Claude Sonnet 4.5",
-          "value": 20.7,
-          "delta": 2.2
-        },
-        "frontierGap": -34.7,
-        "frontierPct": 40,
+        "below": null,
+        "frontierGap": -46.6,
+        "frontierPct": 20,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         },
         "frontier": {
           "label": "Claude Opus 5.5",
-          "value": 57.6
+          "value": 58.4
         }
       },
-      "codingPercentile": 47.1,
-      "agenticPercentile": 50,
-      "score": 56.6,
+      "codingPercentile": 49.4,
+      "agenticPercentile": 51.9,
+      "score": 49.6,
       "tags": [
         "标称百万上下文",
         "实际仅262K",
@@ -999,41 +959,33 @@
       "supportsTools": true,
       "totalParamsB": 30,
       "activeParamsB": 3,
-      "intelIndex": 10.3,
+      "intelIndex": null,
       "codingIndex": 13.8,
       "agenticIndex": null,
-      "tier": "Q4",
-      "tierText": "后 50%",
-      "tierBasis": "intelligence_index",
-      "tierBasisLabel": "智力",
-      "percentile": 24.1,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
       "benchRef": {
-        "value": 10.3,
-        "percentile": 24.1,
+        "value": null,
+        "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
-        "above": {
-          "label": "Gemini 2.5 Pro",
-          "value": 16.1,
-          "delta": -5.8
-        },
+        "sampleSize": 47,
+        "above": null,
         "below": null,
-        "frontierGap": -47.3,
-        "frontierPct": 18,
+        "frontierGap": null,
+        "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
-        },
-        "frontier": {
-          "label": "Claude Opus 5.5",
-          "value": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
-      "codingPercentile": 10.2,
+      "codingPercentile": 10.1,
       "agenticPercentile": null,
-      "score": 37.9,
+      "score": 31.3,
       "tags": [
         "标称长上下文",
         "图片输入",
@@ -1072,45 +1024,33 @@
       "supportsTools": true,
       "totalParamsB": 26,
       "activeParamsB": 4,
-      "intelIndex": 16.7,
+      "intelIndex": null,
       "codingIndex": 39.3,
       "agenticIndex": 2.9,
-      "tier": "Q4",
-      "tierText": "后 50%",
-      "tierBasis": "intelligence_index",
-      "tierBasisLabel": "智力",
-      "percentile": 41.5,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
       "benchRef": {
-        "value": 16.7,
-        "percentile": 41.5,
+        "value": null,
+        "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
-        "above": {
-          "label": "GPT-5 mini",
-          "value": 20.6,
-          "delta": -3.9
-        },
-        "below": {
-          "label": "Gemini 2.5 Pro",
-          "value": 16.1,
-          "delta": 0.6
-        },
-        "frontierGap": -40.9,
-        "frontierPct": 29,
+        "sampleSize": 47,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
-        },
-        "frontier": {
-          "label": "Claude Opus 5.5",
-          "value": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
-      "codingPercentile": 32.5,
-      "agenticPercentile": 21.7,
-      "score": 51.9,
+      "codingPercentile": 35.1,
+      "agenticPercentile": 23.3,
+      "score": 41.3,
       "tags": [
         "标称长上下文",
         "图片输入",
@@ -1171,41 +1111,33 @@
       "supportsTools": true,
       "totalParamsB": 31,
       "activeParamsB": null,
-      "intelIndex": 14.7,
+      "intelIndex": null,
       "codingIndex": 43.4,
       "agenticIndex": 4.2,
-      "tier": "Q4",
-      "tierText": "后 50%",
-      "tierBasis": "intelligence_index",
-      "tierBasisLabel": "智力",
-      "percentile": 37.2,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
       "benchRef": {
-        "value": 14.7,
-        "percentile": 37.2,
+        "value": null,
+        "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
-        "above": {
-          "label": "Gemini 2.5 Pro",
-          "value": 16.1,
-          "delta": -1.4
-        },
+        "sampleSize": 47,
+        "above": null,
         "below": null,
-        "frontierGap": -42.9,
-        "frontierPct": 26,
+        "frontierGap": null,
+        "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
-        },
-        "frontier": {
-          "label": "Claude Opus 5.5",
-          "value": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
-      "codingPercentile": 37.6,
-      "agenticPercentile": 26.7,
-      "score": 52.5,
+      "codingPercentile": 39.3,
+      "agenticPercentile": 27.8,
+      "score": 43.2,
       "tags": [
         "标称长上下文",
         "图片输入",
@@ -1275,16 +1207,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 282,
+        "sampleSize": 47,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 21.5,
-          "p75": 33.7,
-          "p90": 44.8,
-          "max": 57.6
+          "p50": 30.5,
+          "p75": 50.4,
+          "p90": 54.5,
+          "max": 58.4
         }
       },
       "codingPercentile": null,
