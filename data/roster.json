@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-28T09:30:02.661Z",
-  "checkedAt": "2026-10-28T15:43:02.2439690+08:00",
+  "generatedAt": "2026-10-28T09:43:11.712Z",
+  "checkedAt": "2026-10-28T17:43:02.1469075+08:00",
   "totalModels": 464,
   "freeCount": 17,
   "anchorsResolved": 6,
@@ -212,8 +212,8 @@
         "官方免费层"
       ],
       "upstreamCount": 9,
-      "uptime1d": 97.7,
-      "uptime30m": 98.15,
+      "uptime1d": 96.01,
+      "uptime30m": 100,
       "providers": [
         "BaseTen",
         "CoreWeave",
@@ -430,7 +430,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.86,
+      "uptime1d": 99.83,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -681,7 +681,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.15,
+      "uptime1d": 98.57,
       "uptime30m": 100,
       "providers": [
         "Together"
@@ -880,7 +880,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 98.26,
+      "uptime1d": 98.41,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -964,7 +964,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 88.52,
+      "uptime1d": 87.69,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1122,8 +1122,8 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 14,
-      "uptime1d": 99.23,
+      "upstreamCount": 15,
+      "uptime1d": 99.26,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -1132,6 +1132,7 @@
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
+        "Google",
         "Io Net",
         "Makora",
         "NextBit",
@@ -1217,10 +1218,11 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 14,
-      "uptime1d": 99.16,
-      "uptime30m": 99.76,
+      "upstreamCount": 15,
+      "uptime1d": 99.17,
+      "uptime30m": 100,
       "providers": [
+        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
