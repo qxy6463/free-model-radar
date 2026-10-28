@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-27T17:43:11.324Z",
-  "checkedAt": "2026-10-28T01:43:03.0323708+08:00",
-  "totalModels": 463,
+  "generatedAt": "2026-10-28T01:43:11.967Z",
+  "checkedAt": "2026-10-28T09:43:02.6216138+08:00",
+  "totalModels": 464,
   "freeCount": 17,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -212,8 +212,8 @@
         "官方免费层"
       ],
       "upstreamCount": 9,
-      "uptime1d": 99.04,
-      "uptime30m": 99.23,
+      "uptime1d": 97.7,
+      "uptime30m": 98.15,
       "providers": [
         "BaseTen",
         "CoreWeave",
@@ -430,7 +430,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.79,
+      "uptime1d": 99.86,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -591,7 +591,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.93,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "Poolside"
@@ -681,7 +681,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 98.85,
+      "uptime1d": 99.15,
       "uptime30m": 100,
       "providers": [
         "Together"
@@ -880,8 +880,8 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 97.73,
-      "uptime30m": null,
+      "uptime1d": 98.26,
+      "uptime30m": 100,
       "providers": [
         "DeepInfra"
       ],
@@ -964,8 +964,8 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 85.49,
-      "uptime30m": 97.73,
+      "uptime1d": 88.52,
+      "uptime30m": 100,
       "providers": [
         "BaseTen",
         "DeepInfra",
@@ -1123,7 +1123,7 @@
         "官方免费层"
       ],
       "upstreamCount": 14,
-      "uptime1d": 98.88,
+      "uptime1d": 99.23,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -1218,10 +1218,9 @@
         "官方免费层"
       ],
       "upstreamCount": 14,
-      "uptime1d": 99.68,
-      "uptime30m": 100,
+      "uptime1d": 99.16,
+      "uptime30m": 99.76,
       "providers": [
-        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
@@ -1231,6 +1230,7 @@
         "ModelRun",
         "Novita",
         "Parasail",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
