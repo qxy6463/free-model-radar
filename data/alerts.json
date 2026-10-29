@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T09:30:02.177Z",
+  "generatedAt": "2026-10-29T09:43:06.271Z",
   "items": [
     {
       "id": "20261027-174302|nvidia/nemotron-3-super-120b-a12b:free",
@@ -228,52 +228,6 @@
         "自带推理",
         "无可用上游",
         "官方免费层"
-      ]
-    },
-    {
-      "id": "20260929-155820|stealth/space-bunny-alpha",
-      "at": "2026-09-29T15:58:20.5512054+08:00",
-      "type": "new",
-      "modelId": "stealth/space-bunny-alpha",
-      "name": "Space Bunny Alpha",
-      "kindText": "匿名模型",
-      "score": 27.9,
-      "tier": "?",
-      "tierText": "无基准数据",
-      "contextText": "1M",
-      "nominalText": "1M",
-      "tags": [
-        "标称百万上下文",
-        "图片输入",
-        "音视频",
-        "工具调用",
-        "结构化输出",
-        "推理档位",
-        "可调推理档",
-        "单上游",
-        "匿名模型"
-      ]
-    },
-    {
-      "id": "20260929-155820|openrouter/free",
-      "at": "2026-09-29T15:58:20.5512054+08:00",
-      "type": "new",
-      "modelId": "openrouter/free",
-      "name": "Free Models Router",
-      "kindText": "官方路由",
-      "score": 23.1,
-      "tier": "?",
-      "tierText": "无基准数据",
-      "contextText": "200K",
-      "nominalText": "200K",
-      "tags": [
-        "标称长上下文",
-        "图片输入",
-        "工具调用",
-        "结构化输出",
-        "推理档位",
-        "单上游",
-        "官方路由"
       ]
     }
   ]
