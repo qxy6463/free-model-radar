@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-29T13:43:16.827Z",
-  "checkedAt": "2026-10-29T21:43:02.3695767+08:00",
-  "totalModels": 457,
+  "generatedAt": "2026-10-29T17:43:05.660Z",
+  "checkedAt": "2026-10-30T01:43:02.3822038+08:00",
+  "totalModels": 456,
   "freeCount": 17,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -398,8 +398,8 @@
           "max": 58.4
         }
       },
-      "codingPercentile": 24.4,
-      "agenticPercentile": 24.2,
+      "codingPercentile": 23.9,
+      "agenticPercentile": 23.7,
       "score": 29,
       "tags": [
         "标称百万上下文",
@@ -482,8 +482,8 @@
           "value": 58.4
         }
       },
-      "codingPercentile": 55.5,
-      "agenticPercentile": 58.3,
+      "codingPercentile": 55.2,
+      "agenticPercentile": 58,
       "score": 61.3,
       "tags": [
         "标称百万上下文",
@@ -634,8 +634,8 @@
           "value": 58.4
         }
       },
-      "codingPercentile": 53,
-      "agenticPercentile": 56.8,
+      "codingPercentile": 52.8,
+      "agenticPercentile": 56.5,
       "score": 60.5,
       "tags": [
         "标称百万上下文",
@@ -769,8 +769,8 @@
           "max": 58.4
         }
       },
-      "codingPercentile": 30.5,
-      "agenticPercentile": 12.1,
+      "codingPercentile": 30.1,
+      "agenticPercentile": 12.2,
       "score": 31.8,
       "tags": [
         "标称长上下文",
@@ -906,8 +906,8 @@
           "value": 58.4
         }
       },
-      "codingPercentile": 48.2,
-      "agenticPercentile": 51.5,
+      "codingPercentile": 47.9,
+      "agenticPercentile": 51.1,
       "score": 49.6,
       "tags": [
         "标称百万上下文",
@@ -1044,8 +1044,8 @@
           "max": 58.4
         }
       },
-      "codingPercentile": 34.1,
-      "agenticPercentile": 22.7,
+      "codingPercentile": 33.7,
+      "agenticPercentile": 22.1,
       "score": 41.3,
       "tags": [
         "标称长上下文",
@@ -1130,8 +1130,8 @@
           "max": 58.4
         }
       },
-      "codingPercentile": 37.8,
-      "agenticPercentile": 27.3,
+      "codingPercentile": 37.4,
+      "agenticPercentile": 26.7,
       "score": 43.2,
       "tags": [
         "标称长上下文",
