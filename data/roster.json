@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-31T09:43:10.493Z",
-  "checkedAt": "2026-10-31T17:43:02.3059560+08:00",
-  "totalModels": 456,
-  "freeCount": 17,
+  "generatedAt": "2026-10-31T13:43:09.272Z",
+  "checkedAt": "2026-10-31T21:43:02.2059679+08:00",
+  "totalModels": 452,
+  "freeCount": 15,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -522,72 +522,6 @@
       "modelCreatedAt": "2026-07-31"
     },
     {
-      "id": "poolside/laguna-s-2.1:free",
-      "name": "Poolside: Laguna S 2.1 (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "1.05M",
-      "nominalText": "262K",
-      "effectiveContext": 1048576,
-      "nominalContext": 262144,
-      "contextShrunk": false,
-      "maxOutputTokens": 32768,
-      "inputModalities": [
-        "text"
-      ],
-      "reasoningEfforts": [],
-      "supportsTools": true,
-      "totalParamsB": null,
-      "activeParamsB": null,
-      "intelIndex": null,
-      "codingIndex": null,
-      "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
-      "benchRef": {
-        "value": null,
-        "percentile": null,
-        "axis": "智力",
-        "sampleSize": 54,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
-        "dist": {
-          "p50": 28.5,
-          "p75": 49.7,
-          "p90": 54.5,
-          "max": 58.4
-        }
-      },
-      "codingPercentile": null,
-      "agenticPercentile": null,
-      "score": 19.9,
-      "tags": [
-        "标称长上下文",
-        "实际长上下文",
-        "工具调用",
-        "自带推理",
-        "编程向",
-        "单上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 1,
-      "uptime1d": 100,
-      "uptime30m": 100,
-      "providers": [
-        "Poolside"
-      ],
-      "quantizations": [
-        "fp4"
-      ],
-      "implicitCaching": true,
-      "modelCreatedAt": "2026-07-22"
-    },
-    {
       "id": "thinkingmachines/inkling:free",
       "name": "Thinking Machines: Inkling (free)",
       "kind": "free-tier",
@@ -673,72 +607,6 @@
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-07-18"
-    },
-    {
-      "id": "poolside/laguna-xs-2.1:free",
-      "name": "Poolside: Laguna XS 2.1 (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "262K",
-      "nominalText": "262K",
-      "effectiveContext": 262144,
-      "nominalContext": 262144,
-      "contextShrunk": false,
-      "maxOutputTokens": 32768,
-      "inputModalities": [
-        "text"
-      ],
-      "reasoningEfforts": [],
-      "supportsTools": true,
-      "totalParamsB": null,
-      "activeParamsB": null,
-      "intelIndex": null,
-      "codingIndex": null,
-      "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
-      "benchRef": {
-        "value": null,
-        "percentile": null,
-        "axis": "智力",
-        "sampleSize": 54,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
-        "dist": {
-          "p50": 28.5,
-          "p75": 49.7,
-          "p90": 54.5,
-          "max": 58.4
-        }
-      },
-      "codingPercentile": null,
-      "agenticPercentile": null,
-      "score": 18.4,
-      "tags": [
-        "标称长上下文",
-        "实际长上下文",
-        "工具调用",
-        "自带推理",
-        "编程向",
-        "单上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 1,
-      "uptime1d": 100,
-      "uptime30m": 100,
-      "providers": [
-        "Poolside"
-      ],
-      "quantizations": [
-        "fp8"
-      ],
-      "implicitCaching": true,
-      "modelCreatedAt": "2026-07-02"
     },
     {
       "id": "cohere/north-mini-code:free",
