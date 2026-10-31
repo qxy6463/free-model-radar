@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T17:43:09.691Z",
+  "generatedAt": "2026-10-31T19:43:05.429Z",
   "items": [
     {
       "id": "20261031-214302|poolside/laguna-s-2.1:free",
@@ -235,27 +235,6 @@
         "自带推理",
         "单上游",
         "零价模型"
-      ]
-    },
-    {
-      "id": "20261002-014305|apodex/apodex-1.1-mini:free",
-      "at": "2026-10-02T01:43:05.4696929+08:00",
-      "type": "new",
-      "modelId": "apodex/apodex-1.1-mini:free",
-      "name": "Apodex: Apodex 1.1 Mini (free)",
-      "kindText": "官方免费层",
-      "score": 18.4,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "contextText": "262K",
-      "nominalText": "262K",
-      "tags": [
-        "标称长上下文",
-        "工具调用",
-        "结构化输出",
-        "自带推理",
-        "无可用上游",
-        "官方免费层"
       ]
     }
   ]
