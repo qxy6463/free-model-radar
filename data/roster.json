@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-31T19:43:05.429Z",
-  "checkedAt": "2026-11-01T03:43:02.2674605+08:00",
+  "generatedAt": "2026-10-31T23:43:09.102Z",
+  "checkedAt": "2026-11-01T07:43:02.5185105+08:00",
   "totalModels": 452,
   "freeCount": 15,
   "anchorsResolved": 6,
@@ -208,7 +208,7 @@
         "官方免费层"
       ],
       "upstreamCount": 9,
-      "uptime1d": 98.91,
+      "uptime1d": 98.64,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -418,7 +418,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 98.9,
+      "uptime1d": 99.18,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -592,12 +592,11 @@
         "推理档位",
         "可调推理档",
         "编程向",
-        "可用性偏低",
         "单上游",
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 94.15,
+      "uptime1d": 98.49,
       "uptime30m": 100,
       "providers": [
         "Together"
@@ -801,7 +800,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 100,
+      "uptime1d": 99.96,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -940,8 +939,8 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 99.69,
-      "uptime30m": 99.19,
+      "uptime1d": 99.73,
+      "uptime30m": 100,
       "providers": [
         "AkashML",
         "Cloudflare",
@@ -1028,10 +1027,9 @@
         "官方免费层"
       ],
       "upstreamCount": 14,
-      "uptime1d": 99.17,
-      "uptime30m": 100,
+      "uptime1d": 98.81,
+      "uptime30m": 99.38,
       "providers": [
-        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
@@ -1039,6 +1037,7 @@
         "Friendli",
         "Io Net",
         "ModelRun",
+        "Novita",
         "Parasail",
         "SiliconFlow",
         "Venice"
