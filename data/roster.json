@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-31T13:43:09.272Z",
-  "checkedAt": "2026-10-31T21:43:02.2059679+08:00",
+  "generatedAt": "2026-10-31T17:43:09.691Z",
+  "checkedAt": "2026-11-01T01:43:02.2658933+08:00",
   "totalModels": 452,
   "freeCount": 15,
   "anchorsResolved": 6,
@@ -207,8 +207,8 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 99.45,
+      "upstreamCount": 9,
+      "uptime1d": 98.91,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -217,7 +217,6 @@
         "Darkbloom",
         "DeepInfra",
         "Io Net",
-        "Nebius",
         "PrimeIntellect",
         "Together",
         "Venice"
@@ -418,13 +417,14 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 4,
-      "uptime1d": 99.77,
+      "upstreamCount": 5,
+      "uptime1d": 98.9,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
+        "Fireworks",
         "Io Net"
       ],
       "quantizations": [
@@ -597,7 +597,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 94.42,
+      "uptime1d": 94.15,
       "uptime30m": 100,
       "providers": [
         "Together"
@@ -940,8 +940,8 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 98.85,
-      "uptime30m": 100,
+      "uptime1d": 99.69,
+      "uptime30m": 99.19,
       "providers": [
         "AkashML",
         "Cloudflare",
@@ -1027,18 +1027,24 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 8,
-      "uptime1d": 99.89,
-      "uptime30m": 98.47,
+      "upstreamCount": 14,
+      "uptime1d": 99.17,
+      "uptime30m": 100,
       "providers": [
+        "Chutes",
         "CoreWeave",
+        "Crusoe",
         "DeepInfra",
+        "DekaLLM",
         "Friendli",
+        "Io Net",
         "ModelRun",
         "Parasail",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
+        "bf16",
         "fp4",
         "fp8",
         "unknown"
