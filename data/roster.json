@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-02T09:30:02.526Z",
-  "checkedAt": "2026-11-02T15:43:01.9747724+08:00",
-  "totalModels": 452,
+  "generatedAt": "2026-11-02T13:43:18.110Z",
+  "checkedAt": "2026-11-02T21:43:02.0642122+08:00",
+  "totalModels": 450,
   "freeCount": 15,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -207,23 +207,21 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 7,
-      "uptime1d": 99.64,
-      "uptime30m": 100,
+      "upstreamCount": 6,
+      "uptime1d": 99.56,
+      "uptime30m": 97.4,
       "providers": [
         "BaseTen",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
         "PrimeIntellect",
-        "Together",
         "Venice"
       ],
       "quantizations": [
         "bf16",
         "fp4",
-        "nvfp4",
-        "unknown"
+        "nvfp4"
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-10-15"
@@ -416,7 +414,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.49,
+      "uptime1d": 99.65,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -524,11 +522,11 @@
       "name": "Thinking Machines: Inkling (free)",
       "kind": "free-tier",
       "kindText": "官方免费层",
-      "contextText": "1.05M",
+      "contextText": "524K",
       "nominalText": "1.05M",
-      "effectiveContext": 1048576,
+      "effectiveContext": 524288,
       "nominalContext": 1048576,
-      "contextShrunk": false,
+      "contextShrunk": true,
       "maxOutputTokens": 262144,
       "inputModalities": [
         "text",
@@ -580,24 +578,29 @@
       },
       "codingPercentile": 52.8,
       "agenticPercentile": 56.5,
-      "score": 61.2,
+      "score": 60.5,
       "tags": [
         "标称百万上下文",
         "图片输入",
         "音视频",
+        "实际仅524K",
         "工具调用",
         "推理档位",
         "可调推理档",
         "编程向",
-        "无可用上游",
+        "单上游",
         "官方免费层"
       ],
-      "upstreamCount": 0,
-      "uptime1d": null,
-      "uptime30m": null,
-      "providers": [],
-      "quantizations": [],
-      "implicitCaching": false,
+      "upstreamCount": 1,
+      "uptime1d": 95.14,
+      "uptime30m": 100,
+      "providers": [
+        "Together"
+      ],
+      "quantizations": [
+        "unknown"
+      ],
+      "implicitCaching": true,
       "modelCreatedAt": "2026-07-18"
     },
     {
@@ -715,7 +718,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": null,
+      "uptime30m": 100,
       "providers": [
         "DeepInfra"
       ],
@@ -793,7 +796,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.97,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -931,9 +934,9 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 14,
-      "uptime1d": 99.85,
-      "uptime30m": 100,
+      "upstreamCount": 15,
+      "uptime1d": 99.31,
+      "uptime30m": 99.56,
       "providers": [
         "AkashML",
         "Cloudflare",
@@ -948,6 +951,7 @@
         "Novita",
         "Parasail",
         "PrimeIntellect",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
@@ -1019,8 +1023,8 @@
         "官方免费层"
       ],
       "upstreamCount": 16,
-      "uptime1d": 98.94,
-      "uptime30m": 99.78,
+      "uptime1d": 99.14,
+      "uptime30m": 100,
       "providers": [
         "Chutes",
         "CoreWeave",
