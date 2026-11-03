@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-03T01:43:09.711Z",
-  "checkedAt": "2026-11-03T09:43:02.1217138+08:00",
+  "generatedAt": "2026-11-03T03:43:11.212Z",
+  "checkedAt": "2026-11-03T11:43:02.3566890+08:00",
   "totalModels": 451,
   "freeCount": 15,
   "anchorsResolved": 6,
@@ -205,11 +205,12 @@
         "工具调用",
         "结构化输出",
         "自带推理",
+        "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 95.07,
-      "uptime30m": 98.78,
+      "upstreamCount": 9,
+      "uptime1d": 94.9,
+      "uptime30m": 100,
       "providers": [
         "BaseTen",
         "CoreWeave",
@@ -217,7 +218,6 @@
         "Darkbloom",
         "DeepInfra",
         "Io Net",
-        "Nebius",
         "PrimeIntellect",
         "Together",
         "Venice"
@@ -418,13 +418,14 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 4,
-      "uptime1d": 99.68,
+      "upstreamCount": 5,
+      "uptime1d": 98.88,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
+        "Fireworks",
         "Io Net"
       ],
       "quantizations": [
@@ -592,11 +593,12 @@
         "推理档位",
         "可调推理档",
         "编程向",
+        "可用性偏低",
         "单上游",
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 96.58,
+      "uptime1d": 92.81,
       "uptime30m": 100,
       "providers": [
         "Together"
@@ -800,7 +802,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.88,
+      "uptime1d": 99.76,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -938,8 +940,8 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 14,
-      "uptime1d": 99.32,
+      "upstreamCount": 15,
+      "uptime1d": 99.51,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -948,6 +950,7 @@
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
+        "Google",
         "Io Net",
         "Makora",
         "NextBit",
@@ -1025,9 +1028,9 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 16,
-      "uptime1d": 99.74,
-      "uptime30m": 99.52,
+      "upstreamCount": 17,
+      "uptime1d": 98.52,
+      "uptime30m": 100,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -1038,6 +1041,7 @@
         "Io Net",
         "ModelRun",
         "NextBit",
+        "Novita",
         "Parasail",
         "PrimeIntellect",
         "SiliconFlow",
