@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-04T00:05:30.244Z",
-  "checkedAt": "2026-11-04T08:05:11.0249277+08:00",
+  "generatedAt": "2026-11-04T01:43:17.556Z",
+  "checkedAt": "2026-11-04T09:43:05.8536306+08:00",
   "totalModels": 454,
   "freeCount": 16,
   "anchorsResolved": 6,
@@ -282,14 +282,13 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 9,
-      "uptime1d": 97.68,
+      "upstreamCount": 8,
+      "uptime1d": 99.61,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
         "CoreWeave",
         "Crusoe",
-        "Darkbloom",
         "DeepInfra",
         "Io Net",
         "PrimeIntellect",
@@ -422,7 +421,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": null,
+      "uptime30m": 100,
       "providers": [
         "Liquid"
       ],
@@ -493,7 +492,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.42,
+      "uptime1d": 99.82,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -585,7 +584,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.87,
+      "uptime1d": 99.85,
       "uptime30m": 100,
       "providers": [
         "DeepInfra"
@@ -672,7 +671,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 58.86,
+      "uptime1d": 55.67,
       "uptime30m": 100,
       "providers": [
         "Together"
@@ -798,7 +797,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": null,
+      "uptime30m": 100,
       "providers": [
         "DeepInfra"
       ],
@@ -875,17 +874,15 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 5,
-      "uptime1d": 99.89,
+      "upstreamCount": 4,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
-        "DeepInfra",
-        "Venice"
+        "DeepInfra"
       ],
       "quantizations": [
-        "fp4",
-        "fp8"
+        "fp4"
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-06-04"
@@ -1015,7 +1012,7 @@
         "官方免费层"
       ],
       "upstreamCount": 14,
-      "uptime1d": 99.84,
+      "uptime1d": 99.83,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -1102,8 +1099,8 @@
         "官方免费层"
       ],
       "upstreamCount": 16,
-      "uptime1d": 99.48,
-      "uptime30m": 99.78,
+      "uptime1d": 99.25,
+      "uptime30m": 99.76,
       "providers": [
         "Chutes",
         "CoreWeave",
