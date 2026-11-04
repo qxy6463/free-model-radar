@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-04T01:43:17.556Z",
-  "checkedAt": "2026-11-04T09:43:05.8536306+08:00",
-  "totalModels": 454,
+  "generatedAt": "2026-11-04T07:43:20.796Z",
+  "checkedAt": "2026-11-04T15:43:05.7454856+08:00",
+  "totalModels": 455,
   "freeCount": 16,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -80,18 +80,23 @@
         "标称百万上下文",
         "图片输入",
         "音视频",
+        "实际长上下文",
         "工具调用",
         "结构化输出",
         "推理档位",
         "可调推理档",
-        "无可用上游",
+        "单上游",
         "匿名模型"
       ],
-      "upstreamCount": 0,
-      "uptime1d": null,
-      "uptime30m": null,
-      "providers": [],
-      "quantizations": [],
+      "upstreamCount": 1,
+      "uptime1d": 96.51,
+      "uptime30m": 100,
+      "providers": [
+        "Stealth"
+      ],
+      "quantizations": [
+        "unknown"
+      ],
       "implicitCaching": false,
       "modelCreatedAt": "2026-11-03"
     },
