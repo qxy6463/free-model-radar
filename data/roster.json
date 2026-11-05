@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-05T00:14:06.666Z",
-  "checkedAt": "2026-11-05T08:13:56.7533762+08:00",
-  "totalModels": 454,
+  "generatedAt": "2026-11-05T07:43:19.821Z",
+  "checkedAt": "2026-11-05T15:43:04.5788920+08:00",
+  "totalModels": 455,
   "freeCount": 14,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -89,7 +89,7 @@
         "匿名模型"
       ],
       "upstreamCount": 1,
-      "uptime1d": 97.57,
+      "uptime1d": 97.64,
       "uptime30m": 100,
       "providers": [
         "Stealth"
@@ -287,15 +287,17 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 7,
-      "uptime1d": 99.44,
+      "upstreamCount": 9,
+      "uptime1d": 95.25,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
         "CoreWeave",
         "Crusoe",
+        "Darkbloom",
+        "DeepInfra",
         "Io Net",
-        "PrimeIntellect",
+        "Nebius",
         "Together",
         "Venice"
       ],
@@ -485,8 +487,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 24.2,
-      "agenticPercentile": 24,
+      "codingPercentile": 24.7,
+      "agenticPercentile": 23.8,
       "score": 32.5,
       "tags": [
         "标称百万上下文",
@@ -496,7 +498,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.33,
+      "uptime1d": 99.24,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -555,8 +557,8 @@
           "max": 59.1
         }
       },
-      "codingPercentile": 30.4,
-      "agenticPercentile": 12.4,
+      "codingPercentile": 30.9,
+      "agenticPercentile": 12.3,
       "score": 31.8,
       "tags": [
         "标称长上下文",
@@ -692,8 +694,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 48.4,
-      "agenticPercentile": 51.9,
+      "codingPercentile": 48.8,
+      "agenticPercentile": 52.3,
       "score": 49.6,
       "tags": [
         "标称百万上下文",
@@ -706,7 +708,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.78,
+      "uptime1d": 99.84,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -765,7 +767,7 @@
           "max": 59.1
         }
       },
-      "codingPercentile": 10.6,
+      "codingPercentile": 10.5,
       "agenticPercentile": null,
       "score": 31.3,
       "tags": [
@@ -830,8 +832,8 @@
           "max": 59.1
         }
       },
-      "codingPercentile": 34.2,
-      "agenticPercentile": 22.5,
+      "codingPercentile": 34.6,
+      "agenticPercentile": 22.3,
       "score": 41.3,
       "tags": [
         "标称长上下文",
@@ -844,9 +846,9 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 15,
-      "uptime1d": 99.4,
-      "uptime30m": 99.56,
+      "upstreamCount": 14,
+      "uptime1d": 99.48,
+      "uptime30m": 100,
       "providers": [
         "AkashML",
         "Cloudflare",
@@ -858,7 +860,6 @@
         "Io Net",
         "Makora",
         "NextBit",
-        "Novita",
         "Parasail",
         "PrimeIntellect",
         "SiliconFlow",
@@ -917,8 +918,8 @@
           "max": 59.1
         }
       },
-      "codingPercentile": 37.9,
-      "agenticPercentile": 27.1,
+      "codingPercentile": 38.3,
+      "agenticPercentile": 26.9,
       "score": 43.2,
       "tags": [
         "标称长上下文",
@@ -933,7 +934,7 @@
         "官方免费层"
       ],
       "upstreamCount": 16,
-      "uptime1d": 99.35,
+      "uptime1d": 99.74,
       "uptime30m": 100,
       "providers": [
         "Chutes",
@@ -945,8 +946,8 @@
         "Modal",
         "ModelRun",
         "NextBit",
-        "Novita",
         "Parasail",
+        "PrimeIntellect",
         "SiliconFlow",
         "Venice"
       ],
