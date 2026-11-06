@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-11-06T09:30:03.864Z",
+  "generatedAt": "2026-11-06T09:43:09.048Z",
   "items": [
+    {
+      "at": "2026-11-06T17:43:07.9803699+08:00",
+      "type": "removed",
+      "modelId": "nvidia/nemotron-3.5-content-safety:free"
+    },
     {
       "at": "2026-11-05T08:14:03.8673698+08:00",
       "type": "removed",

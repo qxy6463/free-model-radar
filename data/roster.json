@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-06T09:30:03.864Z",
-  "checkedAt": "2026-11-06T15:43:04.9301209+08:00",
-  "totalModels": 454,
-  "freeCount": 14,
+  "generatedAt": "2026-11-06T09:43:09.048Z",
+  "checkedAt": "2026-11-06T17:43:04.8435432+08:00",
+  "totalModels": 453,
+  "freeCount": 13,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -575,70 +575,6 @@
       "quantizations": [],
       "implicitCaching": false,
       "modelCreatedAt": "2026-06-18"
-    },
-    {
-      "id": "nvidia/nemotron-3.5-content-safety:free",
-      "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "131K",
-      "nominalText": "128K",
-      "effectiveContext": 131072,
-      "nominalContext": 128000,
-      "contextShrunk": false,
-      "maxOutputTokens": 8192,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "reasoningEfforts": [],
-      "supportsTools": false,
-      "totalParamsB": null,
-      "activeParamsB": null,
-      "intelIndex": null,
-      "codingIndex": null,
-      "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
-      "benchRef": {
-        "value": null,
-        "percentile": null,
-        "axis": "智力",
-        "sampleSize": 77,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
-        "dist": {
-          "p50": 28.5,
-          "p75": 43.6,
-          "p90": 54.5,
-          "max": 59.1
-        }
-      },
-      "codingPercentile": null,
-      "agenticPercentile": null,
-      "score": 17.7,
-      "tags": [
-        "图片输入",
-        "自带推理",
-        "单上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 1,
-      "uptime1d": 100,
-      "uptime30m": null,
-      "providers": [
-        "DeepInfra"
-      ],
-      "quantizations": [
-        "bf16"
-      ],
-      "implicitCaching": false,
-      "modelCreatedAt": "2026-06-04"
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
