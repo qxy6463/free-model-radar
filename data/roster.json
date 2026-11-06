@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-06T13:43:11.473Z",
-  "checkedAt": "2026-11-06T21:43:04.8051864+08:00",
+  "generatedAt": "2026-11-06T15:43:16.440Z",
+  "checkedAt": "2026-11-06T23:43:03.8176908+08:00",
   "totalModels": 453,
   "freeCount": 13,
   "anchorsResolved": 6,
@@ -89,7 +89,7 @@
         "匿名模型"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.72,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "Stealth"
@@ -287,9 +287,9 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 9,
-      "uptime1d": 96.24,
-      "uptime30m": 99.17,
+      "upstreamCount": 8,
+      "uptime1d": 99.52,
+      "uptime30m": 99.52,
       "providers": [
         "BaseTen",
         "CoreWeave",
@@ -297,7 +297,6 @@
         "Darkbloom",
         "DeepInfra",
         "Io Net",
-        "Nebius",
         "Together",
         "Venice"
       ],
@@ -426,7 +425,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 100,
+      "uptime1d": null,
       "uptime30m": null,
       "providers": [
         "Liquid"
@@ -497,14 +496,13 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 5,
-      "uptime1d": 99.52,
+      "upstreamCount": 4,
+      "uptime1d": 99.93,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
-        "Fireworks",
         "Io Net"
       ],
       "quantizations": [
@@ -652,7 +650,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.79,
+      "uptime1d": 99.75,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -788,24 +786,20 @@
         "结构化输出",
         "自带推理",
         "编程向",
-        "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 15,
-      "uptime1d": 93.66,
+      "upstreamCount": 12,
+      "uptime1d": 99.71,
       "uptime30m": 100,
       "providers": [
         "AkashML",
         "Cloudflare",
-        "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
-        "Google",
         "Io Net",
         "Makora",
         "NextBit",
-        "Novita",
         "Parasail",
         "PrimeIntellect",
         "SiliconFlow",
@@ -887,23 +881,22 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 18,
-      "uptime1d": 96.8,
-      "uptime30m": 94.12,
+      "upstreamCount": 17,
+      "uptime1d": 98,
+      "uptime30m": 100,
       "providers": [
         "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
+        "DekaLLM",
         "Friendli",
-        "Io Net",
         "Modal",
         "ModelRun",
         "NextBit",
         "Novita",
         "Parasail",
         "PrimeIntellect",
-        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
