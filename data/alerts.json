@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-07T00:25:01.288Z",
+  "generatedAt": "2026-11-07T01:43:20.992Z",
   "items": [
+    {
+      "id": "20261107-094303|liquid/lfm-3-1.7b:free",
+      "at": "2026-11-07T09:43:03.8199097+08:00",
+      "type": "new",
+      "modelId": "liquid/lfm-3-1.7b:free",
+      "name": "LiquidAI: LFM3-1.7B (free)",
+      "kindText": "官方免费层",
+      "score": 18.4,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "contextText": "262K",
+      "nominalText": "262K",
+      "tags": [
+        "标称长上下文",
+        "实际长上下文",
+        "工具调用",
+        "结构化输出",
+        "自带推理",
+        "单上游",
+        "官方免费层"
+      ]
+    },
     {
       "id": "20261106-174304|nvidia/nemotron-3.5-content-safety:free",
       "at": "2026-11-06T17:43:04.8435432+08:00",
