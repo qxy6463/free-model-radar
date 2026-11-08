@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-08T03:43:10.442Z",
-  "checkedAt": "2026-11-08T11:43:04.2622193+08:00",
-  "totalModels": 464,
+  "generatedAt": "2026-11-08T05:43:07.551Z",
+  "checkedAt": "2026-11-08T13:43:04.2351529+08:00",
+  "totalModels": 461,
   "freeCount": 14,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -555,8 +555,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 23.8,
-      "agenticPercentile": 22.8,
+      "codingPercentile": 24,
+      "agenticPercentile": 22.2,
       "score": 32.5,
       "tags": [
         "标称百万上下文",
@@ -633,8 +633,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 29.8,
-      "agenticPercentile": 11.8,
+      "codingPercentile": 29.3,
+      "agenticPercentile": 11.9,
       "score": 33.9,
       "tags": [
         "标称长上下文",
@@ -706,8 +706,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 47.6,
-      "agenticPercentile": 50.7,
+      "codingPercentile": 47.3,
+      "agenticPercentile": 50.4,
       "score": 49.6,
       "tags": [
         "标称百万上下文",
@@ -779,7 +779,7 @@
           "max": 59.1
         }
       },
-      "codingPercentile": 10.1,
+      "codingPercentile": 10.2,
       "agenticPercentile": null,
       "score": 31.3,
       "tags": [
@@ -844,8 +844,8 @@
           "max": 59.1
         }
       },
-      "codingPercentile": 33.3,
-      "agenticPercentile": 21.3,
+      "codingPercentile": 32.9,
+      "agenticPercentile": 20.7,
       "score": 41.3,
       "tags": [
         "标称长上下文",
@@ -939,8 +939,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 36.9,
-      "agenticPercentile": 25.7,
+      "codingPercentile": 36.5,
+      "agenticPercentile": 25.2,
       "score": 46,
       "tags": [
         "标称长上下文",
