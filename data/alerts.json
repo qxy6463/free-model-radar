@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T01:43:20.992Z",
+  "generatedAt": "2026-11-08T03:43:10.442Z",
   "items": [
     {
       "id": "20261107-094303|liquid/lfm-3-1.7b:free",
@@ -254,20 +254,6 @@
       "type": "removed",
       "modelId": "inclusionai/ling-3.1-flash",
       "name": "inclusionai/ling-3.1-flash",
-      "kindText": "",
-      "score": 0,
-      "tier": "",
-      "tierText": "",
-      "contextText": "",
-      "nominalText": "",
-      "tags": []
-    },
-    {
-      "id": "20261009-014309|inclusionai/ling-3.0-flash-sante:free",
-      "at": "2026-10-09T01:43:09.7213451+08:00",
-      "type": "removed",
-      "modelId": "inclusionai/ling-3.0-flash-sante:free",
-      "name": "inclusionai/ling-3.0-flash-sante:free",
       "kindText": "",
       "score": 0,
       "tier": "",
