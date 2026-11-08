@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-08T09:30:02.698Z",
-  "checkedAt": "2026-11-08T15:43:06.8579592+08:00",
+  "generatedAt": "2026-11-08T11:43:08.417Z",
+  "checkedAt": "2026-11-08T19:43:04.0945773+08:00",
   "totalModels": 461,
   "freeCount": 14,
   "anchorsResolved": 6,
@@ -156,7 +156,7 @@
         "匿名模型"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.1,
+      "uptime1d": 98.06,
       "uptime30m": 100,
       "providers": [
         "Stealth"
@@ -354,13 +354,12 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 98.2,
-      "uptime30m": 99.63,
+      "upstreamCount": 9,
+      "uptime1d": 97.8,
+      "uptime30m": 100,
       "providers": [
         "BaseTen",
         "CoreWeave",
-        "Crusoe",
         "Darkbloom",
         "DeepInfra",
         "Io Net",
@@ -720,7 +719,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.98,
+      "uptime1d": 99.96,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
