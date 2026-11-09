@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-08T19:43:08.590Z",
-  "checkedAt": "2026-11-09T03:43:04.0740907+08:00",
+  "generatedAt": "2026-11-09T01:43:08.337Z",
+  "checkedAt": "2026-11-09T09:43:04.1285213+08:00",
   "totalModels": 461,
   "freeCount": 14,
   "anchorsResolved": 6,
@@ -71,12 +71,11 @@
         "工具调用",
         "结构化输出",
         "自带推理",
-        "可用性偏低",
         "单上游",
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 83.48,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "Liquid"
@@ -156,7 +155,7 @@
         "匿名模型"
       ],
       "upstreamCount": 1,
-      "uptime1d": 97.22,
+      "uptime1d": 98.12,
       "uptime30m": 100,
       "providers": [
         "Stealth"
@@ -354,12 +353,13 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 9,
-      "uptime1d": 97.96,
-      "uptime30m": 100,
+      "upstreamCount": 10,
+      "uptime1d": 96.13,
+      "uptime30m": 99.26,
       "providers": [
         "BaseTen",
         "CoreWeave",
+        "Crusoe",
         "Darkbloom",
         "DeepInfra",
         "Io Net",
@@ -565,7 +565,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.96,
+      "uptime1d": 99.98,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -719,7 +719,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.96,
+      "uptime1d": 99.9,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -858,7 +858,7 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 99.8,
+      "uptime1d": 99.91,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -954,8 +954,8 @@
         "官方免费层"
       ],
       "upstreamCount": 18,
-      "uptime1d": 98.37,
-      "uptime30m": 100,
+      "uptime1d": 98.59,
+      "uptime30m": 98.76,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -963,7 +963,7 @@
         "DeepInfra",
         "DekaLLM",
         "Friendli",
-        "Io Net",
+        "Modal",
         "ModelRun",
         "NextBit",
         "Novita",
