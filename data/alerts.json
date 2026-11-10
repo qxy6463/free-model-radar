@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-11-09T01:43:08.337Z",
+  "generatedAt": "2026-11-10T05:43:33.293Z",
   "items": [
+    {
+      "id": "20261110-134304|thinkingmachines/inkling-2-small:free",
+      "at": "2026-11-10T13:43:04.5416127+08:00",
+      "type": "new",
+      "modelId": "thinkingmachines/inkling-2-small:free",
+      "name": "Thinking Machines: Inkling 2 Small (free)",
+      "kindText": "官方免费层",
+      "score": 44.4,
+      "tier": "Q3",
+      "tierText": "前 50%",
+      "contextText": "1.05M",
+      "nominalText": "1.05M",
+      "tags": [
+        "标称百万上下文",
+        "图片输入",
+        "工具调用",
+        "推理档位",
+        "可调推理档",
+        "无可用上游",
+        "官方免费层"
+      ]
+    },
+    {
+      "id": "20261110-134304|stealth/crouton-alpha",
+      "at": "2026-11-10T13:43:04.5416127+08:00",
+      "type": "removed",
+      "modelId": "stealth/crouton-alpha",
+      "name": "stealth/crouton-alpha",
+      "kindText": "",
+      "score": 0,
+      "tier": "",
+      "tierText": "",
+      "contextText": "",
+      "nominalText": "",
+      "tags": []
+    },
     {
       "id": "20261107-094303|liquid/lfm-3-1.7b:free",
       "at": "2026-11-07T09:43:03.8199097+08:00",
