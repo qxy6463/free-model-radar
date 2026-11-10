@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-10T09:30:03.119Z",
-  "checkedAt": "2026-11-10T15:43:04.4027591+08:00",
+  "generatedAt": "2026-11-10T13:43:18.297Z",
+  "checkedAt": "2026-11-10T21:43:04.3842901+08:00",
   "totalModels": 465,
   "freeCount": 14,
   "anchorsResolved": 6,
@@ -152,8 +152,8 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.83,
-      "uptime30m": 91.3,
+      "uptime1d": 99.81,
+      "uptime30m": 100,
       "providers": [
         "Liquid"
       ],
@@ -351,8 +351,8 @@
         "官方免费层"
       ],
       "upstreamCount": 10,
-      "uptime1d": 99.51,
-      "uptime30m": 100,
+      "uptime1d": 99.59,
+      "uptime30m": 99.63,
       "providers": [
         "BaseTen",
         "CoreWeave",
@@ -562,16 +562,17 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.4,
+      "uptime1d": 98.98,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
+        "Darkbloom",
         "DeepInfra",
-        "Fireworks",
-        "Io Net"
+        "Fireworks"
       ],
       "quantizations": [
         "bf16",
+        "int4",
         "unknown"
       ],
       "implicitCaching": true,
@@ -714,7 +715,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.92,
+      "uptime1d": 99.93,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -852,17 +853,15 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 15,
-      "uptime1d": 98.45,
-      "uptime30m": 93.33,
+      "upstreamCount": 13,
+      "uptime1d": 99.18,
+      "uptime30m": 100,
       "providers": [
         "AkashML",
         "Cloudflare",
-        "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
-        "Google",
         "Io Net",
         "Makora",
         "NextBit",
@@ -949,8 +948,8 @@
         "官方免费层"
       ],
       "upstreamCount": 18,
-      "uptime1d": 99.28,
-      "uptime30m": 100,
+      "uptime1d": 98.66,
+      "uptime30m": 99.3,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -962,9 +961,9 @@
         "Modal",
         "ModelRun",
         "NextBit",
+        "Novita",
         "Parasail",
         "PrimeIntellect",
-        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
