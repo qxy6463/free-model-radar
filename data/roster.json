@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-10T13:43:18.297Z",
-  "checkedAt": "2026-11-10T21:43:04.3842901+08:00",
-  "totalModels": 465,
-  "freeCount": 14,
+  "generatedAt": "2026-11-11T01:43:11.360Z",
+  "checkedAt": "2026-11-11T09:43:04.0629799+08:00",
+  "totalModels": 469,
+  "freeCount": 13,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -52,12 +52,12 @@
       "tierText": "前 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 57.3,
+      "percentile": 56,
       "benchRef": {
         "value": 30.6,
-        "percentile": 57.3,
+        "percentile": 56,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -67,9 +67,9 @@
         "frontierGap": -28.5,
         "frontierPct": 52,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         },
         "frontier": {
@@ -127,15 +127,15 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         }
       },
@@ -152,7 +152,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.81,
+      "uptime1d": 99.79,
       "uptime30m": 100,
       "providers": [
         "Liquid"
@@ -193,15 +193,15 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         }
       },
@@ -223,67 +223,6 @@
       "quantizations": [],
       "implicitCaching": false,
       "modelCreatedAt": "2026-10-22"
-    },
-    {
-      "id": "xingchen-agi/xing4.0-29b-a4b:free",
-      "name": "XingChen: Xing4.0 29B A4B (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "262K",
-      "nominalText": "262K",
-      "effectiveContext": 262144,
-      "nominalContext": 262144,
-      "contextShrunk": false,
-      "maxOutputTokens": 235929,
-      "inputModalities": [
-        "text"
-      ],
-      "reasoningEfforts": [],
-      "supportsTools": true,
-      "totalParamsB": 29,
-      "activeParamsB": 4,
-      "intelIndex": null,
-      "codingIndex": null,
-      "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
-      "benchRef": {
-        "value": null,
-        "percentile": null,
-        "axis": "智力",
-        "sampleSize": 89,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
-        "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
-          "max": 64.6
-        }
-      },
-      "codingPercentile": null,
-      "agenticPercentile": null,
-      "score": 18.4,
-      "tags": [
-        "标称长上下文",
-        "工具调用",
-        "结构化输出",
-        "自带推理",
-        "无可用上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 0,
-      "uptime1d": null,
-      "uptime30m": null,
-      "providers": [],
-      "quantizations": [],
-      "implicitCaching": false,
-      "modelCreatedAt": "2026-10-17"
     },
     {
       "id": "nvidia/nemotron-3.5-super-vl:free",
@@ -312,12 +251,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 30.3,
+      "percentile": 29.7,
       "benchRef": {
         "value": 13.6,
-        "percentile": 30.3,
+        "percentile": 29.7,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -327,9 +266,9 @@
         "frontierGap": -45.5,
         "frontierPct": 23,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         },
         "frontier": {
@@ -350,9 +289,9 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 10,
+      "upstreamCount": 9,
       "uptime1d": 99.59,
-      "uptime30m": 99.63,
+      "uptime30m": 99.58,
       "providers": [
         "BaseTen",
         "CoreWeave",
@@ -362,14 +301,12 @@
         "Io Net",
         "Nebius",
         "PrimeIntellect",
-        "Together",
         "Venice"
       ],
       "quantizations": [
         "bf16",
         "fp4",
-        "nvfp4",
-        "unknown"
+        "nvfp4"
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-10-15"
@@ -405,15 +342,15 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         }
       },
@@ -467,15 +404,15 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         }
       },
@@ -526,12 +463,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 12.4,
+      "percentile": 12.1,
       "benchRef": {
         "value": 5.5,
-        "percentile": 12.4,
+        "percentile": 12.1,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -541,9 +478,9 @@
         "frontierGap": -53.6,
         "frontierPct": 9,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         },
         "frontier": {
@@ -551,8 +488,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 23.8,
-      "agenticPercentile": 22.1,
+      "codingPercentile": 23.7,
+      "agenticPercentile": 21.9,
       "score": 32.5,
       "tags": [
         "标称百万上下文",
@@ -561,11 +498,10 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 4,
-      "uptime1d": 98.98,
+      "upstreamCount": 3,
+      "uptime1d": 99.51,
       "uptime30m": 100,
       "providers": [
-        "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "Fireworks"
@@ -608,7 +544,7 @@
         "value": 3.4,
         "percentile": 1.1,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -618,9 +554,9 @@
         "frontierGap": -55.7,
         "frontierPct": 6,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         },
         "frontier": {
@@ -628,8 +564,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 29.2,
-      "agenticPercentile": 11.8,
+      "codingPercentile": 29,
+      "agenticPercentile": 11.7,
       "score": 33.9,
       "tags": [
         "标称长上下文",
@@ -676,12 +612,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 23.6,
+      "percentile": 23.1,
       "benchRef": {
         "value": 11.8,
-        "percentile": 23.6,
+        "percentile": 23.1,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -691,9 +627,9 @@
         "frontierGap": -47.3,
         "frontierPct": 20,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         },
         "frontier": {
@@ -701,8 +637,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 47,
-      "agenticPercentile": 50,
+      "codingPercentile": 46.7,
+      "agenticPercentile": 49.6,
       "score": 49.6,
       "tags": [
         "标称百万上下文",
@@ -714,17 +650,19 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 5,
-      "uptime1d": 99.93,
+      "upstreamCount": 6,
+      "uptime1d": 99.9,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
         "DeepInfra",
+        "KT",
         "Venice"
       ],
       "quantizations": [
         "fp4",
-        "fp8"
+        "fp8",
+        "unknown"
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-06-04"
@@ -762,15 +700,15 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         }
       },
@@ -827,20 +765,20 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         }
       },
-      "codingPercentile": 32.7,
-      "agenticPercentile": 20.6,
+      "codingPercentile": 32.5,
+      "agenticPercentile": 20.4,
       "score": 41.3,
       "tags": [
         "标称长上下文",
@@ -853,15 +791,17 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 13,
-      "uptime1d": 99.18,
-      "uptime30m": 100,
+      "upstreamCount": 15,
+      "uptime1d": 97.96,
+      "uptime30m": 99.78,
       "providers": [
         "AkashML",
         "Cloudflare",
+        "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
+        "Google",
         "Io Net",
         "Makora",
         "NextBit",
@@ -907,12 +847,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 6.7,
+      "percentile": 6.6,
       "benchRef": {
         "value": 4.4,
-        "percentile": 6.7,
+        "percentile": 6.6,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -922,9 +862,9 @@
         "frontierGap": -54.7,
         "frontierPct": 7,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         },
         "frontier": {
@@ -932,8 +872,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 36.3,
-      "agenticPercentile": 25,
+      "codingPercentile": 36.1,
+      "agenticPercentile": 24.8,
       "score": 46,
       "tags": [
         "标称长上下文",
@@ -947,9 +887,9 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 18,
-      "uptime1d": 98.66,
-      "uptime30m": 99.3,
+      "upstreamCount": 16,
+      "uptime1d": 98.93,
+      "uptime30m": 99.78,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -959,9 +899,7 @@
         "Friendli",
         "Io Net",
         "Modal",
-        "ModelRun",
         "NextBit",
-        "Novita",
         "Parasail",
         "PrimeIntellect",
         "SiliconFlow",
@@ -1007,15 +945,15 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 89,
+        "sampleSize": 91,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.2,
-          "p75": 36.6,
-          "p90": 54.5,
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
           "max": 64.6
         }
       },
