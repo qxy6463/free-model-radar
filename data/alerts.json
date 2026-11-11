@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-11T09:30:03.104Z",
+  "generatedAt": "2026-11-11T09:43:22.055Z",
   "items": [
+    {
+      "id": "20261111-174304|baidu/ernie-5.5-flash-preview:free",
+      "at": "2026-11-11T17:43:04.0391584+08:00",
+      "type": "new",
+      "modelId": "baidu/ernie-5.5-flash-preview:free",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "kindText": "官方免费层",
+      "score": 19.9,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "contextText": "1.02M",
+      "nominalText": "1.02M",
+      "tags": [
+        "标称百万上下文",
+        "工具调用",
+        "结构化输出",
+        "推理档位",
+        "可调推理档",
+        "无可用上游",
+        "官方免费层"
+      ]
+    },
     {
       "id": "20261111-094304|xingchen-agi/xing4.0-29b-a4b:free",
       "at": "2026-11-11T09:43:04.0629799+08:00",

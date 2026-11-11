@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-11T09:30:03.104Z",
-  "checkedAt": "2026-11-11T15:43:04.1181697+08:00",
+  "generatedAt": "2026-11-11T09:43:22.055Z",
+  "checkedAt": "2026-11-11T17:43:04.0391584+08:00",
   "totalModels": 469,
-  "freeCount": 13,
+  "freeCount": 14,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -20,6 +20,70 @@
     "RpdWithCredits": 1000
   },
   "models": [
+    {
+      "id": "baidu/ernie-5.5-flash-preview:free",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "kind": "free-tier",
+      "kindText": "官方免费层",
+      "contextText": "1.02M",
+      "nominalText": "1.02M",
+      "effectiveContext": 1024000,
+      "nominalContext": 1024000,
+      "contextShrunk": false,
+      "maxOutputTokens": 921600,
+      "inputModalities": [
+        "text"
+      ],
+      "reasoningEfforts": [
+        "high"
+      ],
+      "supportsTools": true,
+      "totalParamsB": null,
+      "activeParamsB": null,
+      "intelIndex": null,
+      "codingIndex": null,
+      "agenticIndex": null,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 91,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 28.5,
+          "p75": 44.2,
+          "p90": 54.6,
+          "max": 64.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
+      "score": 19.9,
+      "tags": [
+        "标称百万上下文",
+        "工具调用",
+        "结构化输出",
+        "推理档位",
+        "可调推理档",
+        "无可用上游",
+        "官方免费层"
+      ],
+      "upstreamCount": 0,
+      "uptime1d": null,
+      "uptime30m": null,
+      "providers": [],
+      "quantizations": [],
+      "implicitCaching": false,
+      "modelCreatedAt": "2026-11-11"
+    },
     {
       "id": "thinkingmachines/inkling-2-small:free",
       "name": "Thinking Machines: Inkling 2 Small (free)",
