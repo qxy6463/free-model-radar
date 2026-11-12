@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-12T09:43:13.126Z",
-  "checkedAt": "2026-11-12T17:43:03.7564800+08:00",
+  "generatedAt": "2026-11-12T15:43:15.933Z",
+  "checkedAt": "2026-11-12T23:43:03.7811325+08:00",
   "totalModels": 468,
   "freeCount": 14,
   "anchorsResolved": 6,
@@ -353,8 +353,8 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 98.94,
+      "upstreamCount": 9,
+      "uptime1d": 98.81,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -362,7 +362,6 @@
         "Crusoe",
         "Darkbloom",
         "DeepInfra",
-        "Io Net",
         "Nebius",
         "PrimeIntellect",
         "Together",
@@ -565,7 +564,7 @@
         "官方免费层"
       ],
       "upstreamCount": 3,
-      "uptime1d": 98.98,
+      "uptime1d": 99.82,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -716,7 +715,7 @@
         "官方免费层"
       ],
       "upstreamCount": 6,
-      "uptime1d": 99.1,
+      "uptime1d": 99.26,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -856,28 +855,25 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 14,
-      "uptime1d": 99.44,
+      "upstreamCount": 12,
+      "uptime1d": 99.21,
       "uptime30m": 100,
       "providers": [
-        "AkashML",
         "Cloudflare",
+        "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "DekaLLM",
-        "Google",
         "Io Net",
         "Makora",
         "NextBit",
         "Novita",
         "Parasail",
-        "PrimeIntellect",
         "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
         "bf16",
-        "fp4",
         "fp8",
         "unknown"
       ],
@@ -952,8 +948,8 @@
         "官方免费层"
       ],
       "upstreamCount": 17,
-      "uptime1d": 98.77,
-      "uptime30m": 99.61,
+      "uptime1d": 98.75,
+      "uptime30m": 99.79,
       "providers": [
         "Chutes",
         "CoreWeave",
