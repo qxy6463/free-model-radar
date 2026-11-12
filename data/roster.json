@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-11T09:43:22.055Z",
-  "checkedAt": "2026-11-11T17:43:04.0391584+08:00",
-  "totalModels": 469,
+  "generatedAt": "2026-11-12T01:43:12.162Z",
+  "checkedAt": "2026-11-12T09:43:03.8152870+08:00",
+  "totalModels": 467,
   "freeCount": 14,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -354,7 +354,7 @@
         "官方免费层"
       ],
       "upstreamCount": 10,
-      "uptime1d": 98.99,
+      "uptime1d": 98.48,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -494,7 +494,7 @@
       ],
       "upstreamCount": 1,
       "uptime1d": 100,
-      "uptime30m": null,
+      "uptime30m": 100,
       "providers": [
         "Liquid"
       ],
@@ -564,17 +564,19 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 3,
-      "uptime1d": 99.81,
+      "upstreamCount": 4,
+      "uptime1d": 98.29,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
         "Darkbloom",
-        "DeepInfra"
+        "DeepInfra",
+        "Fireworks"
       ],
       "quantizations": [
         "bf16",
-        "int4"
+        "int4",
+        "unknown"
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-08-11"
@@ -716,7 +718,7 @@
         "官方免费层"
       ],
       "upstreamCount": 6,
-      "uptime1d": 99.9,
+      "uptime1d": 98.97,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -857,7 +859,7 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 98.09,
+      "uptime1d": 99.5,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -952,18 +954,20 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 12,
-      "uptime1d": 98.92,
-      "uptime30m": 99.7,
+      "upstreamCount": 14,
+      "uptime1d": 98.67,
+      "uptime30m": 100,
       "providers": [
-        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
         "DekaLLM",
         "Friendli",
+        "Modal",
+        "NextBit",
+        "Novita",
+        "Parasail",
         "PrimeIntellect",
-        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
