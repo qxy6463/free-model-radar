@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-12T01:43:12.162Z",
-  "checkedAt": "2026-11-12T09:43:03.8152870+08:00",
-  "totalModels": 467,
+  "generatedAt": "2026-11-12T07:43:12.462Z",
+  "checkedAt": "2026-11-12T15:43:03.7496237+08:00",
+  "totalModels": 468,
   "freeCount": 14,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -52,13 +52,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -116,12 +116,12 @@
       "tierText": "前 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 56,
+      "percentile": 55.4,
       "benchRef": {
         "value": 30.6,
-        "percentile": 56,
+        "percentile": 55.4,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -131,7 +131,7 @@
         "frontierGap": -28.5,
         "frontierPct": 52,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -191,13 +191,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -257,13 +257,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -315,12 +315,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 29.7,
+      "percentile": 29.3,
       "benchRef": {
         "value": 13.6,
-        "percentile": 29.7,
+        "percentile": 29.3,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -330,7 +330,7 @@
         "frontierGap": -45.5,
         "frontierPct": 23,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -408,13 +408,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -470,13 +470,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -529,12 +529,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 12.1,
+      "percentile": 12,
       "benchRef": {
         "value": 5.5,
-        "percentile": 12.1,
+        "percentile": 12,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -544,7 +544,7 @@
         "frontierGap": -53.6,
         "frontierPct": 9,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -611,7 +611,7 @@
         "value": 3.4,
         "percentile": 1.1,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -621,7 +621,7 @@
         "frontierGap": -55.7,
         "frontierPct": 6,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -679,12 +679,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 23.1,
+      "percentile": 22.8,
       "benchRef": {
         "value": 11.8,
-        "percentile": 23.1,
+        "percentile": 22.8,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -694,7 +694,7 @@
         "frontierGap": -47.3,
         "frontierPct": 20,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -767,13 +767,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -832,13 +832,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -914,12 +914,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 6.6,
+      "percentile": 6.5,
       "benchRef": {
         "value": 4.4,
-        "percentile": 6.6,
+        "percentile": 6.5,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -929,7 +929,7 @@
         "frontierGap": -54.7,
         "frontierPct": 7,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
@@ -1010,13 +1010,13 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 91,
+        "sampleSize": 92,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 28.5,
+          "p50": 28.6,
           "p75": 44.2,
           "p90": 54.6,
           "max": 64.6
