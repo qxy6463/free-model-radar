@@ -1,6 +1,16 @@
 {
-  "generatedAt": "2026-11-12T15:43:15.933Z",
+  "generatedAt": "2026-11-13T03:43:26.437Z",
   "items": [
+    {
+      "at": "2026-11-13T11:43:11.7949595+08:00",
+      "type": "new",
+      "modelId": "apodex/apodex-1.1-mini:free"
+    },
+    {
+      "at": "2026-11-13T11:43:11.7949595+08:00",
+      "type": "new",
+      "modelId": "particle-ai/particle-1:free"
+    },
     {
       "at": "2026-11-11T17:43:07.9349608+08:00",
       "type": "new",
