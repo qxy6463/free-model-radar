@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-11-13T09:43:14.356Z",
+  "generatedAt": "2026-11-13T13:43:13.439Z",
   "items": [
+    {
+      "id": "20261113-214304|liquid/lfm-2.5-2.6b:free",
+      "at": "2026-11-13T21:43:04.0909570+08:00",
+      "type": "removed",
+      "modelId": "liquid/lfm-2.5-2.6b:free",
+      "name": "liquid/lfm-2.5-2.6b:free",
+      "kindText": "",
+      "score": 0,
+      "tier": "",
+      "tierText": "",
+      "contextText": "",
+      "nominalText": "",
+      "tags": []
+    },
     {
       "id": "20261113-174304|apodex/apodex-1.1-mini:free",
       "at": "2026-11-13T17:43:04.2677798+08:00",

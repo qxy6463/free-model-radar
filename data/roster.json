@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-13T09:43:14.356Z",
-  "checkedAt": "2026-11-13T17:43:04.2677798+08:00",
-  "totalModels": 472,
-  "freeCount": 15,
+  "generatedAt": "2026-11-13T13:43:13.439Z",
+  "checkedAt": "2026-11-13T21:43:04.0909570+08:00",
+  "totalModels": 470,
+  "freeCount": 14,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -529,70 +529,6 @@
       "modelCreatedAt": "2026-08-14"
     },
     {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "name": "LiquidAI: LFM2.5-2.6B (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "128K",
-      "nominalText": "66K",
-      "effectiveContext": 128000,
-      "nominalContext": 65536,
-      "contextShrunk": false,
-      "maxOutputTokens": 8192,
-      "inputModalities": [
-        "text"
-      ],
-      "reasoningEfforts": [],
-      "supportsTools": true,
-      "totalParamsB": 2.6,
-      "activeParamsB": null,
-      "intelIndex": null,
-      "codingIndex": 7.7,
-      "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
-      "benchRef": {
-        "value": null,
-        "percentile": null,
-        "axis": "智力",
-        "sampleSize": 93,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
-        "dist": {
-          "p50": 28.6,
-          "p75": 44.2,
-          "p90": 54.6,
-          "max": 64.6
-        }
-      },
-      "codingPercentile": 3.6,
-      "agenticPercentile": null,
-      "score": 20.4,
-      "tags": [
-        "工具调用",
-        "结构化输出",
-        "自带推理",
-        "单上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 1,
-      "uptime1d": 100,
-      "uptime30m": null,
-      "providers": [
-        "Liquid"
-      ],
-      "quantizations": [
-        "fp8"
-      ],
-      "implicitCaching": true,
-      "modelCreatedAt": "2026-08-12"
-    },
-    {
       "id": "nvidia/nemotron-3.5-lightning:free",
       "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
       "kind": "free-tier",
@@ -642,7 +578,7 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 23.7,
+      "codingPercentile": 22.8,
       "agenticPercentile": 21.9,
       "score": 32.5,
       "tags": [
@@ -719,7 +655,7 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 29,
+      "codingPercentile": 28.1,
       "agenticPercentile": 11.7,
       "score": 33.9,
       "tags": [
@@ -792,7 +728,7 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 46.7,
+      "codingPercentile": 46.1,
       "agenticPercentile": 49.6,
       "score": 49.6,
       "tags": [
@@ -867,7 +803,7 @@
           "max": 64.6
         }
       },
-      "codingPercentile": 10.1,
+      "codingPercentile": 9,
       "agenticPercentile": null,
       "score": 31.3,
       "tags": [
@@ -932,7 +868,7 @@
           "max": 64.6
         }
       },
-      "codingPercentile": 32.5,
+      "codingPercentile": 31.7,
       "agenticPercentile": 20.4,
       "score": 41.3,
       "tags": [
@@ -1027,7 +963,7 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 36.1,
+      "codingPercentile": 35.3,
       "agenticPercentile": 24.8,
       "score": 46,
       "tags": [
