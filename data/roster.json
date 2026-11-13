@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-13T09:30:02.787Z",
-  "checkedAt": "2026-11-13T15:43:04.0946588+08:00",
-  "totalModels": 475,
-  "freeCount": 16,
+  "generatedAt": "2026-11-13T09:43:14.356Z",
+  "checkedAt": "2026-11-13T17:43:04.2677798+08:00",
+  "totalModels": 472,
+  "freeCount": 15,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -153,17 +153,21 @@
         "可调推理档",
         "官方免费层"
       ],
-      "upstreamCount": 4,
-      "uptime1d": 99.58,
-      "uptime30m": 100,
+      "upstreamCount": 6,
+      "uptime1d": 98.52,
+      "uptime30m": 98.18,
       "providers": [
         "Cloudflare",
+        "DeepInfra",
+        "Modal",
         "Nebius",
         "PrimeIntellect",
         "Together"
       ],
       "quantizations": [
+        "bf16",
         "fp4",
+        "nvfp4",
         "unknown"
       ],
       "implicitCaching": true,
@@ -438,14 +442,13 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 99.52,
+      "upstreamCount": 9,
+      "uptime1d": 99.46,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
         "CoreWeave",
         "Crusoe",
-        "Darkbloom",
         "DeepInfra",
         "Io Net",
         "Nebius",
@@ -461,67 +464,6 @@
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-10-15"
-    },
-    {
-      "id": "apodex/apodex-1.1-mini:free",
-      "name": "Apodex: Apodex 1.1 Mini (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "262K",
-      "nominalText": "262K",
-      "effectiveContext": 262144,
-      "nominalContext": 262144,
-      "contextShrunk": false,
-      "maxOutputTokens": 235929,
-      "inputModalities": [
-        "text"
-      ],
-      "reasoningEfforts": [],
-      "supportsTools": true,
-      "totalParamsB": null,
-      "activeParamsB": null,
-      "intelIndex": null,
-      "codingIndex": null,
-      "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
-      "benchRef": {
-        "value": null,
-        "percentile": null,
-        "axis": "智力",
-        "sampleSize": 93,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
-        "dist": {
-          "p50": 28.6,
-          "p75": 44.2,
-          "p90": 54.6,
-          "max": 64.6
-        }
-      },
-      "codingPercentile": null,
-      "agenticPercentile": null,
-      "score": 18.4,
-      "tags": [
-        "标称长上下文",
-        "工具调用",
-        "结构化输出",
-        "自带推理",
-        "无可用上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 0,
-      "uptime1d": null,
-      "uptime30m": null,
-      "providers": [],
-      "quantizations": [],
-      "implicitCaching": false,
-      "modelCreatedAt": "2026-10-02"
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
@@ -628,7 +570,7 @@
           "max": 64.6
         }
       },
-      "codingPercentile": 3.5,
+      "codingPercentile": 3.6,
       "agenticPercentile": null,
       "score": 20.4,
       "tags": [
@@ -700,8 +642,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 23.5,
-      "agenticPercentile": 21.7,
+      "codingPercentile": 23.7,
+      "agenticPercentile": 21.9,
       "score": 32.5,
       "tags": [
         "标称百万上下文",
@@ -711,7 +653,7 @@
         "官方免费层"
       ],
       "upstreamCount": 4,
-      "uptime1d": 99.86,
+      "uptime1d": 99.76,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -777,8 +719,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 28.8,
-      "agenticPercentile": 11.6,
+      "codingPercentile": 29,
+      "agenticPercentile": 11.7,
       "score": 33.9,
       "tags": [
         "标称长上下文",
@@ -850,8 +792,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 46.5,
-      "agenticPercentile": 49.3,
+      "codingPercentile": 46.7,
+      "agenticPercentile": 49.6,
       "score": 49.6,
       "tags": [
         "标称百万上下文",
@@ -925,7 +867,7 @@
           "max": 64.6
         }
       },
-      "codingPercentile": 10,
+      "codingPercentile": 10.1,
       "agenticPercentile": null,
       "score": 31.3,
       "tags": [
@@ -990,8 +932,8 @@
           "max": 64.6
         }
       },
-      "codingPercentile": 32.4,
-      "agenticPercentile": 20.3,
+      "codingPercentile": 32.5,
+      "agenticPercentile": 20.4,
       "score": 41.3,
       "tags": [
         "标称长上下文",
@@ -1005,8 +947,8 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 98.05,
-      "uptime30m": 99.11,
+      "uptime1d": 97.91,
+      "uptime30m": 100,
       "providers": [
         "AkashML",
         "Cloudflare",
@@ -1085,8 +1027,8 @@
           "value": 59.1
         }
       },
-      "codingPercentile": 35.9,
-      "agenticPercentile": 24.6,
+      "codingPercentile": 36.1,
+      "agenticPercentile": 24.8,
       "score": 46,
       "tags": [
         "标称长上下文",
@@ -1100,14 +1042,15 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 16,
-      "uptime1d": 99.8,
-      "uptime30m": 99.22,
+      "upstreamCount": 17,
+      "uptime1d": 98.21,
+      "uptime30m": 100,
       "providers": [
         "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
+        "DekaLLM",
         "Friendli",
         "KT",
         "Modal",

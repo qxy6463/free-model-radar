@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-11-13T09:30:02.787Z",
+  "generatedAt": "2026-11-13T09:43:14.356Z",
   "items": [
+    {
+      "id": "20261113-174304|apodex/apodex-1.1-mini:free",
+      "at": "2026-11-13T17:43:04.2677798+08:00",
+      "type": "removed",
+      "modelId": "apodex/apodex-1.1-mini:free",
+      "name": "apodex/apodex-1.1-mini:free",
+      "kindText": "",
+      "score": 0,
+      "tier": "",
+      "tierText": "",
+      "contextText": "",
+      "nominalText": "",
+      "tags": []
+    },
     {
       "id": "20261113-114304|particle-ai/particle-1:free",
       "at": "2026-11-13T11:43:04.1652003+08:00",
