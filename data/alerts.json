@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-16T09:30:02.185Z",
+  "generatedAt": "2026-11-16T09:43:22.958Z",
   "items": [
+    {
+      "id": "20261116-174302|inclusionai/ling-3.2-flash:free",
+      "at": "2026-11-16T17:43:02.6793386+08:00",
+      "type": "new",
+      "modelId": "inclusionai/ling-3.2-flash:free",
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "kindText": "官方免费层",
+      "score": 24.9,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "contextText": "1.05M",
+      "nominalText": "1.05M",
+      "tags": [
+        "标称百万上下文",
+        "图片输入",
+        "工具调用",
+        "结构化输出",
+        "自带推理",
+        "无可用上游",
+        "官方免费层"
+      ]
+    },
     {
       "id": "20261113-214304|liquid/lfm-2.5-2.6b:free",
       "at": "2026-11-13T21:43:04.0909570+08:00",
@@ -331,50 +353,6 @@
         "结构化输出",
         "推理档位",
         "可调推理档",
-        "无可用上游",
-        "官方免费层"
-      ]
-    },
-    {
-      "id": "20261017-034305|xingchen-agi/xing4.0-29b-a4b:free",
-      "at": "2026-10-17T03:43:05.2088304+08:00",
-      "type": "new",
-      "modelId": "xingchen-agi/xing4.0-29b-a4b:free",
-      "name": "XingChen: Xing4.0 29B A4B (free)",
-      "kindText": "官方免费层",
-      "score": 18.4,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "contextText": "262K",
-      "nominalText": "262K",
-      "tags": [
-        "标称长上下文",
-        "工具调用",
-        "结构化输出",
-        "自带推理",
-        "无可用上游",
-        "官方免费层"
-      ]
-    },
-    {
-      "id": "20261015-234305|nvidia/nemotron-3.5-super-vl:free",
-      "at": "2026-10-15T23:43:05.9880904+08:00",
-      "type": "new",
-      "modelId": "nvidia/nemotron-3.5-super-vl:free",
-      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
-      "kindText": "官方免费层",
-      "score": 27.9,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "contextText": "1M",
-      "nominalText": "1M",
-      "tags": [
-        "标称百万上下文",
-        "图片输入",
-        "音视频",
-        "工具调用",
-        "结构化输出",
-        "自带推理",
         "无可用上游",
         "官方免费层"
       ]
