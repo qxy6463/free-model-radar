@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-18T09:30:04.273Z",
-  "checkedAt": "2026-11-18T15:43:05.5586928+08:00",
+  "generatedAt": "2026-11-18T11:43:21.553Z",
+  "checkedAt": "2026-11-18T19:43:04.8643698+08:00",
   "totalModels": 478,
   "freeCount": 15,
   "anchorsResolved": 6,
@@ -217,7 +217,7 @@
         "官方免费层"
       ],
       "upstreamCount": 6,
-      "uptime1d": 99.19,
+      "uptime1d": 98.45,
       "uptime30m": 100,
       "providers": [
         "Cloudflare",
@@ -513,7 +513,7 @@
         "官方免费层"
       ],
       "upstreamCount": 10,
-      "uptime1d": 92.05,
+      "uptime1d": 91.78,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -659,10 +659,11 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 4,
-      "uptime1d": 99.19,
+      "upstreamCount": 5,
+      "uptime1d": 96.66,
       "uptime30m": 100,
       "providers": [
+        "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "Fireworks",
@@ -814,7 +815,7 @@
         "官方免费层"
       ],
       "upstreamCount": 6,
-      "uptime1d": 98.45,
+      "uptime1d": 98.48,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -1049,10 +1050,11 @@
         "编程向",
         "官方免费层"
       ],
-      "upstreamCount": 16,
-      "uptime1d": 97.74,
+      "upstreamCount": 18,
+      "uptime1d": 98.43,
       "uptime30m": 100,
       "providers": [
+        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
@@ -1064,6 +1066,7 @@
         "Novita",
         "Parasail",
         "PrimeIntellect",
+        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
