@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-20T09:43:20.127Z",
-  "checkedAt": "2026-11-20T17:43:04.2573968+08:00",
+  "generatedAt": "2026-11-20T17:43:11.397Z",
+  "checkedAt": "2026-11-21T01:43:04.2195592+08:00",
   "totalModels": 477,
   "freeCount": 13,
   "anchorsResolved": 6,
@@ -210,7 +210,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.18,
+      "uptime1d": 99.81,
       "uptime30m": 100,
       "providers": [
         "Liquid"
@@ -421,19 +421,19 @@
         "工具调用",
         "结构化输出",
         "自带推理",
-        "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 9,
-      "uptime1d": 94.41,
+      "upstreamCount": 10,
+      "uptime1d": 96.53,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
         "CoreWeave",
         "Crusoe",
+        "Darkbloom",
         "DeepInfra",
-        "Io Net",
         "Nebius",
+        "PrimaLabs",
         "PrimeIntellect",
         "Together",
         "Venice"
@@ -656,7 +656,7 @@
         "官方免费层"
       ],
       "upstreamCount": 6,
-      "uptime1d": 98.79,
+      "uptime1d": 98.88,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -796,7 +796,7 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 98.1,
+      "uptime1d": 98.54,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -891,7 +891,7 @@
         "官方免费层"
       ],
       "upstreamCount": 17,
-      "uptime1d": 99.74,
+      "uptime1d": 99.25,
       "uptime30m": 100,
       "providers": [
         "Chutes",
@@ -906,6 +906,7 @@
         "Novita",
         "Parasail",
         "PrimeIntellect",
+        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
