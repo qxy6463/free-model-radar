@@ -1,6 +1,34 @@
 {
-  "generatedAt": "2026-11-19T09:30:03.452Z",
+  "generatedAt": "2026-11-20T01:43:11.551Z",
   "items": [
+    {
+      "id": "20261120-094304|thinkingmachines/inkling-2-small:free",
+      "at": "2026-11-20T09:43:04.4039505+08:00",
+      "type": "removed",
+      "modelId": "thinkingmachines/inkling-2-small:free",
+      "name": "thinkingmachines/inkling-2-small:free",
+      "kindText": "",
+      "score": 0,
+      "tier": "",
+      "tierText": "",
+      "contextText": "",
+      "nominalText": "",
+      "tags": []
+    },
+    {
+      "id": "20261120-094304|cohere/north-mini-code:free",
+      "at": "2026-11-20T09:43:04.4039505+08:00",
+      "type": "removed",
+      "modelId": "cohere/north-mini-code:free",
+      "name": "cohere/north-mini-code:free",
+      "kindText": "",
+      "score": 0,
+      "tier": "",
+      "tierText": "",
+      "contextText": "",
+      "nominalText": "",
+      "tags": []
+    },
     {
       "id": "20261116-174302|inclusionai/ling-3.2-flash:free",
       "at": "2026-11-16T17:43:02.6793386+08:00",
