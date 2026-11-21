@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-11-20T17:43:11.397Z",
+  "generatedAt": "2026-11-21T15:43:35.412Z",
   "items": [
+    {
+      "id": "20261121-234304|dots-studio/dots-3-note-preview:free",
+      "at": "2026-11-21T23:43:04.5741857+08:00",
+      "type": "removed",
+      "modelId": "dots-studio/dots-3-note-preview:free",
+      "name": "dots-studio/dots-3-note-preview:free",
+      "kindText": "",
+      "score": 0,
+      "tier": "",
+      "tierText": "",
+      "contextText": "",
+      "nominalText": "",
+      "tags": []
+    },
     {
       "id": "20261120-094304|thinkingmachines/inkling-2-small:free",
       "at": "2026-11-20T09:43:04.4039505+08:00",
@@ -325,41 +339,6 @@
       "contextText": "",
       "nominalText": "",
       "tags": []
-    },
-    {
-      "id": "20261022-214301|minimax/minimax-m3.1-flash:free",
-      "at": "2026-10-22T21:43:01.9731402+08:00",
-      "type": "removed",
-      "modelId": "minimax/minimax-m3.1-flash:free",
-      "name": "minimax/minimax-m3.1-flash:free",
-      "kindText": "",
-      "score": 0,
-      "tier": "",
-      "tierText": "",
-      "contextText": "",
-      "nominalText": "",
-      "tags": []
-    },
-    {
-      "id": "20261022-054301|recursive/flint-v1.0:free",
-      "at": "2026-10-22T05:43:01.8347167+08:00",
-      "type": "new",
-      "modelId": "recursive/flint-v1.0:free",
-      "name": "Recursive: Flint (free)",
-      "kindText": "官方免费层",
-      "score": 18.4,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "contextText": "262K",
-      "nominalText": "262K",
-      "tags": [
-        "标称长上下文",
-        "工具调用",
-        "结构化输出",
-        "自带推理",
-        "无可用上游",
-        "官方免费层"
-      ]
     }
   ]
 }

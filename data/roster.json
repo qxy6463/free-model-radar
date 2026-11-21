@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-20T17:43:11.397Z",
-  "checkedAt": "2026-11-21T01:43:04.2195592+08:00",
-  "totalModels": 477,
-  "freeCount": 13,
+  "generatedAt": "2026-11-21T15:43:35.412Z",
+  "checkedAt": "2026-11-21T23:43:04.5741857+08:00",
+  "totalModels": 476,
+  "freeCount": 12,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -51,7 +51,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -115,7 +115,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -172,12 +172,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 11.4,
+      "percentile": 11.3,
       "benchRef": {
         "value": 6,
-        "percentile": 11.4,
+        "percentile": 11.3,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -210,13 +210,13 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.81,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "Liquid"
       ],
       "quantizations": [
-        "fp8"
+        "unknown"
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-11-07"
@@ -260,7 +260,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -286,7 +286,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 100,
+      "uptime1d": 99.96,
       "uptime30m": 100,
       "providers": [
         "Particle AI"
@@ -327,7 +327,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -385,12 +385,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 25.7,
+      "percentile": 25.5,
       "benchRef": {
         "value": 13.6,
-        "percentile": 25.7,
+        "percentile": 25.5,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -423,15 +423,16 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 96.53,
-      "uptime30m": 100,
+      "upstreamCount": 11,
+      "uptime1d": 96.64,
+      "uptime30m": 98.86,
       "providers": [
         "BaseTen",
         "CoreWeave",
         "Crusoe",
         "Darkbloom",
         "DeepInfra",
+        "Io Net",
         "Nebius",
         "PrimaLabs",
         "PrimeIntellect",
@@ -446,69 +447,6 @@
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-10-15"
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "name": "Dots Studio: Dots3-Note Preview (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "512K",
-      "nominalText": "512K",
-      "effectiveContext": 512000,
-      "nominalContext": 512000,
-      "contextShrunk": false,
-      "maxOutputTokens": 460800,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "reasoningEfforts": [],
-      "supportsTools": true,
-      "totalParamsB": null,
-      "activeParamsB": null,
-      "intelIndex": null,
-      "codingIndex": null,
-      "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
-      "benchRef": {
-        "value": null,
-        "percentile": null,
-        "axis": "智力",
-        "sampleSize": 105,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
-        "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
-          "p90": 57.3,
-          "max": 64.6
-        }
-      },
-      "codingPercentile": null,
-      "agenticPercentile": null,
-      "score": 24.1,
-      "tags": [
-        "标称长上下文",
-        "图片输入",
-        "工具调用",
-        "结构化输出",
-        "自带推理",
-        "无可用上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 0,
-      "uptime1d": null,
-      "uptime30m": null,
-      "providers": [],
-      "quantizations": [],
-      "implicitCaching": false,
-      "modelCreatedAt": "2026-08-14"
     },
     {
       "id": "nvidia/nemotron-3.5-lightning:free",
@@ -535,12 +473,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 9.5,
+      "percentile": 9.4,
       "benchRef": {
         "value": 5.5,
-        "percentile": 9.5,
+        "percentile": 9.4,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -571,7 +509,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.97,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -618,12 +556,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 21,
+      "percentile": 20.8,
       "benchRef": {
         "value": 11.8,
-        "percentile": 21,
+        "percentile": 20.8,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -656,7 +594,7 @@
         "官方免费层"
       ],
       "upstreamCount": 6,
-      "uptime1d": 98.88,
+      "uptime1d": 98.78,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -705,7 +643,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -770,7 +708,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": null,
         "below": null,
         "frontierGap": null,
@@ -795,12 +733,11 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 15,
-      "uptime1d": 98.54,
+      "upstreamCount": 14,
+      "uptime1d": 99.5,
       "uptime30m": 100,
       "providers": [
         "AkashML",
-        "Cloudflare",
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
@@ -819,6 +756,7 @@
         "bf16",
         "fp4",
         "fp8",
+        "int4",
         "unknown"
       ],
       "implicitCaching": true,
@@ -851,12 +789,12 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 4.8,
+      "percentile": 4.7,
       "benchRef": {
         "value": 4.4,
-        "percentile": 4.8,
+        "percentile": 4.7,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": {
           "label": "Claude Sonnet 5.5",
           "value": 54.5,
@@ -891,8 +829,8 @@
         "官方免费层"
       ],
       "upstreamCount": 17,
-      "uptime1d": 99.25,
-      "uptime30m": 100,
+      "uptime1d": 99.82,
+      "uptime30m": 99.78,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -906,7 +844,6 @@
         "Novita",
         "Parasail",
         "PrimeIntellect",
-        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
@@ -950,7 +887,7 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 105,
+        "sampleSize": 106,
         "above": null,
         "below": null,
         "frontierGap": null,
