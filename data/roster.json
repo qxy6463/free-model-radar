@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-22T20:14:40.880Z",
-  "checkedAt": "2026-11-23T04:14:32.6230956+08:00",
-  "totalModels": 476,
-  "freeCount": 12,
+  "generatedAt": "2026-11-23T05:03:38.028Z",
+  "checkedAt": "2026-11-23T13:03:03.9455725+08:00",
+  "totalModels": 477,
+  "freeCount": 13,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -424,7 +424,7 @@
         "官方免费层"
       ],
       "upstreamCount": 11,
-      "uptime1d": 99.61,
+      "uptime1d": 99.5,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -447,6 +447,69 @@
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-10-15"
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "kind": "free-tier",
+      "kindText": "官方免费层",
+      "contextText": "512K",
+      "nominalText": "512K",
+      "effectiveContext": 512000,
+      "nominalContext": 512000,
+      "contextShrunk": false,
+      "maxOutputTokens": 460800,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "reasoningEfforts": [],
+      "supportsTools": true,
+      "totalParamsB": null,
+      "activeParamsB": null,
+      "intelIndex": null,
+      "codingIndex": null,
+      "agenticIndex": null,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "tierBasis": null,
+      "tierBasisLabel": "",
+      "percentile": null,
+      "benchRef": {
+        "value": null,
+        "percentile": null,
+        "axis": "智力",
+        "sampleSize": 106,
+        "above": null,
+        "below": null,
+        "frontierGap": null,
+        "frontierPct": null,
+        "dist": {
+          "p50": 30.8,
+          "p75": 46.5,
+          "p90": 57.3,
+          "max": 64.6
+        }
+      },
+      "codingPercentile": null,
+      "agenticPercentile": null,
+      "score": 24.1,
+      "tags": [
+        "标称长上下文",
+        "图片输入",
+        "工具调用",
+        "结构化输出",
+        "自带推理",
+        "无可用上游",
+        "官方免费层"
+      ],
+      "upstreamCount": 0,
+      "uptime1d": null,
+      "uptime30m": null,
+      "providers": [],
+      "quantizations": [],
+      "implicitCaching": false,
+      "modelCreatedAt": "2026-08-14"
     },
     {
       "id": "nvidia/nemotron-3.5-lightning:free",
@@ -509,7 +572,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.25,
+      "uptime1d": 98.32,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -593,13 +656,14 @@
         "大参数",
         "官方免费层"
       ],
-      "upstreamCount": 7,
+      "upstreamCount": 8,
       "uptime1d": 99.16,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
         "CoreWeave",
         "DeepInfra",
+        "Fireworks",
         "KT",
         "Venice"
       ],
@@ -736,7 +800,7 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 98.43,
+      "uptime1d": 98.94,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -832,8 +896,8 @@
         "官方免费层"
       ],
       "upstreamCount": 18,
-      "uptime1d": 98.72,
-      "uptime30m": 99.69,
+      "uptime1d": 98.41,
+      "uptime30m": 100,
       "providers": [
         "Chutes",
         "CoreWeave",

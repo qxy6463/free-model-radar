@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-22T20:14:40.880Z",
+  "generatedAt": "2026-11-23T05:03:38.028Z",
   "items": [
+    {
+      "id": "20261123-130303|dots-studio/dots-3-note-preview:free",
+      "at": "2026-11-23T13:03:03.9455725+08:00",
+      "type": "new",
+      "modelId": "dots-studio/dots-3-note-preview:free",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "kindText": "官方免费层",
+      "score": 24.1,
+      "tier": "?",
+      "tierText": "OpenRouter 未提供智力基准",
+      "contextText": "512K",
+      "nominalText": "512K",
+      "tags": [
+        "标称长上下文",
+        "图片输入",
+        "工具调用",
+        "结构化输出",
+        "自带推理",
+        "无可用上游",
+        "官方免费层"
+      ]
+    },
     {
       "id": "20261121-234304|dots-studio/dots-3-note-preview:free",
       "at": "2026-11-21T23:43:04.5741857+08:00",

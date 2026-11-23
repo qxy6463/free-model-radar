@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-11-22T20:14:40.880Z",
+  "generatedAt": "2026-11-23T05:03:38.028Z",
   "items": [
+    {
+      "at": "2026-11-23T13:03:23.1567534+08:00",
+      "type": "new",
+      "modelId": "dots-studio/dots-3-note-preview:free"
+    },
     {
       "at": "2026-11-21T23:43:32.9589724+08:00",
       "type": "removed",
