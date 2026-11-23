@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-23T10:38:26.499Z",
-  "checkedAt": "2026-11-23T13:03:03.9455725+08:00",
+  "generatedAt": "2026-11-23T19:02:03.353Z",
+  "checkedAt": "2026-11-24T03:01:55.3121989+08:00",
   "totalModels": 477,
   "freeCount": 13,
   "anchorsResolved": 6,
@@ -286,7 +286,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 100,
+      "uptime1d": 99.95,
       "uptime30m": 100,
       "providers": [
         "Particle AI"
@@ -424,7 +424,7 @@
         "官方免费层"
       ],
       "upstreamCount": 11,
-      "uptime1d": 99.5,
+      "uptime1d": 99.86,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -572,7 +572,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 98.32,
+      "uptime1d": 99.84,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -657,7 +657,7 @@
         "官方免费层"
       ],
       "upstreamCount": 8,
-      "uptime1d": 99.16,
+      "uptime1d": 99.77,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -800,15 +800,13 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 98.94,
+      "uptime1d": 99.53,
       "uptime30m": 100,
       "providers": [
-        "AkashML",
         "Cloudflare",
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
-        "DekaLLM",
         "Google",
         "Io Net",
         "Makora",
@@ -896,7 +894,7 @@
         "官方免费层"
       ],
       "upstreamCount": 18,
-      "uptime1d": 98.41,
+      "uptime1d": 99.29,
       "uptime30m": 100,
       "providers": [
         "Chutes",
