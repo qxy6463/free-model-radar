@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-24T01:43:16.884Z",
-  "checkedAt": "2026-11-24T09:43:04.4745912+08:00",
-  "totalModels": 476,
+  "generatedAt": "2026-11-24T07:43:18.237Z",
+  "checkedAt": "2026-11-24T15:43:04.7257957+08:00",
+  "totalModels": 473,
   "freeCount": 13,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -210,7 +210,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.33,
+      "uptime1d": 99.39,
       "uptime30m": 100,
       "providers": [
         "Liquid"
@@ -286,7 +286,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.92,
+      "uptime1d": 99.93,
       "uptime30m": 100,
       "providers": [
         "Particle AI"
@@ -423,16 +423,15 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 11,
-      "uptime1d": 99.73,
-      "uptime30m": 100,
+      "upstreamCount": 10,
+      "uptime1d": 99.74,
+      "uptime30m": 97.92,
       "providers": [
         "BaseTen",
         "CoreWeave",
         "Crusoe",
         "Darkbloom",
         "DeepInfra",
-        "Io Net",
         "Nebius",
         "PrimaLabs",
         "PrimeIntellect",
@@ -572,7 +571,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.88,
+      "uptime1d": 99.97,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -657,7 +656,7 @@
         "官方免费层"
       ],
       "upstreamCount": 8,
-      "uptime1d": 99.31,
+      "uptime1d": 99.36,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -799,8 +798,8 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 16,
-      "uptime1d": 99.61,
+      "upstreamCount": 15,
+      "uptime1d": 99.78,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -812,7 +811,6 @@
         "Io Net",
         "Makora",
         "NextBit",
-        "Novita",
         "Parasail",
         "PrimeIntellect",
         "SiliconFlow",
@@ -894,9 +892,9 @@
         "大参数",
         "官方免费层"
       ],
-      "upstreamCount": 16,
-      "uptime1d": 99.69,
-      "uptime30m": 99.76,
+      "upstreamCount": 17,
+      "uptime1d": 99.54,
+      "uptime30m": 100,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -907,6 +905,7 @@
         "Modal",
         "ModelRun",
         "NextBit",
+        "Novita",
         "Parasail",
         "PrimeIntellect",
         "SiliconFlow",
