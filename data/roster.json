@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-23T19:02:03.353Z",
-  "checkedAt": "2026-11-24T03:01:55.3121989+08:00",
-  "totalModels": 477,
+  "generatedAt": "2026-11-24T01:43:16.884Z",
+  "checkedAt": "2026-11-24T09:43:04.4745912+08:00",
+  "totalModels": 476,
   "freeCount": 13,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -210,7 +210,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 100,
+      "uptime1d": 99.33,
       "uptime30m": 100,
       "providers": [
         "Liquid"
@@ -286,7 +286,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.95,
+      "uptime1d": 99.92,
       "uptime30m": 100,
       "providers": [
         "Particle AI"
@@ -424,7 +424,7 @@
         "官方免费层"
       ],
       "upstreamCount": 11,
-      "uptime1d": 99.86,
+      "uptime1d": 99.73,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -572,7 +572,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.84,
+      "uptime1d": 99.88,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -657,7 +657,7 @@
         "官方免费层"
       ],
       "upstreamCount": 8,
-      "uptime1d": 99.77,
+      "uptime1d": 99.31,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -799,10 +799,11 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 15,
-      "uptime1d": 99.53,
+      "upstreamCount": 16,
+      "uptime1d": 99.61,
       "uptime30m": 100,
       "providers": [
+        "AkashML",
         "Cloudflare",
         "CoreWeave",
         "Darkbloom",
@@ -893,9 +894,9 @@
         "大参数",
         "官方免费层"
       ],
-      "upstreamCount": 18,
-      "uptime1d": 99.29,
-      "uptime30m": 100,
+      "upstreamCount": 16,
+      "uptime1d": 99.69,
+      "uptime30m": 99.76,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -906,10 +907,8 @@
         "Modal",
         "ModelRun",
         "NextBit",
-        "Novita",
         "Parasail",
         "PrimeIntellect",
-        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
