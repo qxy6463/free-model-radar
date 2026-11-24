@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-24T17:43:08.133Z",
-  "checkedAt": "2026-11-25T01:43:04.2656609+08:00",
+  "generatedAt": "2026-11-24T23:43:11.303Z",
+  "checkedAt": "2026-11-25T07:43:04.2288719+08:00",
   "totalModels": 470,
   "freeCount": 12,
   "anchorsResolved": 6,
@@ -210,7 +210,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.35,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "Liquid"
@@ -286,7 +286,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.96,
+      "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
         "Particle AI"
@@ -421,17 +421,19 @@
         "工具调用",
         "结构化输出",
         "自带推理",
+        "可用性偏低",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 97.76,
-      "uptime30m": 99.58,
+      "upstreamCount": 11,
+      "uptime1d": 94.93,
+      "uptime30m": 100,
       "providers": [
         "BaseTen",
         "CoreWeave",
         "Crusoe",
         "Darkbloom",
         "DeepInfra",
+        "Io Net",
         "Nebius",
         "PrimaLabs",
         "PrimeIntellect",
@@ -593,7 +595,7 @@
         "官方免费层"
       ],
       "upstreamCount": 8,
-      "uptime1d": 99.28,
+      "uptime1d": 98.94,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -735,11 +737,12 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 14,
-      "uptime1d": 99.9,
-      "uptime30m": 99.75,
+      "upstreamCount": 16,
+      "uptime1d": 98.79,
+      "uptime30m": 100,
       "providers": [
         "AkashML",
+        "Cloudflare",
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
@@ -747,6 +750,7 @@
         "Io Net",
         "Makora",
         "NextBit",
+        "Novita",
         "Parasail",
         "PrimeIntellect",
         "SiliconFlow",
@@ -828,11 +832,10 @@
         "大参数",
         "官方免费层"
       ],
-      "upstreamCount": 16,
-      "uptime1d": 99.3,
+      "upstreamCount": 17,
+      "uptime1d": 97.83,
       "uptime30m": 100,
       "providers": [
-        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
@@ -841,8 +844,10 @@
         "Modal",
         "ModelRun",
         "NextBit",
+        "Novita",
         "Parasail",
         "PrimeIntellect",
+        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
