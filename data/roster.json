@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-24T09:30:03.014Z",
-  "checkedAt": "2026-11-24T15:43:04.7257957+08:00",
+  "generatedAt": "2026-11-24T15:43:22.025Z",
+  "checkedAt": "2026-11-24T23:43:04.2801734+08:00",
   "totalModels": 473,
   "freeCount": 13,
   "anchorsResolved": 6,
@@ -210,7 +210,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 99.39,
+      "uptime1d": 99.35,
       "uptime30m": 100,
       "providers": [
         "Liquid"
@@ -286,7 +286,7 @@
         "官方免费层"
       ],
       "upstreamCount": 2,
-      "uptime1d": 99.93,
+      "uptime1d": 99.96,
       "uptime30m": 100,
       "providers": [
         "Particle AI"
@@ -424,8 +424,8 @@
         "官方免费层"
       ],
       "upstreamCount": 10,
-      "uptime1d": 99.74,
-      "uptime30m": 97.92,
+      "uptime1d": 97.76,
+      "uptime30m": 99.58,
       "providers": [
         "BaseTen",
         "CoreWeave",
@@ -656,7 +656,7 @@
         "官方免费层"
       ],
       "upstreamCount": 8,
-      "uptime1d": 99.36,
+      "uptime1d": 99.28,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -798,12 +798,11 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 15,
-      "uptime1d": 99.78,
-      "uptime30m": 100,
+      "upstreamCount": 14,
+      "uptime1d": 99.9,
+      "uptime30m": 99.75,
       "providers": [
         "AkashML",
-        "Cloudflare",
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
@@ -892,8 +891,8 @@
         "大参数",
         "官方免费层"
       ],
-      "upstreamCount": 17,
-      "uptime1d": 99.54,
+      "upstreamCount": 16,
+      "uptime1d": 99.3,
       "uptime30m": 100,
       "providers": [
         "Chutes",
@@ -905,7 +904,6 @@
         "Modal",
         "ModelRun",
         "NextBit",
-        "Novita",
         "Parasail",
         "PrimeIntellect",
         "SiliconFlow",
