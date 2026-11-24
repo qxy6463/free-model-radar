@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-24T15:43:22.025Z",
-  "checkedAt": "2026-11-24T23:43:04.2801734+08:00",
-  "totalModels": 473,
-  "freeCount": 13,
+  "generatedAt": "2026-11-24T17:43:08.133Z",
+  "checkedAt": "2026-11-25T01:43:04.2656609+08:00",
+  "totalModels": 470,
+  "freeCount": 12,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -446,69 +446,6 @@
       ],
       "implicitCaching": true,
       "modelCreatedAt": "2026-10-15"
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "name": "Dots Studio: Dots3-Note Preview (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "512K",
-      "nominalText": "512K",
-      "effectiveContext": 512000,
-      "nominalContext": 512000,
-      "contextShrunk": false,
-      "maxOutputTokens": 460800,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "reasoningEfforts": [],
-      "supportsTools": true,
-      "totalParamsB": null,
-      "activeParamsB": null,
-      "intelIndex": null,
-      "codingIndex": null,
-      "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
-      "benchRef": {
-        "value": null,
-        "percentile": null,
-        "axis": "智力",
-        "sampleSize": 106,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
-        "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
-          "p90": 57.3,
-          "max": 64.6
-        }
-      },
-      "codingPercentile": null,
-      "agenticPercentile": null,
-      "score": 24.1,
-      "tags": [
-        "标称长上下文",
-        "图片输入",
-        "工具调用",
-        "结构化输出",
-        "自带推理",
-        "无可用上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 0,
-      "uptime1d": null,
-      "uptime30m": null,
-      "providers": [],
-      "quantizations": [],
-      "implicitCaching": false,
-      "modelCreatedAt": "2026-08-14"
     },
     {
       "id": "nvidia/nemotron-3.5-lightning:free",
