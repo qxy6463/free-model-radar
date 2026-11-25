@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-24T23:43:11.303Z",
-  "checkedAt": "2026-11-25T07:43:04.2288719+08:00",
-  "totalModels": 470,
+  "generatedAt": "2026-11-25T01:43:09.621Z",
+  "checkedAt": "2026-11-25T09:43:04.4583645+08:00",
+  "totalModels": 472,
   "freeCount": 12,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -51,16 +51,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         }
       },
       "codingPercentile": null,
@@ -115,16 +115,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         }
       },
       "codingPercentile": null,
@@ -172,25 +172,25 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 11.3,
+      "percentile": 10.5,
       "benchRef": {
         "value": 6,
-        "percentile": 11.3,
+        "percentile": 10.5,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": {
           "label": "Claude Sonnet 5.5",
-          "value": 54.5,
-          "delta": -48.5
+          "value": 54.7,
+          "delta": -48.7
         },
         "below": null,
         "frontierGap": -53.1,
         "frontierPct": 10,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         },
         "frontier": {
           "label": "Claude Opus 5.5",
@@ -260,16 +260,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         }
       },
       "codingPercentile": null,
@@ -327,16 +327,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         }
       },
       "codingPercentile": null,
@@ -385,25 +385,25 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 25.5,
+      "percentile": 24.8,
       "benchRef": {
         "value": 13.6,
-        "percentile": 25.5,
+        "percentile": 24.8,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": {
           "label": "Claude Sonnet 5.5",
-          "value": 54.5,
-          "delta": -40.9
+          "value": 54.7,
+          "delta": -41.1
         },
         "below": null,
         "frontierGap": -45.5,
         "frontierPct": 23,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         },
         "frontier": {
           "label": "Claude Opus 5.5",
@@ -474,25 +474,25 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 9.4,
+      "percentile": 8.6,
       "benchRef": {
         "value": 5.5,
-        "percentile": 9.4,
+        "percentile": 8.6,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": {
           "label": "Claude Sonnet 5.5",
-          "value": 54.5,
-          "delta": -49
+          "value": 54.7,
+          "delta": -49.2
         },
         "below": null,
         "frontierGap": -53.6,
         "frontierPct": 9,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         },
         "frontier": {
           "label": "Claude Opus 5.5",
@@ -557,25 +557,25 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 20.8,
+      "percentile": 20,
       "benchRef": {
         "value": 11.8,
-        "percentile": 20.8,
+        "percentile": 20,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": {
           "label": "Claude Sonnet 5.5",
-          "value": 54.5,
-          "delta": -42.7
+          "value": 54.7,
+          "delta": -42.9
         },
         "below": null,
         "frontierGap": -47.3,
         "frontierPct": 20,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         },
         "frontier": {
           "label": "Claude Opus 5.5",
@@ -647,16 +647,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         }
       },
       "codingPercentile": null,
@@ -712,16 +712,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         }
       },
       "codingPercentile": null,
@@ -793,25 +793,25 @@
       "tierText": "后 50%",
       "tierBasis": "intelligence_index",
       "tierBasisLabel": "智力",
-      "percentile": 4.7,
+      "percentile": 4.8,
       "benchRef": {
         "value": 4.4,
-        "percentile": 4.7,
+        "percentile": 4.8,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": {
           "label": "Claude Sonnet 5.5",
-          "value": 54.5,
-          "delta": -50.1
+          "value": 54.7,
+          "delta": -50.3
         },
         "below": null,
         "frontierGap": -54.7,
         "frontierPct": 7,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         },
         "frontier": {
           "label": "Claude Opus 5.5",
@@ -891,16 +891,16 @@
         "value": null,
         "percentile": null,
         "axis": "智力",
-        "sampleSize": 106,
+        "sampleSize": 105,
         "above": null,
         "below": null,
         "frontierGap": null,
         "frontierPct": null,
         "dist": {
-          "p50": 30.8,
-          "p75": 46.5,
+          "p50": 30.7,
+          "p75": 46.6,
           "p90": 57.3,
-          "max": 64.6
+          "max": 64.8
         }
       },
       "codingPercentile": null,
