@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-25T11:43:21.912Z",
-  "checkedAt": "2026-11-25T19:43:04.4436306+08:00",
-  "totalModels": 472,
+  "generatedAt": "2026-11-25T19:09:07.469Z",
+  "checkedAt": "2026-11-26T03:08:59.3668212+08:00",
+  "totalModels": 470,
   "freeCount": 12,
   "anchorsResolved": 6,
   "skippedNonText": [
@@ -283,9 +283,10 @@
         "结构化输出",
         "推理档位",
         "可调推理档",
+        "单上游",
         "官方免费层"
       ],
-      "upstreamCount": 2,
+      "upstreamCount": 1,
       "uptime1d": 100,
       "uptime30m": 100,
       "providers": [
@@ -424,7 +425,7 @@
         "官方免费层"
       ],
       "upstreamCount": 11,
-      "uptime1d": 97.24,
+      "uptime1d": 99.44,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -509,7 +510,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.77,
+      "uptime1d": 99.79,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -737,7 +738,7 @@
         "官方免费层"
       ],
       "upstreamCount": 16,
-      "uptime1d": 98.52,
+      "uptime1d": 99.47,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -832,21 +833,21 @@
         "官方免费层"
       ],
       "upstreamCount": 17,
-      "uptime1d": 97.23,
-      "uptime30m": 99.02,
+      "uptime1d": 98.12,
+      "uptime30m": 100,
       "providers": [
         "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
         "Friendli",
+        "KT",
         "Modal",
         "ModelRun",
         "NextBit",
         "Novita",
         "Parasail",
         "PrimeIntellect",
-        "SambaNova",
         "SiliconFlow",
         "Venice"
       ],
