@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-26T09:30:02.893Z",
-  "checkedAt": "2026-11-26T15:43:04.4998603+08:00",
+  "generatedAt": "2026-11-26T09:43:16.863Z",
+  "checkedAt": "2026-11-26T17:43:04.5032294+08:00",
   "totalModels": 474,
   "freeCount": 12,
   "anchorsResolved": 6,
@@ -210,7 +210,7 @@
         "官方免费层"
       ],
       "upstreamCount": 1,
-      "uptime1d": 95.67,
+      "uptime1d": 96.15,
       "uptime30m": 100,
       "providers": [
         "Liquid"
@@ -425,7 +425,7 @@
         "官方免费层"
       ],
       "upstreamCount": 10,
-      "uptime1d": 99.58,
+      "uptime1d": 99.64,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -509,7 +509,7 @@
         "官方免费层"
       ],
       "upstreamCount": 5,
-      "uptime1d": 99.78,
+      "uptime1d": 99.94,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
@@ -594,7 +594,7 @@
         "官方免费层"
       ],
       "upstreamCount": 8,
-      "uptime1d": 98.58,
+      "uptime1d": 98.49,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -737,11 +737,10 @@
         "官方免费层"
       ],
       "upstreamCount": 16,
-      "uptime1d": 99.41,
+      "uptime1d": 99.37,
       "uptime30m": 100,
       "providers": [
         "AkashML",
-        "Ambient",
         "Cloudflare",
         "CoreWeave",
         "Darkbloom",
@@ -750,6 +749,7 @@
         "Io Net",
         "Makora",
         "NextBit",
+        "Novita",
         "Parasail",
         "PrimeIntellect",
         "SiliconFlow",
@@ -760,7 +760,6 @@
         "fp4",
         "fp8",
         "int4",
-        "nvfp4",
         "unknown"
       ],
       "implicitCaching": true,
@@ -832,9 +831,9 @@
         "大参数",
         "官方免费层"
       ],
-      "upstreamCount": 15,
-      "uptime1d": 98.36,
-      "uptime30m": 99.76,
+      "upstreamCount": 16,
+      "uptime1d": 97.99,
+      "uptime30m": 100,
       "providers": [
         "Chutes",
         "CoreWeave",
@@ -848,6 +847,7 @@
         "Novita",
         "Parasail",
         "PrimeIntellect",
+        "SiliconFlow",
         "Venice"
       ],
       "quantizations": [
