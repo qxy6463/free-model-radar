@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-27T09:43:16.956Z",
-  "checkedAt": "2026-11-27T17:43:04.3164886+08:00",
+  "generatedAt": "2026-11-27T13:43:15.094Z",
+  "checkedAt": "2026-11-27T21:43:04.3191893+08:00",
   "totalModels": 477,
-  "freeCount": 12,
+  "freeCount": 11,
   "anchorsResolved": 6,
   "skippedNonText": [
     "google/lyria-3-pro-preview",
@@ -20,69 +20,6 @@
     "RpdWithCredits": 1000
   },
   "models": [
-    {
-      "id": "inclusionai/ling-3.2-flash:free",
-      "name": "inclusionAI: Ling 3.2 Flash (free)",
-      "kind": "free-tier",
-      "kindText": "官方免费层",
-      "contextText": "1.05M",
-      "nominalText": "1.05M",
-      "effectiveContext": 1048576,
-      "nominalContext": 1048576,
-      "contextShrunk": false,
-      "maxOutputTokens": 262144,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "reasoningEfforts": [],
-      "supportsTools": true,
-      "totalParamsB": null,
-      "activeParamsB": null,
-      "intelIndex": null,
-      "codingIndex": null,
-      "agenticIndex": null,
-      "tier": "?",
-      "tierText": "OpenRouter 未提供智力基准",
-      "tierBasis": null,
-      "tierBasisLabel": "",
-      "percentile": null,
-      "benchRef": {
-        "value": null,
-        "percentile": null,
-        "axis": "智力",
-        "sampleSize": 108,
-        "above": null,
-        "below": null,
-        "frontierGap": null,
-        "frontierPct": null,
-        "dist": {
-          "p50": 30.7,
-          "p75": 46.6,
-          "p90": 57.3,
-          "max": 64.8
-        }
-      },
-      "codingPercentile": null,
-      "agenticPercentile": null,
-      "score": 24.9,
-      "tags": [
-        "标称百万上下文",
-        "图片输入",
-        "工具调用",
-        "结构化输出",
-        "自带推理",
-        "无可用上游",
-        "官方免费层"
-      ],
-      "upstreamCount": 0,
-      "uptime1d": null,
-      "uptime30m": null,
-      "providers": [],
-      "quantizations": [],
-      "implicitCaching": false,
-      "modelCreatedAt": "2026-11-14"
-    },
     {
       "id": "baidu/ernie-5.5-flash-preview:free",
       "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",

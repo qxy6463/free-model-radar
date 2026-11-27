@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-11-27T09:43:16.956Z",
+  "generatedAt": "2026-11-27T13:43:15.094Z",
   "items": [
+    {
+      "at": "2026-11-27T21:43:14.0246808+08:00",
+      "type": "removed",
+      "modelId": "inclusionai/ling-3.2-flash:free"
+    },
     {
       "at": "2026-11-25T01:43:07.1365888+08:00",
       "type": "removed",
