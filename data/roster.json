@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-27T09:30:02.899Z",
-  "checkedAt": "2026-11-27T15:43:04.3334454+08:00",
+  "generatedAt": "2026-11-27T09:43:16.956Z",
+  "checkedAt": "2026-11-27T17:43:04.3164886+08:00",
   "totalModels": 477,
   "freeCount": 12,
   "anchorsResolved": 6,
@@ -98,7 +98,10 @@
         "text"
       ],
       "reasoningEfforts": [
-        "high"
+        "high",
+        "medium",
+        "low",
+        "none"
       ],
       "supportsTools": true,
       "totalParamsB": null,
@@ -425,7 +428,7 @@
         "官方免费层"
       ],
       "upstreamCount": 11,
-      "uptime1d": 97.01,
+      "uptime1d": 97.58,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -595,7 +598,7 @@
         "官方免费层"
       ],
       "upstreamCount": 8,
-      "uptime1d": 99.26,
+      "uptime1d": 99.68,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -839,10 +842,11 @@
         "大参数",
         "官方免费层"
       ],
-      "upstreamCount": 15,
-      "uptime1d": 98.38,
+      "upstreamCount": 16,
+      "uptime1d": 99.49,
       "uptime30m": 100,
       "providers": [
+        "Chutes",
         "CoreWeave",
         "Crusoe",
         "DeepInfra",
