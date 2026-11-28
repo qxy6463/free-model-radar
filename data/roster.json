@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-11-27T23:43:12.298Z",
-  "checkedAt": "2026-11-28T07:43:04.3685932+08:00",
+  "generatedAt": "2026-11-28T07:43:19.715Z",
+  "checkedAt": "2026-11-28T15:43:04.3314763+08:00",
   "totalModels": 476,
   "freeCount": 11,
   "anchorsResolved": 6,
@@ -364,8 +364,8 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 10,
-      "uptime1d": 99.87,
+      "upstreamCount": 11,
+      "uptime1d": 99.51,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -375,6 +375,7 @@
         "DeepInfra",
         "Io Net",
         "Nebius",
+        "PrimaLabs",
         "PrimeIntellect",
         "Together",
         "Venice"
@@ -448,15 +449,16 @@
         "自带推理",
         "官方免费层"
       ],
-      "upstreamCount": 5,
-      "uptime1d": 99.95,
+      "upstreamCount": 6,
+      "uptime1d": 99.86,
       "uptime30m": 100,
       "providers": [
         "CoreWeave",
         "Darkbloom",
         "DeepInfra",
         "Fireworks",
-        "ModelRun"
+        "ModelRun",
+        "Venice"
       ],
       "quantizations": [
         "bf16",
@@ -534,7 +536,7 @@
         "官方免费层"
       ],
       "upstreamCount": 8,
-      "uptime1d": 99.6,
+      "uptime1d": 99.11,
       "uptime30m": 100,
       "providers": [
         "BaseTen",
@@ -685,7 +687,7 @@
         "官方免费层"
       ],
       "upstreamCount": 15,
-      "uptime1d": 100,
+      "uptime1d": 99.99,
       "uptime30m": 100,
       "providers": [
         "AkashML",
@@ -779,8 +781,8 @@
         "官方免费层"
       ],
       "upstreamCount": 16,
-      "uptime1d": 99.77,
-      "uptime30m": 100,
+      "uptime1d": 99.72,
+      "uptime30m": 99.75,
       "providers": [
         "Chutes",
         "CoreWeave",
